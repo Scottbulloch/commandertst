@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Use Modules in Workflows</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="UseModulesinWorkflows" data-magellan-target="UseModulesinWorkflows">Use Modules in Workflows</h1><p>This topic provides an example that shows how to create:</p><ul><li>A workflow module that uses steps to send an approval email and execute an embedded script. The module uses input variables to enable information to be passed in from steps in the workflow the module is added to.</li><li>A command workflow that includes a step to run the configured module. Input variables used in a step in the workflow will pass information into a step in the workflow module.</li></ul><p>Input variables provide a way to pass information from a workflow to steps in the workflow module. In this example, the command workflow passes static information (an approver's email and a script) into the input variables used in the workflow module.</p><p>It's also possible to pass output that's generated from a workflow step into the input variables used in a Run Module step that comes after the workflow step. For example, a workflow step could retrieve information, such as an IP address, from another system, then, in the Run Module step, pass it into an input variable that provides the information to the workflow module.</p><p>This example uses a command workflow, but the steps are similar for all workflow types.</p><h2 id="Createtheworkflowmodule" data-magellan-target="Createtheworkflowmodule">Create the workflow module</h2><ol><li value="1">Click <b>Configuration &gt; Command Workflows</b>.</li><li value="2">Click the <b>Modules</b> tab, then click <b>Add</b>.</li><li value="3">In the Command Workflow Module Configuration dialog, enter "Approve and execute script" as the module name and enter a description for the workflow module (for example, "Sends an approval email, and once approved executes the specified script.").</li><li value="4">For <b>Target Type</b>, leave the default value of <b>VM</b>, then click <b>Next</b>.</li><li value="5">On the <strong>Input Variables</strong> page, do the following to add two input variables for the module to use — one for the approver's email address, the other for the script contents:
+        <ul><li>To add an input variable for the approver's email address, click <b>Add.</b> In the Input Variables dialog that appears, enter the following:</li><ol><li value="1">For <b>Display Name</b>, enter an identifying name for the input variable (in this case, "Approver Email Address").</li><li value="2">For <b>Variable Name</b>, enter the name that will be used for the variable expression. For example, if you enter "approver", the resulting expression will be <code>#{inputVariable['approver']</code>. See <a href="syntax_emails_scripts.htm" class="MCXref xref">Variable Syntax for Emails and Scripts</a> for basic variable syntax.</li><li value="3">For <b>Description</b>, enter a description to indicate that the variable is used to get the approver's email address.</li><li value="4">For <b>Default Value</b>, enter the email address of the network administrator.</li><li value="5">Enable the <b>Required</b> check box to ensure that a value is provided for this variable when the workflow is run.</li><li value="6">Click <b>OK</b>.</li></ol><li>To add a variable for an embedded script, click <b>Add</b>. In the Input Variables dialog, enter the following:</li><ol><li value="1">For <b>Display Name</b>, enter an identifying name for the input variable (in this case, "Script Contents").</li><li value="2">For <b>Variable Name</b>, enter the name to be used for the variable expression (in this case, "Script").</li><li value="3">For <b>Description</b>, enter a description to indicate that the variable is used to receive output from script that will be run in the workflow.</li><li value="4">Enable the <b>Required</b> check box to ensure a value for the variable is provided when the workflow is run.</li><li value="5">Click <b>OK</b>.</li></ol></ul></li><li value="6">Click <b>Next</b>.</li><li value="7">On the <strong>Steps </strong>page, add a step to send an approver email:<ol><li value="1">Click <b>Add &gt; Send Approval Email</b>.</li><li value="2">In the details section, name the step "Send Email".</li><li value="3">From <b>Step Execution</b>, select <b>Execute when condition are met</b>, then click <b>Edit</b> at the right of the field.</li><li value="4">In the script editor, search for <b>Input Variables</b>, then select the <b>Approver Email Address</b> attribute and click <b>Insert</b>.<p>In the <b>Condition</b> section, enter "-ne"" to add a not-equals operator to the end of the expression. This indicates that if the approver exists (or isn't empty), then run the step:</p><p class="code">"#{inputVariable['approver']}" -ne ""</p><p>See <a href="set_condition.htm" class="MCXref xref">Make Workflow Steps Conditional</a> for more details on operators.</p></li><li value="5">Click <b>OK</b>.</li><li value="6">For <b>Address List</b>, click <span class="f_Icons_Inline"></span>.</li><li value="7">In the script editor, search for <b>Input Variables</b>, then select the <b>Approver Email Address</b> attribute. Click <b>Insert</b>, then click <b>OK</b>.</li><li value="8">For <b>Email Subject</b>, enter "Command workflow approval needed".</li><li value="9">For <b>Email Body</b>, click <span class="f_Icons_Inline"></span>.</li><li value="10">In the script editor, enter "Please review the following script and approve:", then from the <b>Variables</b> list, search for <b>Input Variables</b>, select the <b>Script Contents</b> attribute. Click <b>Insert</b>, then click <b>OK</b>. </li></ol></li><li value="8">Add an step to execute an embedded script:<ol><li value="1">On the Steps page, click <b>Add &gt; Execute Embedded Script</b>. <p>An Execute Embedded Script differs from an Execute Script in that you must provide  the entire script contents, which is then saved in the workflow definition. This makes the step portable — it allows you to use the module that contains the step in multiple workflows, but you don't have to worry about uploading the script file. See <a href="executing-scripts-in-workflows.htm#AddingEmbedded" class="MCXref xref">Add Execute Embedded Script workflow steps</a> for more information.</p></li><li value="2">In the details section, name the step "Execute Embedded Script".</li><li value="3">For the <b>Executable</b> field, enter the executable that will be used run the script. <p>If your system environment doesn't have the script executable on its path, you must provide the fully-qualified path to it (for example, "<code>C:\python37\python.exe</code>"). Note that to use Windows Powershell, you only need to enter "<code>powershell.exe</code>". </p><p class="Note"><a name="aanchor291"></a><MadCap:concept term="Admin Portal" />When the step is run, it writes a temporary script file to the system. Some scripting executables require files to have a particular extension (for example, <code>powershell.exe</code> requires a <code>.ps1</code> extension for scripts). For an executable that requires a file extension, you must map the executable and file extension in the <span style="word-wrap:anywhere;"><code>embotics.workflow.embedded.script.extensions</code></span> Commander system property. By default, default mappings already exist for the following executables: <code>powershell.exe=.ps1, python.exe=.py, cmd.exe=.bat</code>. See <a href="advanced-configuration.htm#console" class="MCXref xref">Set system properties in Commander</a> for details on how to modify system properties through the Admin Portal.</p></li><li value="4">In the <b>Script Contents </b>field, click <span class="f_Icons_Inline"></span>.</li><li value="5">In the script editor, search for <b>Input Variables</b> and select the <b>Script Contents</b> attribute. Click <b>Insert</b>, then click <b>OK</b>.
+            </li></ol></li><li value="9">Click <b>Next</b>.</li><li value="10">On the Summary page, enter details about the module in the<b> Description of Changes</b> field, review the module details, then click <b>Finish</b>.</li></ol><h2 id="Createthecommandworkflow" data-magellan-target="Createthecommandworkflow">Create the command workflow</h2><ol><li value="1">Go to <b>Configuration &gt; Command Workflows</b>.</li><li value="2">On the Workflows page, click <b>Add</b>.</li><li value="3">In the Command Workflow Configuration wizard, enter a name for the workflow (for example "Email VM's primary owner email and execute script").</li><li value="4">For <b>Target Type</b>, leave the default value of <b>VM</b>, then click <b>Next</b>.</li><li value="5">On the Steps page, add a step to send an email to the VM's primary owner:                <ol><li value="1">Click <b>Add &gt; Send Email</b>.</li><li value="2">In the <b>Address List</b> field, click <span class="f_Icons_Inline"></span>.</li><li value="3">In the script editor, select the <b>Primary Owner Email</b>, click <b>Insert</b>, then click <b>OK</b>.
+            </li><li value="4">In the <b>Email Body</b> field, enter the message to send out (for example, "Getting approval to run a script on the VM.").</li></ol></li><li value="6">Add a step to run your the module you configured in the previous procedure:</li><ol><li value="1">Click <b>Add &gt; Run Module</b>.</li><li value="2">For <b>Step Name</b>, rename the step to something more descriptive (for example, "Run module to send email then execute script").</li><li value="3">For <b>Step Execution</b>, leave the default value of <b>Always Execute</b>.</li><li value="4">From <b>Workflow Module</b>, select <b>Approve and execute script</b> that you created earlier.<p>
+            The input variables included with the module are displayed.</p></li><li value="5">In the <b>Input Variables</b> section, for the <b>Approver Email Address</b> variable, enter the administrator's email address.
+                <p>The &lt;a&gt; tag is automatically added to links in emails (only the http protocol is supported). For example, if the value of a custom attribute is a link, the value will be formatted as a link in the email.</p><p>If you don't use HTML markup in the email body, the body is assumed to be plain text; &lt;br&gt; and &lt;p&gt; tags are automatically added for new lines.</p><p>If you add HTML markup to the email body, however, no additional tags are added.</p></li><li value="6">For <b>Script contents</b>, enter "NET USE:Z: \\CorpDIR\Files. <p>This provides the content for the embedded script step in the module to run.</p></li></ol><li value="7">Click <b>Next</b>.</li><li value="8">On the Permissions page, decide who will have access this workflow, then click <b>Next</b>.</li><li value="9">On the Options page, enable other settings as required, then click <b>Next</b>.</li><li value="10">On the Summary page, enter details about the workflow in the <b>Description of Changes</b> field, review the module details, then click <b>Finish</b>.</li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="E-WPawBCe06yEY012rW_ZA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="E-WPawBCe06yEY012rW_ZA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#UseModulesinWorkflows">Use Modules in Workflows</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Createtheworkflowmodule">Create the workflow module</a>
+                                                            </li>
+                                                            <li><a href="#Createthecommandworkflow">Create the command workflow</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

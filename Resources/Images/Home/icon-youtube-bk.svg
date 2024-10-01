@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 114.97 114.97"
+   version="1.1"
+   sodipodi:docname="icon-youtube-bk.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata924">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>icon-youtube-black</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs922" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="941"
+     inkscape:window-height="702"
+     id="namedview920"
+     showgrid="false"
+     inkscape:zoom="2.0527094"
+     inkscape:cx="48.1446"
+     inkscape:cy="63.201621"
+     inkscape:window-x="867"
+     inkscape:window-y="144"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1"
+     inkscape:document-rotation="0" />
+  <title
+     id="title903">icon-youtube-black</title>
+  <path
+     d="M348.88,435.47A57.49,57.49,0,1,1,406.37,378,57.55,57.55,0,0,1,348.88,435.47Zm0-109A51.49,51.49,0,1,0,400.37,378,51.55,51.55,0,0,0,348.88,326.5Z"
+     transform="translate(-291.4 -320.5)"
+     id="path905"
+     style="fill:#101e2c;fill-opacity:1" />
+  <path
+     d="M369.44,392.29a1.45,1.45,0,0,0-1.25.51,2.81,2.81,0,0,0-.38,1.66v1.88H371v-1.88a2.76,2.76,0,0,0-.39-1.66A1.38,1.38,0,0,0,369.44,392.29Z"
+     transform="translate(-291.4 -320.5)"
+     id="path907"
+     style="fill:#101e2c;fill-opacity:1" />
+  <path
+     d="m 85.749999,57.33 c -3,-3 -28.28,-3 -28.28,-3 0,0 -25.269999,0 -28.279999,3 -3.01,3 -3,17.82 -3,17.9 0,0.08 0,14.9 3,17.9 3,3 28.279999,3.06 28.279999,3.06 0,0 25.27,-0.07 28.28,-3.06 C 88.759997,90.14 88.75,75.23 88.75,75.23 c 0,0 0.01,-14.9 -3.000001,-17.9 z M 45.46,66.06 H 41.2 V 87.58 H 37.08 V 66.06 H 32.82 V 62.4 h 12.629999 v 3.66 z m 11.999999,21.52 h -3.65 v -2 a 7.85,7.85 0 0 1 -2.11,1.72 A 4.3999999,4.4 0 0 1 49.58,87.89 2.25,2.25 0 0 1 47.67,87.06 4.0799999,4.08 0 0 1 47.03,84.57 V 69 h 3.65 v 14.25 a 1.62,1.62 0 0 0 0.22,1 0.89999998,0.9 0 0 0 0.75,0.3 2,2 0 0 0 1,-0.4 5.1699999,5.17 0 0 0 1.129999,-1 V 69 h 3.65 V 87.58 Z M 70.71,83.75 a 4.6599999,4.66 0 0 1 -0.860001,3 3,3 0 0 1 -2.48,1.05 4.2899999,4.29 0 0 1 -1.91,-0.4 4.6799999,4.68 0 0 1 -1.56,-1.26 v 1.43 h -3.69 V 62.41 h 3.69 V 70.5 A 5.6299999,5.63 0 0 1 65.47,69.21 3.5199999,3.52 0 0 1 67.15,68.77 3.1399999,3.14 0 0 1 69.799999,69.95 5.5899999,5.59 0 0 1 70.71,73.42 v 10.31 z m 12.659999,-5 h -7 v 3.49 a 4.1499999,4.15 0 0 0 0.36,2 1.36,1.36 0 0 0 1.24,0.56 1.49,1.49 0 0 0 1.27,-0.48 3.9999999,4 0 0 0 0.37,-2.12 v -0.85 h 3.75 v 1 a 5.9999999,6 0 0 1 -1.37,4.31 5.3999999,5.4 0 0 1 -4.1,1.44 4.9999999,5 0 0 1 -3.87,-1.53 5.9999999,6 0 0 1 -1.41,-4.21 v -8.34 a 5.2999999,5.3 0 0 1 1.55,-3.94 5.4699999,5.47 0 0 1 4,-1.52 5.0899999,5.09 0 0 1 3.86,1.41 5.6399999,5.64 0 0 1 1.34,4 v 4.74 z"
+     id="path909"
+     style="fill:#101e2c;stroke-width:0.999997;fill-opacity:1" />
+  <path
+     d="M356.85,392.23a1.73,1.73,0,0,0-.77.18,2.63,2.63,0,0,0-.75.57v11.57a3.12,3.12,0,0,0,.87.65,2,2,0,0,0,.88.2,1.16,1.16,0,0,0,1-.4,2,2,0,0,0,.32-1.28v-9.59a2.27,2.27,0,0,0-.39-1.43A1.39,1.39,0,0,0,356.85,392.23Z"
+     transform="translate(-291.4 -320.5)"
+     id="path911"
+     style="fill:#101e2c;fill-opacity:1" />
+  <path
+     d="M369.43,367h-4.11v-2.26a8.66,8.66,0,0,1-2.36,1.9,5.07,5.07,0,0,1-2.38.65,2.57,2.57,0,0,1-2.15-.91,4.39,4.39,0,0,1-.72-2.74v-17.1h4.1v15.69a1.69,1.69,0,0,0,.27,1.05,1,1,0,0,0,.83.33,2.35,2.35,0,0,0,1.15-.43,5.46,5.46,0,0,0,1.27-1.1V346.54h4.11V367h0Z"
+     transform="translate(-291.4 -320.5)"
+     id="path913"
+     style="fill:#101e2c;fill-opacity:1" />
+  <path
+     d="M352.74,347.51a6,6,0,0,0-4.19-1.49,6.67,6.67,0,0,0-4.46,1.41,4.69,4.69,0,0,0-1.66,3.79v10.6A5.48,5.48,0,0,0,344,366a6,6,0,0,0,4.32,1.54,6.22,6.22,0,0,0,4.41-1.49,5.37,5.37,0,0,0,1.59-4.12V351.34A5,5,0,0,0,352.74,347.51Zm-2.56,14.71a1.72,1.72,0,0,1-.49,1.29,1.85,1.85,0,0,1-1.33.47,1.63,1.63,0,0,1-1.25-.46,1.83,1.83,0,0,1-.44-1.3V351.07a1.39,1.39,0,0,1,.47-1.09,1.79,1.79,0,0,1,1.23-.41,2,2,0,0,1,1.31.41,1.34,1.34,0,0,1,.5,1.09v11.15Z"
+     transform="translate(-291.4 -320.5)"
+     id="path915"
+     style="fill:#101e2c;fill-opacity:1" />
+  <polygon
+     points="39.83 18.78 35.17 18.78 40.68 35.52 40.68 46.51 45.31 46.51 45.31 35 50.69 18.78 45.99 18.78 43.13 29.86 42.84 29.86 39.83 18.78"
+     id="polygon917"
+     style="fill:#101e2c;fill-opacity:1" />
+</svg>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="https://docs.embotics.com/Skins/Favicons/smalltile.png" />
+            <square150x150logo src="https://docs.embotics.com/Skins/Favicons/mediumtile.png" />
+            <wide310x150logo src="https://docs.embotics.com/Skins/Favicons/snow-perspective-win-558w.png" />
+            <square310x310logo src="https://docs.embotics.com/Skins/Favicons/largetile.png" />
+            <TileColor>#FFFFFF</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

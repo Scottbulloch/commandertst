@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|Tag and Label Enforcement|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Work with Custom Attributes</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="WorkwithCustomAttributes" data-magellan-target="WorkwithCustomAttributes"><a name="aanchor36"></a><MadCap:concept term="Admin Portal" />Work with Custom Attributes</h1><p>This topic discusses how to work with custom attributes in Commander.</p><a name="editcustomattributes"></a><h2 id="Createcustomattributes" data-magellan-target="Createcustomattributes"><a name="Creating"></a>Create custom attributes</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Custom Attributes</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Roles of Superuser and Enterprise Admin</p></td></tr></table><ol><li value="1">On the Custom Attributes page, click <b>Add</b>.<p class="tip">You can search for a custom attribute by name or description. </p></li><li value="2">In the Configure Custom Attribute dialog, enter a name for the custom attribute.
+                <p>This is the name that appears for users to select when they apply an attribute to a service, infrastructure element, or organization.</p><p class="caution">Although you shouldn't create an attribute that's already defined in Commander or duplicates the name of a policy within Commander, you can create new custom attributes that are variations of existing attributes (for example, Cost Center Europe). See <a href="custom-attributes.htm#predefined" class="MCXref xref">Predefined custom attributes</a>. </p></li><li value="3">Optional:&#160;Enter a <b>Description</b>.
+                <p>The details that you enter here will be visible to users.</p></li><li value="4"> From <b>Attribute Type</b>, select the attribute type:
+            <ul><li><b>Inventory</b> — Inventory custom attributes can be applied to services or infrastructure elements. See <a href="custom-attributes.htm#inventory" class="MCXref xref">Inventory custom attributes</a>.</li><li><b>Form</b> — Form custom attributes are used to capture information required only during the service request process (form attributes aren't attached to deployed services). See <a href="custom-attributes.htm#form" class="MCXref xref">Form custom attributes</a>.</li><li><b>Organization</b> — Organization custom attributes allow you to segregate organization-specific information and customize workflows to meet each organization's needs. See <a href="custom-attributes.htm#organization" class="MCXref xref">Organization custom attributes</a>. </li></ul><p class="Note">If you're editing an existing custom attribute, you can't change the attribute type. If you want to change the attribute type, you must delete the attribute and create it again with a different type.</p></li><li value="5">To use an Inventory or Form custom attribute for Intelligent Placement, select the <b>Placement Attribute</b> checkbox. For more information, see <a href="plcmt_attribs.htm" class="MCXref xref">Configure Placement Attributes</a>.</li><p class="Note">You can only select the <b>Placement Attribute</b> checkbox if the Type is set to List.</p><li value="6"> From <b>Input Type</b>, select the input type:
+            <ul><li><b>List</b> — Allows you to define values that users can select from a drop-down.</li><li><b>Text</b> — Allows users to enter text values. You can allow either free-form text or enforce a specific format. A maximum of 4096 characters is supported.</li><li><b>Sublist</b> — Allows you to define allowed values for each value of another custom attribute. For more information, see <a href="relating-attributes-used-on-forms.htm#sublist" class="MCXref xref">Create Relationships Between Attributes Used on Forms</a>. <p>If you select <b>Sublist</b>, the <b>Sublist</b> drop-down appears. Select the custom attribute that will act as the "parent" attribute.</p></li></ul></li><li value="7">For Inventory custom attributes with <b>Input Type</b> set to <b>List</b> or <b>Text</b>, from <b>Applies To</b>, do one of the following:</li><ul><li>Select the virtual infrastructure element that you want the custom attribute to be available for. Services includes all service types (VMs, load balancers, databases, virtual services, application stacks, auto scaling groups, and Kubernetes namespaces).</li><li>Select <b>All Types</b> if:</li><ul><li>The infrastructure element where you want to apply a custom attribute doesn't appear in the drop-down (for example, a datacenter, a Kubernetes managed cluster, or a Kubernetes namespace).</li><li>You want the custom attribute to be available for all infrastructure elements.<p class="tip">Custom attributes configured to be available for All Types can also be added to request forms through the Custom Attribute form element. In this case, selected values are applied to deployed services. See <a href="new-service-request-form-elements.htm" class="MCXref xref">Service Request Form Elements</a>.</p></li></ul></ul><li value="8">For Inventory custom attributes, to allow a user to view or set the value of the custom attribute in the Service Portal, select <b>Accessible in Service Portal</b>.<ul class="TipMultiple"><li>Service Portal users can set a value only if their  role has the required permission. For more information, see <a href="understand_service_portal_roles_permissions.htm" class="MCXref xref">Customize Service Portal Roles for Users</a>.</li><li>If Commander is configured to import AWS, GCP, or Azure tags as Commander custom attributes, but isn't configured to export Commander custom attributes as tags, we recommend keeping this checkbox cleared for all custom attributes created from public cloud tags. Otherwise, if a user sets an attribute value, the value will be removed during the next public cloud synchronization. By default, this checkbox is cleared for all custom attributes created from imported tags. For more information on importing tags as custom attributes, see <a href="tag-and-label-enforcement.htm" class="MCXref xref">Tag and Label Enforcement</a>.</li></ul></li><li value="9">On the Configure Attribute page, configure the acceptable values for the input type you selected:</li><ul><li><p><b>List</b> — To add list values, do either of the following:</p><ul><li>Enter each value separately and click <b>Add</b>.</li><li>Enter a comma-separated list of allowed values for the attribute and click <b>Add</b>.</li></ul><p>The maximum number of characters for each value is 100.</p><ul class="TipMultiple"><li>To specify a fixed cost for each value of a list type custom attribute, see <a href="cost_models.htm#custom_attribute_costs" class="MCXref xref">Custom page</a>.</li><li>To calculate a custom cost for each value of a list type custom attribute, see <a href="cost_attributes.htm" class="MCXref xref">Calculate Custom Costs</a>.</li></ul></li><li><b>Text</b> — Select one of the following:<ul><li><b>Free Form</b> — Allows users to enter text in any format.</li><li><b>Specific Format</b> — Forces users to follow a set text format.</li><ol style="list-style-type: lower-alpha;"><li value="1">In the <b>Regular Expression</b> field, enter a regular expression.</li><li value="2">In the <b>Validation Error Message</b> field, enter a message that users will see if they enter text that doesn't conform to the regular expression.</li><li value="3">In the <b>Entry to test against</b> field, to test your regular expression, enter text that should pass validation. For example, if you're enforcing a project code, enter a valid project code.</li></ol></ul><p class="tip">To avoid format conflicts, Text type custom attributes used in cost models shouldn't contain regular expressions. All custom attributes used in cost models are validated as positive numbers. For more information, see <a href="cost_models.htm"><a href="cost-models.htm" class="MCXref xref">Cost Models</a></a>.</p></li><li><b>Sublist</b> — To add sublist values, do the following:          <ol style="list-style-type: lower-alpha;"><li value="1">Click a parent attribute in the list and enter a comma-separated list of allowed sublist values  in the text field, then click <b>Add</b>.</li><li value="2"> Repeat for each parent attribute you want to have sublist values.</li></ol></li></ul><p>Use the Move Up and Move Down buttons to position the allowed values.</p><li value="10">Click <b>Finish</b>.</li></ol><a name="editcustomattributes"></a><h2 id="Editcustomattributes" data-magellan-target="Editcustomattributes">Edit custom attributes</h2><p>You can make changes to existing custom attributes, such as the attribute's name, description, its value, or the position of those values in a selectable list. </p><p>However, you can't change the attribute type. If you want to change the attribute from a text to a list type or from a list to a text type, you must delete the attribute and configure it again.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Custom Attributes</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Roles of Superuser and Enterprise Admin</p></td></tr></table><ol><li value="1">On the Custom Attributes page, select a custom attribute, and click <b>Edit</b>.</li><li value="2">In the Configure Custom Attribute dialog, make the configuration changes required.</li><li value="3">Click <b>Finish</b>.</li></ol><h2 id="Deletecustomattributes" data-magellan-target="Deletecustomattributes"><a name="Deleting"></a><a name="deletecustomattributes"></a>Delete custom attributes</h2><p class="Note">A custom attribute in use by a tag compliance policy can't be deleted.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Custom Attributes</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Roles of Superuser and Enterprise Admin</p></td></tr></table><ol><li value="1">On the Custom Attributes page, select a custom attribute, and click <b>Delete</b>.</li><li value="2">Click&#160;<b>Yes</b> to confirm the deletion.<p>If the custom attribute you're deleting has sublist attributes, the confirmation dialog provides a list of sublist attributes. When you confirm the deletion, the sublist attributes are also deleted.</p></li></ol><h2 id="Applyinventorycustomattributevalues" data-magellan-target="Applyinventorycustomattributevalues"><a name="apply"></a>Apply inventory custom attribute values</h2><p>You can apply an unlimited number of inventory custom attributes to services and infrastructure elements. You can manually apply custom attributes to:
+        </p><ul><li>An infrastructure element such as a cloud account, Kubernetes cluster, datacenter, folder, datastore, host, or resource pool.</li><li>A service, such as a VM, virtual service, or Kubernetes namespace.</li></ul><ul class="NoteMultiple"><li>Custom attribute values set for a parent element, such as a virtual service or application stack, aren't inherited by its children.</li><li><a name="troubleshoot-apply"></a>If Commander is configured to import <a href="synchronizing-aws-tags.htm">AWS</a>, <a href="synchronizing-gcp-labels.htm">GCP,</a> or <a href="synchronizing-azure-tags.htm">Azure tags</a> as Commander custom attributes but isn't configured to export Commander custom attributes as tags, a value set for a custom attribute created from an imported tag will be overwritten during the next public cloud synchronization. </li></ul><p class="tip">Besides manually applying custom attribute values as described here, you can also set custom attributes on a service request form, with a workflow step, during manual deployment, and through the tag compliance policy.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator and All Operator Levels of Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Infrastructure</b>, <b>Applications</b>, or <b>Storage</b> tab.</li><li value="2">Select a service or other element in the tree or in a table, then do the following:</li><ul><li>For a selected VM, select  <b>Action &gt; Lifecycle Management &gt; Set Custom Attributes</b>.</li><li>For all other selected elements, select <b>Actions &gt; Set Custom Attributes</b>.<p>The Set Custom Attributes dialog displays all available attributes for the selected element.</p><p class="tip">To view an attribute's description, hover over its name. Descriptions beginning with "Automatically generated from" indicate custom attributes imported from AWS, GCP, or Azure tags.</p></li></ul><li value="3">For a list-type custom attribute, select a value from the list. For a text-type custom attribute, enter a value in any or all of the <b>Value</b> fields.</li><p>If this is a Cost custom attribute, use the Value field to enter the cost. Enter a number only, such as 500 or 67. For more information, see <a href="cost_models.htm#custom_attribute_costs" class="MCXref xref">Custom page</a> in Configure Cost Models.</p><li value="4">Click <b>OK</b>.
+                <p>If the custom attribute has a required format, a validation error is displayed for input that doesn't match the required format.</p></li></ol><h2 id="Viewinventorycustomattributevalues" data-magellan-target="Viewinventorycustomattributevalues"><a name="viewcustomattributes"></a>View inventory custom attribute values</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory &gt; Infrastructure, Applications, or Storage</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>All Access Rights Levels</p></td></tr></table><p>When you select a resource from the Inventory tree, you can view its custom attribute values in the Details section of the Summary page for the resource.</p><p class="tip">If you don't see any custom attributes in the Details section, beside <b>Details</b>, click <span class="f_Icons_Inline"></span><b>Pick Properties</b>. In the Property Selection dialog, select available custom attributes. For more information, see <a href="customize-the-admin-portal-display.htm" class="MCXref xref">Customize the Admin Portal Display</a>.</p></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="w-dFrHshIkulHQ6PmpFdpg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="w-dFrHshIkulHQ6PmpFdpg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#WorkwithCustomAttributes">Work with Custom Attributes</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Createcustomattributes">Create custom attributes</a>
+                                                            </li>
+                                                            <li><a href="#editcustomattributes">Edit custom attributes</a>
+                                                            </li>
+                                                            <li><a href="#deletecustomattributes">Delete custom attributes</a>
+                                                            </li>
+                                                            <li><a href="#Applyinventorycustomattributevalues">Apply inventory custom attribute values</a>
+                                                            </li>
+                                                            <li><a href="#Viewinventorycustomattributevalues">View inventory custom attribute values</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

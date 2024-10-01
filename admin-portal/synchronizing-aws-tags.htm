@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|Tag and Label Enforcement" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Synchronize AWS Tags and Commander Metadata</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyles/Standard.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="SynchronizeAWSTagsandCommanderMetadata" data-magellan-target="SynchronizeAWSTagsandCommanderMetadata"><a name="aanchor279"></a><MadCap:concept term="Admin Portal" />Synchronize AWS Tags and Commander Metadata</h1><p>You can synchronize AWS tags, such as Cost Center, Business Unit, Product, Tier, or Version, with Commander custom attributes and other metadata. Like AWS, Commander uses key-value pairs to allow you to assign metadata to services and cloud infrastructure. Metadata persists throughout a service's lifecycle, which enables administrators to understand the purpose of each service.</p><h2 id="Tagsynchronizingoverview" data-magellan-target="Tagsynchronizingoverview">Tag synchronizing overview</h2><p>You can configure tag synchronization when you add an AWS cloud account, or at a later time. You can:</p><ul><li>Import AWS tags as Commander custom attributes</li><li>Export Commander custom attributes and metadata to AWS&#160;as tags. The metadata includes:</li><ul><li>Primary owner name</li><li>Primary owner login</li><li>Primary owner email address</li><li>Assigned organization</li><li>Expiry date</li></ul></ul><p>Also, if you don't want to sync all AWS tags, custom attributes, or Commander metadata, you can specify which to exclude.</p><p>Commander supports synchronization of tags for auto scaling groups, load balancers, stacks, RDS instances, VM instances, and VM&#160;images.</p><p>Tag synchronization provides:</p><ul><li>Better targeting of power schedule recommendations — Automatically set one power schedule for VMs with the label "dev" and another for those labeled "prod". For more information, see <a href="power_sched.htm" class="MCXref xref">Configure VM Power Schedules</a>. </li><li>Advanced search and reporting — Report on costs by label, such as application ID or environment, so you can get a handle on costs per application, or for production vs. development environments. For more information, see <a href="search_report.htm" class="MCXref xref">Searching and Reporting</a>.</li><li>Workflow conditions based on label values — Automatically select the right Chef recipe or Ansible playbook to run during post-provisioning, depending on tag compliance requirements. For more information, see <a href="set_condition.htm" class="MCXref xref">Make Workflow Steps Conditional</a>.</li></ul><h2 id="Howimportedtagsandcustomattributesarematched" data-magellan-target="Howimportedtagsandcustomattributesarematched"><a name="attrib_match"></a>How imported tags and custom attributes are matched</h2><p>When importing AWS tags, if Commander finds an existing custom attribute with the same name, it automatically populates the value for VMs with that tag assignment. Note that a match will only be made if the existing custom attribute is configured to apply to "All Types" or "Services". In the case of a matching list-type custom attribute, for a value to be updated, the value in AWS must match one of the preconfigured values for the custom attribute.</p><p>While AWS tag keys are case-sensitive, Commander custom attribute names aren't. When importing AWS tags, Commander matches AWS tag keys with custom attribute names, and tag values with configured list-type custom attribute values, regardless of case.</p><p>If an AWS tag doesn't match an existing custom attribute, the tag is imported as a free-form text-type custom attribute that applies to services. By default, Service Portal users can't set values for these custom attributes.</p><p>Tags prefixed with "aws:" and "vcmdr:" are automatically excluded from import excluded from import.</p><h2 id="Commandermetadataexport" data-magellan-target="Commandermetadataexport"><a name="metadata_export"></a>Commander metadata export</h2><p>When you configure Commander to export custom attributes as AWS tags, information about the service's primary owner, assigned organization, and expiry is also exported as AWS tags with a "vcmdr:" prefix.</p><p class="tip">If you don't want to export some or all of this metadata, you can exclude it. See <a href="#exclude" class="MCXref xref">Exclude specific tags and metadata from synchronization</a>.</p><p class="Caption"><a name="tbl_meta"></a>Commander metadata exported to AWS tags</p><div style="overflow: auto; overflow-y: hidden;"><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Standard.css');" class="TableStyle-Standard" cellspacing="0"><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Metadata</p></th><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Possible values</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>AWS tag</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Expiry Date</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><ul><li>Date, of the form yyyy/MM/dd</li><li>Never Expires</li><li>No Expiry Date Set</li></ul><p>If no expiry information is assigned, the value is No Expiry Date Set.</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>vcmdr:ExpiryDate</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Organization</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Organization name</p><p>If no organization is assigned, the value is an empty string.</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>vcmdr:Organization</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Primary Owner Email</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Email address</p><p>If no email address is assigned, the value is an empty string.</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>vcmdr:PrimaryOwnerEmail</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Primary Owner Login</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Login ID</p><p>If no email address is assigned, the value is an empty string.</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>vcmdr:PrimaryOwnerLogin</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>Primary Owner Name</p></td><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>FirstName LastName</p><p>If no email address is assigned, the value is an empty string.</p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p>vcmdr:PrimaryOwnerName</p></td></tr></tbody></table></div><h2 id="Synchronizationtiming" data-magellan-target="Synchronizationtiming">Synchronization timing</h2><p>Tag, custom attribute, and metadata values are updated as part of the automatic AWS synchronization task, as well as when you manually synchronize the inventory. To prevent timing issues during synchronization, tag values are imported from AWS before custom attribute values are exported to AWS. When a custom attribute value is applied, the value is exported to AWS immediately. However, new tag values are only imported during automatic or manual synchronization of the AWS cloud account.</p><p class="Note">AWS limits the number of tags that can be assigned to various types of services. See the AWS documentation for more information.</p><h2 id="BestpracticesfortagandCommandermetadatasynchronization" data-magellan-target="BestpracticesfortagandCommandermetadatasynchronization"><a name="bp"></a>Best practices for tag and Commander metadata synchronization</h2><ul><li>If you use labels to store expiry and ownership information, exclude them from import. Commander has distinct properties to store this information. If you import a label used for expiry or ownership, Commander will create a custom attribute to store this information, and users may be confused by the duplication.</li><li>If Commander is configured to import tags as custom attributes, but isn't configured to export Commander custom attributes as tags, clear the Edit in Service Portal option for all custom attributes created from tags. Otherwise, if a user sets an attribute value, the value will be removed during the next synchronization with AWS. By default, this option is disabled for all custom attributes created from imported tags. </li><li>If you have an AWS tag that serves the same purpose as an existing Commander custom attribute, make sure that the tag key and the custom attribute key are identical and that tag values match the preconfigured custom attribute values.</li><li>AWS tags are and Commander custom attributes are case-insensitive. Lower-case tags from AWS are imported before upper-case tags. So if you have tags and custom attributes with the same name, but different cases, you may notice unintended behavior when synchronization occurs.<br />For example, if you have two AWS tags, "name" and "NAME", and a Commander custom attribute "Name", the last tag value to be imported from AWS, "NAME", will be applied to the Commander "Name" custom attribute. You can exclude the "NAME" tag from import to ensure that the Commander "Name" custom attribute is populated with the value from the AWS "name" tag instead. When exporting custom attributes to AWS, a new tag with the key "Name" will be created (if it doesn't already exist).</li></ul><h2 id="SynchronizeAWStagsandCommandermetadata" data-magellan-target="SynchronizeAWStagsandCommandermetadata"><a name="import_existing"></a>Synchronize AWS tags and Commander metadata</h2><p>This procedure assumes you're configuring synchronization for an existing AWS cloud account. The steps are similar when you add an AWS account to Commander.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Roles of Superuser and Enterprise Admin</p></td></tr></table><ol><li value="1">Click the <b>Infrastructure</b> or <b>Applications</b> tab.</li><li value="2">In the Infrastructure or Applications view, select an AWS cloud account in the tree.</li><li value="3">Select <strong>Actions &gt; Sync Tags and Custom Attributes</strong>.</li><li value="4">In the Synchronize AWS Tags and Commander Custom Attributes dialog, select any of the following:</li><ul><li><b>Import AWS Tags as Commander Custom Attributes</b></li><li><b>Export Commander Custom Attributes as AWS Tags</b></li></ul><li value="5">If you want to exclude specific AWS tags and custom attributes from synchronization,  in the <b>Excluded Tags/Custom Attributes</b> field enter each tag or custom attribute in a comma-separated list.
+                <p>You can enter up to 5000 characters in this field. Also note that AWS&#160;tags are case-sensitive but custom attributes aren't.</p></li><li value="6">Click <b>OK</b>.
+                <p>Commander imports tag values from AWS and then exports custom attribute and metadata values to AWS.</p><p class="Note">Once you've configured synchronization, when a custom attribute value is applied, the value is exported to AWS immediately. However, new tag values are only imported during automatic or manual synchronization of the AWS cloud account.</p></li></ol><h2 id="Excludespecifictagsandmetadatafromsynchronization" data-magellan-target="Excludespecifictagsandmetadatafromsynchronization"><a name="exclude"></a>Exclude specific tags and metadata from synchronization</h2><p>If you've configured synchronization and you decide you don't want to import particular AWS tags or export particular custom attributes, you can exclude them.</p><p class="Note">Tags prefixed with "aws:" and "vcmdr:" are automatically excluded from import. Form-type custom attributes are automatically excluded from export.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Roles of Superuser and Enterprise Admin</p></td></tr></table><ol><li value="1">Click the <b>Infrastructure</b> or <b>Applications</b> tab.</li><li value="2">In the Infrastructure or Applications view, select an AWS cloud account in the tree.</li><li value="3">Select <b>Actions &gt; Sync Tags and Custom Attributes</b>.</li><li value="4">In the Synchronize AWS Tags and Commander Custom Attributes dialog, enter tags, custom attributes and metadata labels as a comma-separated list in the <b>Excluded Tags/Custom Attributes</b> field.
+                <p>Commander metadata labels have the following format: <code>vcmdr:&lt;metadata&gt;</code>. For example: <code>vcmdr:ExpiryDate</code></p><p>For the complete list of metadata labels, see <a href="#metadata_export" class="MCXref xref">Commander metadata export</a>. Also, AWS tags are case-sensitive; enter tags with the correct case.
+ You can enter up to 5000 characters in this field.</p></li><li value="5">Click <b>OK</b>.
+                <p>Commander will now no longer import this tag during synchronization with AWS.</p><p class="Note">If an AWS tag was previously imported, excluding it doesn't automatically delete the custom attribute. You may want to delete the custom attribute manually. (See <a href="working-with-custom-attributes.htm#Deleting" class="MCXref xref">Delete custom attributes</a>). Likewise, if a custom attribute was previously exported, excluding it doesn't automatically delete the AWS tag. You may want to delete the tag manually; consult the AWS documentation to learn how.</p></li></ol><h2 id="Synchronizecustomattributesortagsthatwereexcluded" data-magellan-target="Synchronizecustomattributesortagsthatwereexcluded"><a name="unexclude"></a>Synchronize custom attributes or tags that were excluded</h2><p>You can synchronize a custom attribute or tag that you had previously excluded but now want to synchronize.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Roles of Superuser and Enterprise Admin</p></td></tr></table><ol><li value="1">In the Infrastructure or Applications view, select the AWS cloud account in the tree.</li><li value="2">Select <strong>Actions &gt; Sync Tags and Custom Attributes</strong>.</li><li value="3">In the Synchronize AWS Tags and Commander Custom Attributes dialog, remove the custom attribute or tag from the list and click <b>OK</b>.<p>Commander will now include this label or custom attribute in future synchronizations.</p></li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="GbVMqTlBSUeQ2Hg846h5Vg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="GbVMqTlBSUeQ2Hg846h5Vg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#SynchronizeAWSTagsandCommanderMetadata">Synchronize AWS Tags and Commander Metadata</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Tagsynchronizingoverview">Tag synchronizing overview</a>
+                                                            </li>
+                                                            <li><a href="#Howimportedtagsandcustomattributesarematched">How imported tags and custom attributes are matched</a>
+                                                            </li>
+                                                            <li><a href="#Commandermetadataexport">Commander metadata export</a>
+                                                            </li>
+                                                            <li><a href="#Synchronizationtiming">Synchronization timing</a>
+                                                            </li>
+                                                            <li><a href="#BestpracticesfortagandCommandermetadatasynchronization">Best practices for tag and Commander metadata synchronization</a>
+                                                            </li>
+                                                            <li><a href="#SynchronizeAWStagsandCommandermetadata">Synchronize AWS tags and Commander metadata</a>
+                                                            </li>
+                                                            <li><a href="#Excludespecifictagsandmetadatafromsynchronization">Exclude specific tags and metadata from synchronization</a>
+                                                            </li>
+                                                            <li><a href="#Synchronizecustomattributesortagsthatwereexcluded">Synchronize custom attributes or tags that were excluded</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

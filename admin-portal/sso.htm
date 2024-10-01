@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Configure SAML SSO</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="ConfigureSAMLSSO" data-magellan-target="ConfigureSAMLSSO"><a name="aanchor443"></a><MadCap:concept term="Admin Portal" />Configure SAML SSO</h1><p>Single sign-on (SSO) allows Commander and Service Portal users to authenticate once before accessing multiple service provider resources, including Commander and the Service Portal.</p><h2 id="Howitworks" data-magellan-target="Howitworks"><a name="how_works"></a>How it works</h2><p>Commander uses the SAML 2.0 Web Browser SSO profile to provide single sign-on. Security Assertion Markup Language (SAML) is an XML-based, open-standard data format for exchanging authentication and authorization data between  an identity provider  (IdP) and a service provider.</p><p>The IdP is the service you provide that authenticates your users and can provide user identity information to Commander and the Service Portal.</p><p>As part of configuring SSO, you must establish trust between your IdP and Commander. This involves generating metadata for your IdP and providing it to Commander, and generating metadata for Commander and providing it to your IdP.</p><p>You can sign in to both Commander and the Service Portal using SAML SSO. If SAML is misconfigured or malfunctioning, you can bypass SAML and sign in to Commander using Commander credentials. For more information, see <a href="#bypass" class="MCXref xref">Bypass SAML</a>. No bypass is available for the Service Portal.</p><p>The SAML settings for Commander won’t be shared with the SAML settings for the Service Portal. You can set up Commander and the Service Portal separately and you can set up just Commander or just the Service Portal.</p><ul class="NoteMultiple"><li>Commander respects the <a href="change_session_timeout_display_format.htm#change_timeout_period" class="hreflinks">session timeout configured for </a><a href="change_session_timeout_display_format.htm#change_timeout_period" class="hreflinks">Commander and </a><a href="change_session_timeout_display_format.htm#change_timeout_period" class="hreflinks">the Service Portal</a>, rather than the IdP's session timeout.</li><li> You must configure the IdP's session timeout to work with Commander's session timeout. The IdP's session timeout should be significantly longer than the session timeout for Commander.</li><li>When using SAML SSO, the sign in speed is based on factors outside of Commander, such as the response time from your IdP and the speed of your infrastructure.</li><li> This capability also provides for multi-factor authentication (MFA), since many SAML SSO providers directly support MFA.</li></ul><h2 id="Prerequisites" data-magellan-target="Prerequisites"><a name="prereq"></a>Prerequisites</h2><ul><li>A directory service (Active Directory or LDAP) must be integrated with Commander prior to configuring SAML SSO integration. Before proceeding with SAML integration, the Commander internal user database needs to be built by adding users or groups to Commander from the Active Directory or LDAP integration. These users must have a valid email address as that's the account property that will be exchanged between the Directory Service, IdP and Commander to authenticate users.</li><li>Commander must be installed with a valid signed certificate. For more information, see the Snow Globe article <a href="https://community.snowsoftware.com/s/article/generatingandinstallingansslcertificate" target="_blank">Generating and Installing an SSL Certificate</a>.</li><li>The Commander Tomcat service requires a PKCS #12 keystore to sign SSO requests. A keystore contains a public/private key pair plus a certificate. As part of configuring SAML SSO in Commander, you must upload a PKCS #12 keystore and provide the following information:<ul><li>the keystore password</li><li>the alias of the key pair in the uploaded keystore file</li><li>the key pair password</li></ul></li><li>You must have an operational IdP and generate metadata for that IdP. This task is performed outside Commander. For more information, consult your IdP documentation.</li><li>If you have deployed Commander or the Service Portal behind a load balancer, you must enable session pinning on your load balancer. Session pinning enables the load balancer to bind a user's session to a specific instance, ensuring that all of the user's requests during the session are sent to the same instance. For more information, see the <a href="https://community.snowsoftware.com/s/article/snowsoftwareacommanderahighavailability">Commander High Availability Configuration Guide</a> on Snow Globe.</li></ul><h2 id="PrepareakeystoreforSAMLSSO" data-magellan-target="PrepareakeystoreforSAMLSSO"><a name="prep-key-store"></a>Prepare a keystore for SAML SSO</h2><p>
+            For both Commander and the Service Portal, the metadata that must be generated for your IdP requires your current keystore configuration. Any changes you make to the keystore configuration will require you to upload the new Commander SAML metadata file to your IdP server or otherwise make sure your IdP is accessing the correct URL for metadata.</p><p class="Note">The task of generating metadata for your IdP is performed outside Commander. For more information, consult your IdP documentation.</p><p>In the procedure below, the example command assumes the following about your original source keystore, which should be true when using the Commander defaults:</p><ul><li>The keystore contains a key pair named <code>tomcat</code>.</li><li>The keystore is protected with the password <code>changeit</code>.</li><li>The key pair isn't password protected.</li></ul><p class="Note">If you chose to use a different key pair or password for the source keystore, you must replace the <code>-srcalias</code> and <code>-srcstorepass</code> values in the procedure below. If you don't have the correct values, Technical Support won't be able to retrieve them for you.</p><p>As of vCommander 6.0, the SAML SSO configuration requires administrators to create a second keystore for the Tomcat webserver using a PKCS#12 file. This second keystore enhances the end-to-end security and protects user sessions.</p><p>In the example command, a second destination keystore is generated to validate for your IdP. It assumes the following about your "destination" keystore:</p><ul><li>The keystore file name will be <code>saml-keystore.p12</code>.</li><li>The keystore contains a key pair named <code>saml</code>.</li><li>The keystore is protected with the password <code>changeit</code>. </li></ul><p class="Note">If you chose to use a different key pair or password for the destination keystore, you must replace the <code>-destalias</code> and <code>-deststorepass</code> values in the procedure below. If you don't have the correct values, Technical Support won't be able to retrieve them for you.</p><p>To prepare a keystore:</p><ol><li value="1">On the Commander application server, open a command prompt and browse to <code>&lt;INSTALL_DIRECTORY&gt;\Embotics\vCommander\jre\bin\</code>.</li><li value="2">Issue the following command:
+          
+                <p class="code">keytool -importkeystore -srckeystore ..\..\tomcat\conf\keystore -srcstoretype JKS -srcalias tomcat -srcstorepass changeit -destkeystore ..\..\tomcat\conf\saml-keystore.p12 -deststoretype PKCS12 -deststorepass changeit -destalias saml</p><p>This command extracts a key pair named "tomcat" from the original keystore and places it into a file. Any used passwords will remain the same.</p></li><li value="3">Retrieve the file <code>&lt;INSTALL_DIRECTORY&gt;\Embotics\vCommander\tomcat\conf\saml-keystore.p12</code>, and store it in a secure location.</li></ol><h2 id="ConfigureSAMLSSOforCommanderandServicePortal" data-magellan-target="ConfigureSAMLSSOforCommanderandServicePortal"><a name="config"></a>Configure SAML SSO for Commander and Service Portal</h2><p>The following procedure applies to configuring both Commander and the Service Portal SSO, with appropriate filepaths for each. The <a href="#bypass">bypass instructions</a> only apply to Commander.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Identity and Access</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Role of Superuser</p></td></tr></table><ol><li value="1">Click the <b>Authentication</b> tab.</li><li value="2">In the <b>SAML Single Sign-On</b> section for either Commander or the Service Portal, click <b>Edit</b>.</li><li value="3">In the SAML Single Sign-On dialog for either Commander or the Service Portal, select <b>Enabled</b> to enable SSO.</li><li value="4">If you want users to be signed out of the IdP and all other service providers when they sign out, enable <b>Global Sign Out</b>.</li><li value="5">Provide the IdP metadata (see the <a href="#prereq" class="MCXref xref">Prerequisites</a> above). In the <b>Identity Provider</b> area, do one of the following:
+            </li><ul><li>If your metadata is accessible online, select <b>URL</b>, then enter an accessible URL that isn't protected by a user name and password.</li><li>If you have a downloaded metadata file, click <b>Add</b> and browse to the file.<p>
+              To store the metadata: Using the following exact file name, copy your metadata directly to the following location on the Commander server:</p><p class="code">&lt;Commander install dir&gt;/tomcat/conf/sso-idp-metadata.xml</p></li></ul><li value="6">In the <b>SAML Key Pair</b> section, provide a PKCS #12 keystore that Commander will use to sign SSO requests (see the <a href="#prereq" class="MCXref xref">Prerequisites</a> above).
+                <p><img alt="saml-key-pair-values" style="height: auto;max-width: 99.99%;width: auto;" src="Images/saml-key-pair-values.png" /></p></li><ul><li>Click <b>Add</b> and browse to a PKCS #12 file.</li><li>Enter the keystore password (default value: <code>changeit</code>). </li><li>Enter the alias for the key pair in the selected keystore file (default value: <code>saml</code>).</li><li>Enter the password for the key pair (default value: <code>changeit</code>).</li></ul><li value="7">In the <b>Service Provider Metadata</b> section, provide information that Commander will use to create metadata that you will then upload to your IdP.
+                <p><img alt="SAML Service Portal metadata" style="height: auto;max-width: 99.99%;width: auto;" src="Images/saml-portal-metadata.png" /></p><ul><li><b>External URL</b> — The Commander External URL or the Service Portal External URL field displays the Commander or the Service Portal URL by default. If Commander or the Service Portal is deployed behind a load balancer or proxy, enter the load balancer or proxy URL. Otherwise, leave the default URL.</li><li><b>Entity ID URI Override</b> — In the Entity ID URI Override field, enter the override value for the entity ID that's in the SAML metadata generated by Commander or the Service Portal.</li><li><a name="credential_attrib"></a><b>User ID Attribute</b> — In the User ID Attribute field, enter the attribute in the SSO payload that will allow Commander to identify a Service Portal user account. The default attribute is <code>mail</code>.</li><li><b>Hash Algorithm</b> — From the Hash Algorithm list, select the secure hash algorithm required by your IdP. The default is SHA1; SHA256, SHA384 and SHA512 are also supported.</li><li><b>Sign Metadata</b> — By default, Commander metadata is signed. If you don't want the metadata to be signed, clear the Sign Metadata option.<p class="caution">Using unsigned metadata in production environments isn't recommended.</p></li><li><b>Sign Out URL</b> — In the Sign Out URL field, enter the URL for the page where you want the Commander or Service Portal user to land after signing out. The default URL for Commander is <code>/saml-logout.html</code> and the default URL for the Service Portal is <code>/saml-logout.xhtml</code>.</li><li><b>IdP Error URL</b> — In the IdP Error URL field, enter the URL for the page where you want Commander or Service Portal users to land if an error occurs while signing in to the IdP. The default IdP Error URL for Commander is <code>/saml-error.html</code> and the default URL for the Service Portal is <code>/saml-error.xhtml</code>.</li><li><b>Commander Error URL</b> — In the Commander Error URL field, enter the URL for the page where you want Commander or Service Portal users to land if an error occurs while signing in to Commander or the Service Portal. The default URL for Commander is <code>/saml-error.html</code> and the default URL for the Service Portal is <code>/saml-error.xhtml</code>.</li></ul></li><li value="8">Click <b>OK</b>.</li><li value="9"><a name="metadata"></a>If you need to upload a metadata file to your IdP, in the <b>SAML Single Sign-On</b> section of the <b>Authentication</b> tab for either Commander or the Service Portal, click <b>Download</b>.
+            <p class="Note">If you need to provide a URL for accessing the metadata, use the following:</p><p>For Service Portal: <code>https://&lt;Commander host&gt;:&lt;port&gt;/service_portal_metadata.xml</code></p><p>For Commander: <code>https://&lt;Commander host&gt;:&lt;port&gt;/admin_portal_metadata.xml</code></p></li><li value="10">Configure your IdP to trust Commander. See <a href="#example" class="hreflinks">below</a> for an example using Active Directory Certificate Services (ADFS). For more information, consult your IdP documentation.</li><li value="11">To test your configuration, sign out of Commander or the Service Portal and then sign back in.<p>You will be redirected to a sign in page on the IdP server.</p></li><li value="12">Sign in as an existing Commander or Service Portal user.
+If you can't sign in, you can bypass SAML by using Commander credentials. For more information, see<a href="#bypass" class="MCXref xref">Bypass SAML</a>. No bypass is available for the Service Portal.<p>You are able to access Commander or the Service Portal without having to sign in again.</p></li></ol><h2 id="TroubleshootingSSOconfiguration" data-magellan-target="TroubleshootingSSOconfiguration"><a name="troubleshoot"></a>Troubleshooting SSO configuration</h2><p>While testing Commander or Service Portal access with SSO, if you receive a 403 error, make sure the metadata has been uploaded properly to your IdP server. If you have confirmed that the metadata has been uploaded correctly, review the <code>vCommander.log</code> file for errors, or open a ticket with Customer Support, being sure to include a diagnostics package. For more information, see <a href="https://community.snowsoftware.com/s/article/submittingsnowsoftwarecommanderdiagnostics" target="_blank">Submitting Snow Commander Diagnostics</a> in the Snow Globe user community.</p><p>If you make configuration changes, you must upload the new Commander SAML metadata file to your IdP server or make sure your IdP is accessing the correct URL for metadata.</p><h2 id="BypassSAML" data-magellan-target="BypassSAML"><a name="bypass"></a>Bypass SAML</h2><p>In case of SAML misconfiguration or malfunction, you can bypass SAML in Commander but not in the Service Portal.</p><p class="Note">When SAML is enabled, an audit event is generated of each sign in (successful or unsuccessful) to Commander using the SAML bypass mechanism. See <a href="monitor.htm" class="MCXref xref">Monitor with Tasks, Alerts, Events</a>.</p><p>To sign in to Commander using Commander credentials instead of SAML, enter the following bypass URL:</p><p> <code>https://&lt;Commander host&gt;:&lt;port&gt;?defaultLogin</code>.</p><h2 id="ExampleConfiguringIdPforSSOusingADFS" data-magellan-target="ExampleConfiguringIdPforSSOusingADFS"><a name="example"></a>Example: Configuring IdP for SSO using ADFS</h2><p>The following example shows how to configure an IdP for SAML 2.0 SSO, using Active Directory Federation Services (ADFS) as an example. This example is for SAML SSO with the Service Portal and not SAML SSO for Commander. You can also configure SAML SSO for Commander.</p><h3><a name="example_prereq"></a>Prerequisites for this example</h3><ul><li>Commander must be installed with a valid certificate. This example uses an internal certificate authority (CA).</li><li>You must have a verified operational ADFS server. For more information, see <a href="https://technet.microsoft.com/en-us/library/dd807076.aspx" target="_blank" class="hreflinks">Verify That a Federation Server Is Operational</a> from the Microsoft documentation.</li><li>You need a Service Portal user account to test the configuration. This user must be a member of the domain for which the ADFS server has been configured.</li><li>You must configure Commander for SSO and generate Commander metadata as shown in the <a href="#config" class="hreflinks">procedure above</a>.</li></ul><h3>Configure ADFS servers for SSO</h3><ol><li value="1">On the ADFS Server, launch the ADFS Management Console.</li><li value="2">Right-click the tree and select <b>Add Relying Party Trust</b>.</li><li value="3">On the Select Data Source page of the Add Relying Party Trust Wizard, select <b>Import data about the relying party from a file</b>.
+                <p><img alt="sso-adfs-import-data" style="height: auto;max-width: 99%;" src="Images/sso-adfs-import-data.png" /></p></li><li value="4">Click <b>Browse</b> and navigate to the <code>service_portal_metadata.xml</code> file you generated <a href="#metadata" class="hreflinks">in the previous procedure</a>, then click <b>Next</b>.</li><li value="5">On the Specify Display Name page, give the trust configuration an identifying name, such as "Commander Service Portal SSO", then click <b>Next</b>.
+                </li><li value="6">On the Choose Issuance Authorization Rules page, select <b>Permit all users to access this relying party</b>, then click <b>Next</b>.
+			<p class="Note">In a production environment, we don't recommend allowing access to all users.</p></li><li value="7">On the Ready to Add Trust page, review your settings, then click <b>Next</b>.</li><li value="8">On the Finish page, select <b>Open the Edit Claims Rules Dialog for this relying party trust when the wizard closes</b>, then click <b>Close</b>.
+                </li><li value="9">In the Edit Claim Rules window, go to the <b>Issuance Transform Rules</b> tab and click <b>Add Rule</b>.
+                <p><img alt="sso-adfs-edit-claim-rules" style="height: auto;max-width: 99%;" src="Images/sso-adfs-edit-claim-rules.png" /></p></li><li value="10">On the Select Rule Template page of the Add Transform Claim Rule wizard, from the <b>Claim Rule Template</b> list, select <b>Send LDAP Attributes as Claims</b>, then click <b>Next</b>.
+                <p><img alt="sso-adfs-add-xform-claim" style="height: auto;max-width: 99%;" src="Images/sso-adfs-add-xform-claim.png" /></p></li><li value="11">On the Configure Rule page, configure the rule to map <b>User-Principal-Name</b> to <b>mail</b>.
+                <p class="Note">The mapped attribute must match the Credential Attribute configured <a href="#credential_attrib" class="hreflinks">above</a>.</p><p><img alt="sso-adfs-config-claim-rule" style="height: auto;max-width: 99%;" src="Images/sso-adfs-config-claim-rule.png" /></p></li><li value="12">Click <b>Finish</b>.</li><li value="13">On the Select Rule Template page of the Add Transform Claim Rule Wizard, add another rule to transform an incoming claim and give the rule a name, then click <b>Next</b>.
+                <p><img alt="sso-adfs-add-xform-incoming-claim" style="height: auto;max-width: 99%;" src="Images/sso-adfs-add-xform-incoming-claim.png" /></p></li><li value="14">On the Configure Rule page, configure the rule to map the Windows account name to the Windows-formatted Name ID, then click <b>Finish</b>.
+<p><img alt="sso-adfs-config-xform-rule" style="height: auto;max-width: 99%;" src="Images/sso-adfs-config-xform-rule.png" /></p></li><li value="15">Verify your settings and click <b>OK.</b><p><img alt="sso-adfs-verify-rules" style="height: auto;max-width: 99%;" src="Images/sso-adfs-verify-rules.png" /></p></li></ol><h3>Test the configuration</h3><ol><li value="1">Go to <code>https://&lt;Commander host&gt;:&lt;port&gt;/portal</code>.
+           
+                <p>You are redirected to a sign-in page on the ADFS server.</p></li><li value="2">In the same browser session, sign in as a preconfigured Service Portal user.
+            <p>You are able to access the Service Portal without having to sign in again.</p></li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="7PRGOM-mnk2JQyh_iDgqQQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="7PRGOM-mnk2JQyh_iDgqQQ:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#ConfigureSAMLSSO">Configure SAML SSO</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Howitworks">How it works</a>
+                                                            </li>
+                                                            <li><a href="#Prerequisites">Prerequisites</a>
+                                                            </li>
+                                                            <li><a href="#PrepareakeystoreforSAMLSSO">Prepare a keystore for SAML SSO</a>
+                                                            </li>
+                                                            <li><a href="#ConfigureSAMLSSOforCommanderandServicePortal">Configure SAML SSO for Commander and Service Portal</a>
+                                                            </li>
+                                                            <li><a href="#TroubleshootingSSOconfiguration">Troubleshooting SSO configuration</a>
+                                                            </li>
+                                                            <li><a href="#BypassSAML">Bypass SAML</a>
+                                                            </li>
+                                                            <li><a href="#ExampleConfiguringIdPforSSOusingADFS">Example: Configuring IdP for SSO using ADFS</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

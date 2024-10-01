@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Manually Provision Azure VMs</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="ManuallyProvisionAzureVMs" data-magellan-target="ManuallyProvisionAzureVMs"><a name="aanchor389"></a><MadCap:concept term="Admin Portal" />Manually Provision Azure VMs</h1><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt;  Inventory &gt; Applications</p><p>or</p><p>View &gt; Service Requests &gt; Request Details</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator, Operator with Approval Access Rights</p></td></tr></table><p>This topic covers manual deployment of Azure VMs. </p><p>Use Commander to:</p><ul><li>Deploy a requested service or VM component by clicking <b>Deploy</b> at the appropriate level of the tree in the <a href="fulfill_vm_request.htm" class="hreflinks">Request Details dialog</a>. Note that once a component in a service has been deployed, it's no longer possible to deploy at the service level; you must deploy at the component level.</li><li>Deploy a VM from a private Azure image. Right-click an image and choose <b>Provisioning &gt; Deploy to VM</b>. The VM must be deployed into an existing resource group.</li><li>Deploy a VM from a public Azure image. In the Public Images folder, right-click an image and choose <b>Provisioning &gt; Deploy to VM</b>. The VM must be deployed into an existing resource group.</li></ul><p class="Note">When deploying an entire service, if the deployment of one or more components fails, Commander will still attempt to deploy other components in the service.</p><p>You can also manually provision ARM templates. For more information, see <a href="deploy_arm_tmpl.htm" class="MCXref xref">Manually Provision ARM Templates</a>.</p><p>The following sections provide details and additional help links for the manual deployment wizard. The pages and options displayed depend on whether you're deploying an entire service or a VM component.</p><h2 id="NameTargetpage" data-magellan-target="NameTargetpage"><a name="target_page"></a>Name &amp; Target page</h2><ul><li><b>Let the system name this VM automatically:</b> See also <a href="configure_auto_provision.htm" class="MCXref xref">Customize Naming Conventions</a>.</li><li><b>Manually name this VM:</b> The name must be unique in the target resource group. Note that you can't use variables in this field, but you can use variables in the <a href="configure_auto_provision.htm" class="hreflinks">global VM naming convention</a>.</li><li><b>Placement Options:</b> Although the option you choose here allows Commander to preselect destination choices for you, you can change those selections throughout this wizard. The available options are:</li><ul><li><b>Last Specified:</b> Uses the placement location that was last used to deploy this service or component. If the service or component has not been previously deployed, no destination is selected.</li><li><b>User Specified:</b> No destination is selected; the destination must be selected manually.</li><li><b>Automated Deployment:</b> Uses the placement options configured for automated deployment. When multiple deployment destinations are valid, the first alphabetically is used. If you see the error "Automated deployment has not been configured", see <a href="config_auto_placement_depl_vms.htm#config_dest_arm" class="MCXref xref">Azure: Configure destinations for automated deployment</a> to learn how to set up automated deployment.</li></ul><li><b>Destination:</b> Choose a resource group where the VM will be deployed. You must deploy into an existing resource group. If you're deploying a private (custom) image, you can select from the resource groups in the source region. If you're deploying a public image, all regions are available for selection. The default public images are available in all regions, but if you've <a href="azure.htm#public_img" class="hreflinks">customized the public images</a>, make sure to select a resource group in a region where the public image is available. Otherwise, deployment will fail.</li></ul><h2 id="ResourcesSecuritypage" data-magellan-target="ResourcesSecuritypage"><a name="config_page"></a>Resources &amp; Security page</h2><p>This page allows you to customize VM resources and security settings. This page doesn't appear if you're deploying an entire service as individual components (that is, if you clicked Deploy at the Service level in the Request Details dialog rather than at the Component level).</p><ul><li><b>Instance Type:</b> Select an instance type from the drop-down menu. This option isn't available if you're deploying an entire service as individual components — that is, if you clicked <b>Deploy</b> at the Service level in the Request Details dialog (rather than at the Component level). Click <b>Details</b> to see more information about the selected instance type. Note that only instance types supporting the number of data disks already attached to the image are displayed.</li><li><b>Credentials:</b> If you're deploying a prepared (generalized) template, select credentials from the drop-down menu. Prepared templates contain no built-in authentication information, as opposed to Specialized templates, which already have credentials configured. You can confirm that a template is prepared by checking the value for the Customizable OS property in the General section of the template's Summary tab; a value of Yes means the template is prepared. </li><p class="Note">Due to an Azure limitation, the value for the Customizable OS property for Azure images is always Yes (Generalized), even for prepared images. Because Commander can't determine whether the image requires credentials, this wizard always allows you to specify credentials. To prevent deployment failures, be sure to specify credentials only when required.</p><p style="font-weight: normal;">Public images are always generalized (prepared), and always require credentials.</p><p>Click <b>Add Credentials</b> to create a new set of credentials if required. You can specify:</p></ul><ul><ul><li>Username/Password credentials: Azure user names must contain from 1 to 64 characters, must contain only lowercase letters, numbers, hyphens and underscores, and must start with a lowercase letter. You can't use one of the following user names: user, root, admin or administrator. Azure passwords must contain from 12 to 72 characters and must contain three of the following: one lowercase character, one uppercase character, one number and one special character. User names are validated when you click <b>Next</b>, but passwords are validated at provisioning time. See also <a href="https://docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions" class="hreflinks">Naming Conventions for Azure Resources <span class="f_Icons_Inline"></span></a> in the Microsoft documentation.</li><p class="caution">Don't lose this user name and password, or the VM will be inaccessible.</p><li>RSA Key credentials, for Linux prepared images only. For more information, see <a href="credentials.htm#add" class="MCXref xref">Add credentials</a>.</li></ul></ul><ul><li><b>Network Security Group:</b> Select a network security group from the drop-down menu. All network security groups from the target region are available for selection.</li><li><b>Diagnostics Storage Account:</b> To enable memory usage monitoring, a storage account needs to be selected either by automated deployment destination or manually.</li><li><b>Availability Set:</b> Microsoft Azure availability sets ensure both fault tolerance and service availability. Select an availability set from the drop-down menu, if configured for the service catalog entry. Or, enter text in the text field. If you enter the name of an availability set that doesn't already exist, it will be created. Availability set names are case-insensitive.</li></ul><h2 id="Storagepage" data-magellan-target="Storagepage"><a name="storage_page"></a>Storage page</h2><p>This page allows you to configure storage resources. Note that when deploying an entire service, all VMs in the service are deployed with the same storage options, and you can't edit disk information.</p><ul><li><b>Type:</b> Select <b>Managed</b> or <b>Unmanaged</b> storage in the drop-down menu. All of a VM's disks must have the same storage type. For private (custom) images with managed storage, you can't change the storage type. If you selected an availability set on the previous page, the storage type is determined by that availability set.</li><p>Existing disks are listed with their projected location, depending on the storage type selected. Storage accounts are filtered based on the image's region and selected instance type.</p></ul><p><a name="edit_disks_page"></a>To edit disk information, click <b>Edit Disks</b>. In the Edit Disks dialog, you can:</p><ul><li>add a disk by clicking <b>Add</b>. Note that the number of disks you can add is controlled by the selected instance type.</li><li>delete a disk (other than the OS disk and existing data disks, which can't be deleted) by selecting it in the Disks list and clicking <b>Delete</b>.</li><li>modify a disk by selecting it in the Disks list and editing its settings as required:
+            </li><ul><p><b>Device Name:</b> Edit the suggested device name if required. Managed disk names must be unique in the target resource group. Unmanaged disk names must be unique within the VM. The name must contain from 1 to 64 characters, must contain only letters, numbers, hyphens, dots and underscores, and must start with a letter or number.</p><p>Limitation: Even though you can edit the name for a managed disk, the suggested name will be used.</p><p><b>Capacity:</b> Specify the disk capacity in GB. Note that you can't shrink existing disks, and you can't resize existing unmanaged disks.</p><p>Disk Type: Select one of the following types from the drop-down menu:</p><ul><li><b>SSD:</b> Premium disks (SSD) are backed by solid-state drives and offer consistent, low-latency performance. They provide the best balance between price and performance, and are ideal for I/O-intensive applications and production workloads. Premium disks are not supported for all instance types.</li><li><b>HDD:</b> Standard disks (HDD) are backed by magnetic drives and are preferable for applications where data is accessed infrequently.</li></ul><p><b>Storage Account:</b> For unmanaged disks, select a storage account from the list. You can select only storage accounts that are available in the image's region and support the selected Disk Type.</p></ul><ul><li>Limitation: You can't configure encryption for a new disk.</li><li>Each Azure instance type has limitations for the number and type of disks that can be added.</li></ul></ul><h2 id="Networkingpage" data-magellan-target="Networkingpage"><a name="network_page"></a>Networking page</h2><p>This page doesn't appear if you're deploying an entire service as individual components (that is, if you clicked Deploy at the Service level in the Request Details dialog rather than at the Component level).</p><ul><li><b>Network:</b> By default, the first network (alphabetically) in the destination resource group is selected. Select a different network from the drop-down list if required. Only networks in the image's region are available for selection. The Network drop-down list groups networks by resource group.</li><li><b>Subnet:</b> All subnets in the selected network are displayed. Choose a subnet from the list.</li></ul><p>To assign a public IP address to the VM, select <b>Create Public IP Address</b> and select either <b>Static</b> or <b>Dynamic</b> in the Allocation Method drop-down list.</p><p>Otherwise, leave the default selection, <b>No Public IP Address</b>.</p><h2 id="Componentspage" data-magellan-target="Componentspage"><a name="components_page"></a>Components page</h2><p>This page appears only when deploying an entire requested service. That is, you clicked Deploy at the Service level in the Request Details dialog, rather than at the Component level.</p><p>All components in the service are listed. Custom components contained in the service are listed for information purposes only.</p><p>Deselect the components you don't want to deploy at this time.</p><p>Components are deployed serially, not in parallel.</p><h2 id="CustomAttributespage" data-magellan-target="CustomAttributespage"><a name="custom_attr_page"></a>Custom Attributes page</h2><p>Custom attributes allow you to provide more management information about your virtualized infrastructure.</p><p>This page doesn't appear when deploying an entire service that's configured to be deployed as individual VM components.</p><p>For more information on custom attributes, see <a href="working-with-custom-attributes.htm" class="MCXref xref">Work with Custom Attributes</a>.</p><h2 id="OtherPropertiespage" data-magellan-target="OtherPropertiespage"><a name="other_prop_page"></a>Other Properties page</h2><p>When deploying an entire service, values entered on this page will be applied only to the components of the service.</p><p>If the Expiry Date form element or the Primary Owner form element has been added to the Component request form, users can specify expiry and/or ownership information for requested components (see <a href="new-service-request-form-elements.htm" class="MCXref xref">Service Request Form Elements</a>). Their selection isn't displayed in the manual Service deployment wizard. In this case, you should deploy each component separately by clicking <b>Deploy</b> at the Component level of the Request Details, rather than at the Service level. Doing so ensures that you won't override the requester's individual selections for all components in the service.</p><ul><li><b>VM Name:</b> If name you specified on the Name page isn't unique in the target resource group, an error message is displayed. Click <b>Edit</b>. In the Modify VM Name dialog, edit the name and click Validate to verify that it meets naming rules. Click <b>OK</b>, and if the name you specified doesn't already exist in the target resource group, the warning disappears. See also <a href="configure_auto_provision.htm" class="MCXref xref">Customize Naming Conventions</a>.</li><li><b>Expiry Date:</b> Click <b>Edit</b> to set or override the expiry date, or to specify that the service will never expire. See also <a href="manage-service-expirations.htm" class="MCXref xref">Manage Service Expirations</a>.</li><li><b>Expiry Group:</b> Click <b>Edit</b> and choose an <a href="groups_vm.htm" class="hreflinks">expiry group</a> from the drop-down.</li><li><b>Maintenance Group:</b> Click <b>Edit</b> and choose a <a href="groups_vm.htm" class="hreflinks">maintenance group</a> from the drop-down.</li><li><b>Power Schedule Group:</b> Click <b>Edit</b> and choose a <a href="groups_vm.htm" class="hreflinks">power schedule group</a> from the drop-down. Displayed for VM components only.</li><li><b>Rightsizing Group:</b> Click <b>Edit</b> and choose a <a href="groups_vm.htm" class="hreflinks">rightsizing group</a> from the drop-down. Displayed for VM components only.</li><li><p><b>Owners:</b> To edit ownership assignment, click <b>Edit</b>. In the Edit Ownership dialog, if the user you assign is a member of an organization, make sure to select the owner's organization to ensure the service is visible to organization members. To assign users, enter a username or email address. See also <a href="set-resource-ownership.htm" class="MCXref xref">Set Resource Ownership</a>.</p></li><li><b>Service Request:</b> When deploying a service request, the <b>Release</b> checkbox is visible and is enabled by default, so that components advance to completion automatically. When the Release checkbox is enabled, if one or more <a href="completion-workflows.htm" class="hreflinks">completion workflows</a> have been assigned, the service request is automatically transferred to the completion workflow process. If no completion workflows are assigned, once all components in a service are deployed, releasing the components makes the service visible to the requester (for example, the Service Portal user).<br />If there are manual steps in your provisioning process, disable the <b>Release</b> checkbox so that you can carry out these steps before the completion workflow starts. For example, you may need to install software, check operating system patches, or migrate VMs. Click <b>Comment</b> to enter more information for the service request comment log.</li></ul><h2 id="Summarypage" data-magellan-target="Summarypage"><a name="summary_page"></a>Summary page</h2><p>A summary of your settings is displayed. New public cloud VMs are always powered on when created.</p><ul><li><b>Policy Actions:</b> If one or more policies will be triggered once deployment occurs, policy actions are listed here.</li></ul><h2 id="Troubleshooting" data-magellan-target="Troubleshooting"><a name="trblshoot"></a>Troubleshooting</h2><p>If the deployment operation is canceled or fails, Commander doesn't delete any additional VM resources, such as NICs, that were created before the operation was canceled. These must be deleted in the Azure portal.</p></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="ewGgq2xsS0O8IoRd3DXHBA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="ewGgq2xsS0O8IoRd3DXHBA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#ManuallyProvisionAzureVMs">Manually Provision Azure VMs</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#NameTargetpage">Name &amp; Target page</a>
+                                                            </li>
+                                                            <li><a href="#ResourcesSecuritypage">Resources &amp; Security page</a>
+                                                            </li>
+                                                            <li><a href="#Storagepage">Storage page</a>
+                                                            </li>
+                                                            <li><a href="#Networkingpage">Networking page</a>
+                                                            </li>
+                                                            <li><a href="#Componentspage">Components page</a>
+                                                            </li>
+                                                            <li><a href="#CustomAttributespage">Custom Attributes page</a>
+                                                            </li>
+                                                            <li><a href="#OtherPropertiespage">Other Properties page</a>
+                                                            </li>
+                                                            <li><a href="#Summarypage">Summary page</a>
+                                                            </li>
+                                                            <li><a href="#Troubleshooting">Troubleshooting</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+﻿/* MadCap Table Style: Taken from H&M used by Variable Ref Entries*/
+
+
+
+table.help-table{
+	width:90%;
+	border:1px solid ##F16531;
+        font-family: 'Open Sans', sans-serif !important;
+}
+
+table.help-table th,
+table.help-table td{
+	padding:5px;
+	text-align:left;
+}
+
+table.help-table th{
+	background:#f5d7c5;
+	border:1px solid #F16531; 
+	}
+
+table.help-table td{
+	border-bottom:1px solid #F16531;
+	border-right:1px solid #F16531;
+	border-left:1px solid #F16531;
+}
+
+table.help-table tbody tr:nth-child(2n+0){
+	background:#F0F0F0;	
+}
+
+table.help-table td.help-table-group{
+	background:#AAAAAA;
+	color:#FFFFFF;
+	font-weight:bold;
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Manually Reconfigure VM Resources</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyles/Standard.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 style="page-break-before: always;" id="ManuallyReconfigureVMResources" data-magellan-target="ManuallyReconfigureVMResources"><a name="aanchor194"></a><MadCap:concept term="Admin Portal" />Manually Reconfigure VM Resources</h1><p>Depending on the cloud platform, reconfiguring VM resources could entail:</p><ul><li>Changing the amount of memory and the number of virtual processors assigned to a VM, or changing the instance type.</li><li>Adding or deleting network adapters.</li><li>Adding, changing, or removing storage.</li></ul><p>There are three ways to reconfigure VM resources in Commander and the Service Portal:</p><ul><li>Apply a <a href="rightsizing.htm" class="hreflinks">rightsizing recommendation.</a></li><li>Submit a change request.</li><li>Manually reconfigure VM resources, as detailed in this topic.</li></ul><p>The method you choose to expose to users depends on how much control you want over VM configuration changes. If you need to control VM configuration changes for some or all of your users, you should require users to apply a recommendation or to submit a change request, rather than allowing them to manually reconfigure VM resources.</p><p class="Note">This task requires the Service Portal permissions Modify VM CPU &amp; Memory and Modify VM Storage. Service Portal users can reconfigure memory, CPU, storage and network resources (or change the instance type, in the case of public cloud VMs).</p><p class="caution">Networks aren't filtered by deployment destination or user visibility, which means a user with the Modify VM Network permission is able to see networks that they don't have access to.</p><h2 id="Hotcoldresourcechangesforeachcloudplatform" data-magellan-target="Hotcoldresourcechangesforeachcloudplatform"><a name="table_power_state"></a>Hot/cold resource changes for each cloud platform</h2><p><a name="vcenter"></a><a name="scvmm"></a>What you can change depends on the power state of the VM and the cloud platform. The following table indicates whether you must power off the VM in order to perform each task.</p><p><b>Not Supported</b> indicates that this type of resource change is supported by the cloud platform, but not supported by Commander.</p><div style="overflow: auto; overflow-y: hidden;"><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Standard.css');" class="TableStyle-Standard" cellspacing="0"><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1" rowspan="2"><p>Resource Change</p></th><th colspan="5" class="TableStyle-Standard-HeadD-Regular-Header1"><p>Power down required?</p></th></tr><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>vCenter</p></th><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>SCVMM</p></th><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>AWS</p></th><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Azure</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>GCP</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Modify CPU / memory resources OR change instance type</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>The CPU Hot Plug and Memory Hot Plug properties must be set for the VM in vCenter to enable this feature.</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Yes</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Yes</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Yes</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Yes</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Add network adapters</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Yes</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Not supported</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Not supported</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Not supported</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Delete network adapters</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Yes</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Yes</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Not supported</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Not supported</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Not supported</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Modify network adapters</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Not supported</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Change subnet: Yes</p><p>Other changes: Not supported</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Not supported</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Add storage</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Not supported</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Delete storage</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No (base disk can't be deleted)</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>No (base disk can't be deleted)</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Not supported</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>Modify existing storage</p></td><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>No</p></td><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>Yes</p></td><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>Not supported</p></td><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>Yes</p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p>Not supported</p></td></tr></tbody></table></div><h2 id="ReconfigureresourcesforAWSinstances" data-magellan-target="ReconfigureresourcesforAWSinstances"><a name="ec2"></a>Reconfigure resources for AWS instances</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator with Approval, Operator Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Infrastructure</b> or <b>Applications</b> tab.</li><li value="2">Select a VM in the tree or on the <b>Virtual Machines</b> tab.</li><li value="3">Select <b>Actions &gt; Configuration Management &gt; Reconfigure VM Resources</b>.</li><li value="4">To change the instance type, on the Instance Type page, select an instance type from the drop-down.<ul class="NoteMultiple"><li>To change the instance type, the VM must be powered off.</li><li><b>EBS Optimized</b>: If the selected instance type supports EBS optimization, this option is active. EBS optimization enables additional, dedicated throughput between Amazon EC2 and Amazon EBS, and therefore improved performance for Amazon EBS volumes. Additional charges from AWS apply if you enable this option.</li></ul><p class="tip">Click <b>Details</b> to see the full set of properties for the selected instance type.</p></li><li value="5"><a name="ec2_storage"></a>To create a new EBS volume and attach it to this VM, on the Storage page, click <b>Add</b> and specify the following:<ul><li><b>Device Name</b>: Specify the name that the block device driver for the instance will assign when mounting the volume. The name recommended by Amazon is provided; edit this value if required. See <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html" target="_blank">Block Device Mapping</a> in the AWS documentation for more information.</li><li>&#160;<b>Capacity</b>: Specify the disk capacity, in GB.</li><li><b>Volume Type</b>: Select one of the following types from the drop-down. Hover over the <span class="f_Icons_Inline"></span> icon for details on each type; see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html" target="_blank">Amazon EBS Volume Types</a> in the AWS documentation for more information.
+				<ul><li><b>General Purpose (SSD)</b>: General purpose Solid-State Drive volume that balances price and performance for a wide variety of transactional workloads. Recommended for system boot volumes, virtual desktops, low-latency interactive apps, development and test environments.</li><li><b>Provisioned IOPS (SSD)</b>: Highest-performance SSD volume designed for mission-critical applications. Best for critical business applications that require sustained IOPS performance, or more than 10,000 IOPS or 160 MiB/s of throughput per volume, such as large database workloads and EBS-optimized instances. The ratio of IOPS provisioned and the volume size requested can be a maximum of 50.</li><li><b>Magnetic</b>: Previous-generation Hard Disk Drive volumes for workloads where data is infrequently accessed. Not recommended for new applications.</li><li><b>Throughput Optimized (HDD)</b>: Low-cost Hard Disk Drive volume designed for frequently accessed, throughput-intensive workloads. Best for streaming workloads requiring consistent, fast throughput at a low price, such as big data, data warehouses, and log processing. The minimum disk size for this type is 500 GB. It can't be a boot volume.</li><li><b>Cold (HDD)</b>: Lowest-cost Hard Disk Drive volume designed for less frequently accessed workloads. Best for throughput-oriented storage for large amounts of data that's infrequently accessed. The minimum disk size for this type is 500 GB. It can't be a boot volume.</li></ul></li><li><b>IOPS</b>: If you select the Provisioned IOPS (SSD) volume type, you must specify the number of I/O operations per second (IOPS) this volume will support. Specify a number between 100 and 10,000. A maximum ratio of 50:1 is permitted between IOPS and volume size; for example, a volume with 3000 IOPS must be at least 60 GB in size. The minimum disk size for this storage type is 4 GB.</li><li><b>Encryption</b>: Specify whether to encrypt the disk. Note that not all instance types support disk encryption; see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#EBSEncryption_supported_instances" target="_blank">Amazon EBS Encryption</a> in the AWS documentation for the list of supported instance types.</li><li><b>Delete on Termination</b>: By default, this disk will be deleted when the VM to which it's attached is terminated. If you want to preserve this disk so that it can be attached to a different VM when this VM is terminated, disable this option.<p class="Note">The new disk is created in the same availability zone as the instance it's attached to.</p></li></ul></li><li value="6">To delete a disk, on the Storage page, select a disk and click <b>Delete</b>. Click <b>OK</b> to confirm the deletion.
+                <p class="Note">You can't remove the base disk.</p></li><li value="7">Click <b>OK</b>. </li></ol><h2 id="ReconfigureresourcesforAzureinstances" data-magellan-target="ReconfigureresourcesforAzureinstances"><a name="arm"></a>Reconfigure resources for Azure instances</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator with Approval, Operator Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Infrastructure</b> or <b>Applications</b> tab.</li><li value="2">Select a VM in the tree or on the Virtual Machines tab.</li><li value="3">Select <b>Actions &gt; Configuration Management &gt; Reconfigure VM Resources</b>.</li><li value="4">To change the instance type, go to the Instance Type page and select an instance type from the drop-down.
+The VM must be powered off.<p class="tip">Click <b>Details</b> to see the full set of properties for the selected instance type.</p></li><li value="5"><a name="arm_network"></a>To change the subnet, go to the Network page and select a subnet from the list of those available in the VM's network. The VM must be powered off.</li><li value="6"><a name="arm_storage"></a>To add storage resources, go to the Storage page, click <b>Add</b> and specify the following: <ul><li><b>Device Name:</b> Edit the suggested device name if required. Managed disk names must be unique in the target resource group. Unmanaged disk names must be unique within the VM. The name must contain from 1 to 64 characters, must contain only letters, numbers, hyphens, dots and underscores, and must start with a letter or number.<p class="Note">Even though you can edit the name for a managed disk, the suggested name will be used.</p></li><li><b>Capacity</b>: Specify the disk capacity in GB. Note that you can't shrink existing disks, and you can't resize existing unmanaged disks.</li><li><b>Disk Type</b>: Select one of the following types from the drop-down:
+			
+			<p><b>SSD</b>: Premium disks (SSD) are backed by solid-state drives and offer consistent, low-latency performance. They provide the best balance between price and performance, and are ideal for I/O-intensive applications and production workloads. Premium disks aren’t supported for all instance types.</p><p><b>HDD</b>: Standard disks (HDD) are backed by magnetic drives and are preferable for applications where data is accessed infrequently.</p></li><li><b>Storage Account</b>: For unmanaged disks, select a storage account from the list. You can select only storage accounts that are available in the image's region and support the selected Disk Type.<p class="NoteMultiple">&#160;</p><ul class="NoteMultiple"><li>You can't configure encryption for a new disk.</li><li>Each Azure instance type has limitations for the number and type of disks that can be added.</li></ul></li></ul></li><li value="7">To delete a disk, go to the Storage page, select a disk, click <b>Delete</b>, and confirm the deletion.  <p class="Note">You can't remove the base disk.</p></li><li value="8">To expand an existing disk, go to the Storage page, select the disk you want to expand, enter a number in the <b>Capacity</b> field, and click <b>OK</b>.<p class="Note">The VM must be powered off to expand a disk.</p></li></ol><h2 id="ReconfigureresourcesforGCPinstances" data-magellan-target="ReconfigureresourcesforGCPinstances"><a name="gcp"></a>Reconfigure resources for GCP instances</h2><p>In this release, you can change the instance type for a GCP instance, but you can't change network or storage resources.</p><p>In addition to choosing a predefined GCP&#160;instance type, you can also choose custom values for memory and CPU. For more information, see <a href="https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type" target="_blank" title="GCP Documentation" alt="GCP Documentation">Creating a VM Instance with a Custom Machine Type</a> in the GCP documentation.</p><p class="Note">To change CPU and memory resources, the instance must be powered off.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory &gt; Infrastructure or Applications</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator with Approval, Operator Access Rights</p></td></tr></table><p>To change memory and CPU resources for a GCP instance:</p><ol><li value="1">Select an instance in the tree or on the Virtual Machines tab.</li><li value="2">Right-click and select <b>Configuration Management &gt; Reconfigure VM Resources</b>.</li><li value="3">If one of the predefined instance types meets your needs, select it from the drop-down.
+                <p class="tip">Click Details to see the full set of properties for the selected instance type.</p></li><li value="4">If none of the predefined instance types fits your needs:</li><ol style="list-style-type: lower-alpha;"><li value="1">Select <b>Custom</b> from the menu.</li><li value="2">Enter values for CPU Count and Memory (GB) as required.
+                
+                    <p>The maximum CPU count is determined by the region and the CPU platform. Commander doesn't validate your value. If you enter an invalid value, the task may fail.</p><p>The minimum and maximum memory values depend on the value you entered for CPU Count.</p></li><li value="3">A custom machine can have up to 6.5 GB of memory per vCPU. If this isn't enough memory for your workload, enable <b>Extended Memory</b>.
+                <p>The maximum extended memory depends on the region. Commander doesn't validate that your value is permitted by the region.</p><p class="caution">Extended memory incurs additional costs. For more information, see <a href="https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#extendedmemory" title="GCP Documentation" alt="GCP Documentation">Adding extended memory to a machine type</a> in the GCP documentation.</p></li></ol><li value="5">Click <b>OK</b>.</li></ol><h2 id="ReconfigureresourcesforSCVMMVMs" data-magellan-target="ReconfigureresourcesforSCVMMVMs">Reconfigure resources for SCVMM VMs</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator with Approval, Operator Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Infrastructure</b> or <b>Applications</b> tab.</li><li value="2">Select a VM in the tree or on the Virtual Machines tab.</li><li value="3">Select <b>Actions &gt; Configuration Management &gt; Reconfigure VM Resources</b>.</li><li value="4">In the menu, select the resource you want to configure.<ul><li><b>CPU &amp; Memory</b>: Specify values for memory size and CPU count as required.
+                <p class="Note"><a name="hot_add"></a>vCenter: If you've enabled CPU Hot Add, CPU Hot Remove or Memory Hot Add for the VM, you can change CPU and memory resources while the VM is powered on, within the allowed range.</p><p class="caution">If you change the number of virtual processors for a VM after the guest operating system has been installed, the VM may become unstable.</p></li><li><b>Network</b>: Specify network settings as required. To add adapters for the VM, click <b>Add Network Adapter</b>.
+                <p class="tip">If you have a large number of networks, click <span class="f_Icons_Inline"></span> next to the Network drop-down to open a pop-up dialog for easier searching.</p></li><li><b>Storage</b>: For existing disks, you can modify their capacity and delete them. <p class="Note">It's not possible to resize IDE disks, independent disks, or disks involved in a snapshot or linked clone chain.</p><p>To add a disk for vCenter:</p><ol><li value="1"><a name="datastore"></a>Click <b>Add</b> and then specify disk capacity, disk type and location.</li><li value="2">To specify the datastore: Choose <b>Select a datastore</b> from the Location drop-down. The Select Datastore dialog appears, allowing you to specify the datastore. Commander provides capacity information to guide your decision.</li><li value="3">The options available in the Disk Provisioning drop-down depend on the selected datastore and the VM's hardware version:</li><li value="4"><ul><li><b>Dynamically Expanding:</b> Save storage space by creating a small file that grows as data is written to it, up to the configured limit.</li><li><b>Fixed Format:</b> Allow the datastore to occupy the entire space provisioned for it by creating a file equivalent in size to the disk you are creating (for example, 20 GB on disk for a 20 GB VHD). This is the default format.</li></ul><p class="Note">The datastore where the VM resides and the datastore where the new disk is placed must both be clustered, or must both be non-clustered. All new disks are created as SCSI disks.</p></li></ol></li><li>To delete a disk, select it in the Disks list and click <b>Delete</b>.</li></ul></li></ol><h2 id="ReconfigureresourcesforvCenterVMs" data-magellan-target="ReconfigureresourcesforvCenterVMs"><a name="reconfig_vcenter"></a>Reconfigure resources for vCenter VMs</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator with Approval, Operator Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Infrastructure</b> or <b>Applications</b> tab.</li><li value="2">Select a VM in the tree or on the <b>Virtual Machines</b> tab.</li><li value="3">Select <b>Actions &gt; Configuration Management &gt; Reconfigure VM Resources</b>.</li><li value="4">In the menu, select the resource you want to configure.
+					<ul><li><b>CPU &amp; Memory</b>: Specify values for memory size and CPU count as required.
+                <p class="Note"><a name="hot_add"></a>If you've enabled CPU Hot Add, CPU Hot Remove or Memory Hot Add for the VM, you can change CPU and memory resources while the VM is powered on, within the allowed range.</p><p class="caution">If you change the number of virtual processors for a VM after the guest operating system has been installed, the VM may become unstable.</p></li><li><b>Network</b>: Specify network settings as required. To add adapters for the VM, click <b>Add Network Adapter</b>.
+                <p class="tip">If you have a large number of networks, click <span class="f_Icons_Inline"></span> next to the Network drop-down to open a pop-up dialog for easier searching.</p></li><li><b>Storage</b>: For existing disks, you can modify their capacity and delete them.
+							
+							<p class="Note">It's not possible to resize IDE disks, independent disks, or disks involved in a snapshot or linked clone chain.</p></li><ul><li>To add a disk:</li><ol><li value="1"><a name="datastore"></a>Click <b>Add</b> and then specify disk capacity, disk type and location.</li><li value="2">To specify the datastore: Choose <b>Select a datastore</b> from the Location drop-down. The Select Datastore dialog appears, allowing you to specify the datastore. Commander provides capacity information to guide your decision.</li><li value="3">The options available in the Disk Provisioning drop-down depend on the selected datastore and the VM's hardware version:
+<ul><li><b>Thin:</b> Allocate disk space on demand. Supports over-allocation of storage resources.</li><li><b>SEsparse:</b> Allocate disk space as it's used by the guest OS. Supports over-allocation of storage resources. Block size is configurable and space may be reclaimed.
+<p class="Note">The SEsparse format is supported only for hardware version 9 or higher.</p></li><li><b>Thick - Lazy Zeroed:</b> Allocate disk space now. Disk blocks are zeroed out on first write. This is the default format.</li><li><b>Thick - Eager Zeroed:</b> Allocate disk space now. All disk blocks are zeroed out during disk creation. This is required to support clustering features such as Fault Tolerance.</li></ul></li><li value="4">To delete a disk, select it in the Disks list and click <b>Delete</b>.</li></ol></ul></ul></li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="8P0aTAwi2UCrLpfO7HLssg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="8P0aTAwi2UCrLpfO7HLssg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#ManuallyReconfigureVMResources">Manually Reconfigure VM Resources</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Hotcoldresourcechangesforeachcloudplatform">Hot/cold resource changes for each cloud platform</a>
+                                                            </li>
+                                                            <li><a href="#ReconfigureresourcesforAWSinstances">Reconfigure resources for AWS instances</a>
+                                                            </li>
+                                                            <li><a href="#ReconfigureresourcesforAzureinstances">Reconfigure resources for Azure instances</a>
+                                                            </li>
+                                                            <li><a href="#ReconfigureresourcesforGCPinstances">Reconfigure resources for GCP instances</a>
+                                                            </li>
+                                                            <li><a href="#ReconfigureresourcesforSCVMMVMs">Reconfigure resources for SCVMM VMs</a>
+                                                            </li>
+                                                            <li><a href="#ReconfigureresourcesforvCenterVMs">Reconfigure resources for vCenter VMs</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
