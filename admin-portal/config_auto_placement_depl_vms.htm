@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Configure Automated Deployment for Approved Service Requests</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 style="page-break-before: always;" id="ConfigureAutomatedDeploymentforApprovedServiceRequests" data-magellan-target="ConfigureAutomatedDeploymentforApprovedServiceRequests"><a name="aanchor149"></a><MadCap:concept term="Admin Portal" />Configure Automated Deployment for Approved Service Requests</h1><p>Commander can automatically deploy new service requests once they are approved. When automated deployment is configured, new service requests can move from approval to completion with no intervention. Automated deployment means that administrators are freed from decisions related to capacity, storage and networking. Commander emails you when automated deployment failures occur and when changes in your infrastructure cause deployment destinations that you have configured to become invalid.</p><p>To automatically deploy approved new service requests, you must:</p><ul><li>Create one or more deployment destinations.</li><li>Set up an approval workflow with the Automatically deploy approved requests setting enabled.</li></ul><p>See also:</p><ul><li><a href="deployment_destination_details.htm" class="MCXref xref">How Intelligent Placement Works</a> for more details, including best practices for SCVMM cloud accounts</li><li><a href="fence_depl_dest.htm" class="MCXref xref">Create Deployment Destinations for Fenced Networks</a> to learn how to set up a deployment destination for vCenter fenced networks</li></ul><p class="tip"><a name="copy_dest"></a>Once you've configured a deployment destination or approval workflow for one of your customers or departments, select it in the list and click <b>Copy </b>as a shortcut for setting up additional customers or departments. Note that you can't change the target cloud account in a copied deployment destination.</p><h2 id="vCenterConfiguredestinationsforautomateddeployment" data-magellan-target="vCenterConfiguredestinationsforautomateddeployment"><a name="config_dest_vcenter"></a><a name="summary_vcenter"></a><a name="name_vcenter"></a>vCenter: Configure destinations for automated deployment</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Self-Service</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Role of Superuser or Enterprise Admin</p><p>Administrator and All Operator Levels of Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Provisioning</b> tab.</li><li value="2"><a name="managed_system_vcenter"></a>In the <b>Automated Deployment Placement</b> section, right-click a vCenter cloud account in the tree and select <b>Add</b>.</li><li value="3">On the Name page, enter a name that identifies the destination.</li><li value="4"><a name="assignment_vcenter"></a>On the Assignment page, specify who has access to this destination.
+            <ul><li>To create a destination that any user without a specific assignment can use, choose <b>Default Destination</b>.</li><li>To create a destination for specific users, choose <b>Assign this destination to these specific users/groups</b>. </li><p>To assign this destination to an organization, on the <b>Organizations</b> tab, select an organization from the drop-down list and click <b>Add</b>. Repeat for additional organizations.</p><p>To assign this destination to a user or group, on the <b>Users/Groups</b> tab, enter a user name or email address and click <b>Add</b>. Repeat for additional users and groups. </p><ul class="NoteMultiple"><li>You can assign a single destination to multiple organizations, users and groups.</li><li>Once you assign a destination to organizations, users or groups, this assignment overrides less specific assignments. For example, if a destination is assigned to a user, the user won't have access to a destination assigned to their group or their organization, or to the default destination. For more information, see <a href="metadata.htm#dest_visibility" class="MCXref xref">Deployment destination visibility</a>.</li></ul></ul><p>If multiple destinations are available to a user, the destination with the most capacity is chosen.</p></li><li value="5"><a name="folder_vcenter"></a>On the Folder page, select the appropriate folder in the tree.</li><li value="6"><a name="target_vcenter"></a>On the Target page:</li><ul><li>Choose a target host or cluster. If you have chosen a cluster that has its automation level for VMware DRS (load balancing) set to <b>Manual</b>, you can choose a host within that cluster. Otherwise, this selection is unavailable.</li><li>Choose to deploy based on <b>Peak Capacity</b> or <b>Average Capacity</b> from the drop-down menu. For more information, see <a href="configure_capacity.htm#peak_average" class="MCXref xref">Peak versus Average capacity values</a>.</li></ul><li value="7"><a name="network_vcenter"></a>On the Networks page, define the networks to which VMs will attach once deployed.</li><ul><li>To match the source template's settings, enable <b>Connect to the same network as the source service</b>.
+                <p class="tip">In any text field that supports variables, click <span class="f_Icons_Inline"></span> to open the script editor and select variables for the current context.</p></li><li>To connect to a different network than the source service, from <b>Available Networks</b>, select one or more networks from the list of available networks and move them to the <b>Configured Networks</b> list.<ul class="NoteMultiple"><li>If no suitable configured network is available for the requested network zone, VM deployment will fail. See <a href="networking.htm" class="MCXref xref">Assign Network Zones</a> to learn how to assign networks to zones.</li><li>The <code>$NETWORK</code> <a href="config_deploy_parameters.htm" class="hreflinks">deployment parameter</a> specified by a request approver or in a script overrides the network zone specified on the <a href="Adding-vCenter-Services.htm#network_rsrc" class="hreflinks">request form</a>.</li></ul></li></ul><li value="8"><a name="ip_pools_vcenter"></a>On the IP Pools page, if an IP pool is linked to a target network:</li><ul><li><b>Assign each NIC a static IP address from pool</b>: Have Commander automatically assign a static IP address to each NIC. For this option, a customization specification must have been configured for the source service. For more information, see <a href="Adding-vCenter-Services.htm" class="MCXref xref">Add vCenter Services to the Catalog</a>.</li><li><b>Do not assign any IP addresses</b>: Allow IP addresses to be assigned manually during deployment.</li></ul><li value="9">On the Isolated (Fenced) Networks page, to allow fenced deployments to be placed on this destination, check <b>Enable fenced networks</b>.
+                <p>See <a href="fence_depl_dest.htm" class="MCXref xref">Create Deployment Destinations for Fenced Networks</a> for details on these settings.</p></li><li value="10"><a name="storage_vcenter"></a>On the Storage page, assign storage resources to this destination.<ul><li>Choose a datastore or datastore cluster from the <b>Available Storage</b> list and move it to the <b>Configured Storage</b> list.
+							<p>Adding a datastore cluster means that all datastores in that cluster at deployment time are automatically available for deployment. There's no need to update the deployment destination when datastores are added to or removed from a datastore cluster. If you add a clustered datastore as well as the datastore cluster itself, the clustered datastore is removed from the Configured Storage list; a dialog pops up to inform you when this happens.</p><p class="Note">Enable <b>Show clustered datastores</b> to show datastores that are part of a datastore cluster.</p><p>As required, add other datastores or datastore clusters.</p><p>Making multiple datastores available:
+        </p><ul><li>Ensures that VMs are automatically deployed to datastores with available free space.</li><li>Allows datastores with different storage tiers to be selected for automated deployment.</li><li>Ensures that VMs with disks on different storage tiers are deployed to meet service level agreements.</li></ul></li></ul><p class="NoteMultiple">&#160;</p><ul class="NoteMultiple"><li>Datastores excluded from capacity calculations aren't displayed as available datastores. For more information, see <a href="configure_capacity.htm#include_capacity" class="MCXref xref">Include or exclude specific datastores in capacity calculations</a>.</li><li>While HA reserved capacity affects how Commander chooses the best deployment destination, it doesn't invalidate deployment destinations. For more information, see <a href="configure_capacity.htm#failover">About capacity reserved for high availability failover</a>.</li></ul></li><li value="11"><a name="diskformat_vcenter"></a>On the Disk Format page, specify the format in which to store the VM's virtual disks. </li><ul><li><b>Same format as source</b>: Use the disk format of the source template or VM.</li><li><b>Thin</b>: Allocate disk space on demand. Supports over-allocation of storage resources.</li><li><b>SEsparse</b>: Allocate disk space as it's used by the guest OS. Supports over-allocation of storage resources. Block size is configurable and space may be reclaimed.
+                    <p class="Note">The SEsparse format is supported only for hardware version 9 or higher. The source VM must have one and only one snapshot.</p></li><li><b>Thick — Lazy Zeroed</b>: Allocate disk space now. Disk blocks are zeroed out on first write.</li><li><b>Thick — Eager Zeroed</b>: Allocate disk space now. All disk blocks are zeroed out during disk creation. This is required to support clustering features such as Fault Tolerance.</li></ul><li value="12"><a name="attrib_vcenter"></a>On the Placement page, you can assign placement attributes to this destination. Placement attributes are used to identify the capabilities of a deployment destination.</li><ol><li value="1">Click <b>Edit Placement Attributes</b>.</li><li value="2">In the Edit Placement Attributes dialog, in the <b>Not Provided</b> section, select a placement capability that's provided by this destination and click <b>Add</b> to move it to the Provided section.</li><li value="3">Click <b>OK</b> to close the Edit Placement Attributes dialog.
+				<p>See <a href="plcmt_attribs.htm">Configuring Attributes for Intelligent Placement</a> for more information.</p></li></ol><li value="13">On the Summary page, review your settings and click <b>Finish</b>.
+                <p class="Note">For standalone hosts only, the Host property appears as "Not set" on the Summary page. Any standalone host will also appear as "Not set" on the Details section for the deployment destination you created.</p></li></ol><p>Now you need to <a href="#autodeployment_approval_workflow" class="hreflinks">set up an approval workflow to enable automated deployment</a>.</p><h2 id="AWSConfiguredestinationsforautomateddeployment" data-magellan-target="AWSConfiguredestinationsforautomateddeployment"><a name="config_dest_ec2"></a><a name="name_ec2"></a><a name="summary_ec2"></a>AWS: Configure destinations for automated deployment</h2><p class="Note">You must configure distinct deployment destinations for each AWS region. EC2 VMs (instances) must be deployed in the same AWS region as their source template (AMI). In addition, all resources in a CloudFormation template must be deployed to the same region.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Self-Service</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Role of Superuser or Enterprise Admin</p><p>Administrator and All Operator Levels of Access Rights</p></td></tr></table><ol><li value="1"><a name="managed_system_ec2"></a>Click the <b>Provisioning</b> tab.</li><li value="2">In the <b>Automated Deployment Placement</b> section, right-click an AWS cloud account and select <b>Add</b>.</li><li value="3">On the Name page, enter a name that identifies the destination (maximum 100 characters).</li><li value="4"><a name="assignment_ec2"></a>On the Assignment page, specify who has access to this destination.
+            <p><ul><li>To create a destination that any user without a specific assignment can use, choose <b>Default Destination</b>.</li><li>To create a destination for specific users, choose <b>Assign this destination to these specific users/groups</b>. </li><p>To assign this destination to an organization, on the <b>Organizations</b> tab, select an organization from the drop-down list and click <b>Add</b>. Repeat for additional organizations.</p><p>To assign this destination to a user or group, on the <b>Users/Groups</b> tab, enter a user name or email address and click <b>Add</b>. Repeat for additional users and groups. </p><ul class="NoteMultiple"><li>You can assign a single destination to multiple organizations, users and groups.</li><li>Once you assign a destination to organizations, users or groups, this assignment overrides less specific assignments. For example, if a destination is assigned to a user, the user won't have access to a destination assigned to their group or their organization, or to the default destination. For more information, see <a href="metadata.htm#dest_visibility" class="MCXref xref">Deployment destination visibility</a>.</li></ul></ul></p><p>If multiple destinations are available to a user, the first destination alphabetically is chosen.</p></li><li value="5"><a name="target_ec2"></a>On the Target page, select a VPC (Virtual Private Cloud) or EC2-Classic (if you're not using VPCs).
+                <p>In the Destination tree, "EC2-Classic" is a container to represent the parent of instances running in EC2-Classic (as opposed to in a VPC).</p><p class="Note">Although CloudFormation templates require only a region as target, the Add Automated Deployment Placement wizard requires that you specify a VPC or EC2-Classic, as well as additional information in subsequent wizard pages. Only the target region is used when deploying CloudFormation templates, unless you're using any of the <code>#{destination.*} </code><a href="variables.htm" class="hreflinks">variables</a> to populate parameter values.</p></li><li value="6"><a name="resources_sec_ec2"></a>On the Resources and Security page:
+            <ul><li>If you chose EC2-Classic on the Target page, choose an <b>Availability Zone</b> from the drop-down menu, or keep the default setting, <b>Let the system decide</b>, to let AWS choose the availability zone.</li><li>Optionally, select a <b>Key Pair Name</b> from the target region to assign to a deployed Linux VM. Key pairs can be assigned to new VMs in several ways. For more information, see <a href="keypairs.htm" class="MCXref xref">Enable Key Pair SSH Connections to Amazon EC2 VMs</a>.</li><li>Optionally, specify one or more <b>Security Group Names</b>. Only security groups assigned to the target VPC are shown (or, if your target is EC2-Classic, those not assigned to a VPC).</li><li><a name="iam_role"></a>Optionally, enter the name of an <b>IAM Role</b> to assign to the deployed VM. The maximum number of characters is 255. Configuring the IAM role in the deployment destination rather than in the <a href="catalog_ec2.htm#iam_role" class="hreflinks">catalog blueprint</a> makes sense if you deploy the same template (AMI) to multiple deployment destinations, or if you have a large number of catalog entries. If an IAM role is also configured in the catalog blueprint, the blueprint takes precedence. Administrators can override the IAM role during <a href="deploy_clone_aws.htm#iam_role" class="hreflinks">manual deployment</a>.<p class="tip">Commander doesn't validate IAM role names, so ensure that role names entered in Commander match those in AWS. IAM role names are not case-sensitive.</p></li></ul></li><li value="7"><a name="network_ec2"></a>If you chose a VPC on the Target page, the Subnets page appears, enabling you to configure networking information.
+                <p>Select one or more subnets from the Available Subnets list, and move them to the Configured Subnets list. See <a href="networking.htm" class="MCXref xref">Assign Network Zones</a> to learn how to assign subnets to zones.</p></li><li value="8"><a name="attrib_ec2"></a>On the Placement page, you can assign placement attributes to this destination. Placement attributes are used to identify the capabilities of a deployment destination.                
+			<ol><li value="1">Click <b>Edit Placement Attributes</b>.</li><li value="2">In the Edit Placement Attributes dialog, in the <b>Not Provided</b> section, select a placement capability that's provided by this destination and click <b>Add</b> to move it to the Provided section.</li><li value="3">Click <b>OK</b> to close the Edit Placement Attributes dialog.</li><p>For more information, <a href="plcmt_attribs.htm" class="MCXref xref">Configure Placement Attributes</a>.</p></ol></li><li value="9">On the <b>Summary</b> page, review your settings and click <b>Finish</b>.</li></ol><p>Now you need to <a href="#autodeployment_approval_workflow" class="hreflinks">set up an approval workflow to enable automated deployment</a>.</p><h2 id="AzureConfiguredestinationsforautomateddeployment" data-magellan-target="AzureConfiguredestinationsforautomateddeployment"><a name="config_dest_arm"></a><a name="name_arm"></a><a name="summary_arm"></a>Azure: Configure destinations for automated deployment</h2><p>Each Azure deployment destination must target an existing resource group, because all Azure resources must be deployed into a resource group. However, when Commander deploys an ARM template into a new resource group, Commander chooses the best deployment destination for the service, and then creates the new resource group in the primary region of the resource group targeted by that destination. Subnet and storage options set in the deployment destination are ignored for ARM template deployments.</p><p>In addition, Azure VMs (instances) must be deployed in the same Azure region as their source template (image). Therefore, if you're deploying to multiple Azure regions, you need to configure a service catalog entry and a deployment destination for each region. For more information, see <a href="catalog_azure.htm" class="MCXref xref">Add Azure Services to the Catalog</a>.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Self-Service</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Role of Superuser or Enterprise Admin</p><p>Administrator and All Operator Levels of Access Rights</p></td></tr></table><ol><li value="1"><a name="managed_system_arm"></a>Click the <b>Provisioning</b> tab.</li><li value="2">In the <b>Automated Deployment Placement</b> section, right-click an Azure cloud account and select <b>Add</b>.</li><li value="3">On the Name page, enter a name that identifies the destination (maximum 100 characters).</li><li value="4"><a name="assignment_arm"></a>On the Assignment page, specify who has access to this destination.
+					<p><ul><li>To create a destination that any user without a specific assignment can use, choose <b>Default Destination</b>.</li><li>To create a destination for specific users, choose <b>Assign this destination to these specific users/groups</b>. </li><p>To assign this destination to an organization, on the <b>Organizations</b> tab, select an organization from the drop-down list and click <b>Add</b>. Repeat for additional organizations.</p><p>To assign this destination to a user or group, on the <b>Users/Groups</b> tab, enter a user name or email address and click <b>Add</b>. Repeat for additional users and groups. </p><ul class="NoteMultiple"><li>You can assign a single destination to multiple organizations, users and groups.</li><li>Once you assign a destination to organizations, users or groups, this assignment overrides less specific assignments. For example, if a destination is assigned to a user, the user won't have access to a destination assigned to their group or their organization, or to the default destination. For more information, see <a href="metadata.htm#dest_visibility" class="MCXref xref">Deployment destination visibility</a>.</li></ul></ul></p><p>If multiple destinations are valid for a user, the first destination alphabetically is chosen.</p></li><li value="5"><a name="target_arm"></a>On the Target page, select a resource group.<p class="Note">When an ARM template is configured to be deployed into a new resource group, Commander creates the new resource group in the primary region of the resource group you select as the target on this page.</p></li><li value="6"><a name="rsrc_sec_arm"></a>On the Resources &amp; Security page:
+				<ul><li>Select a network security group. All network security groups in the target region are available for selection.</li><li>Select a diagnostics storage account. To enable memory usage monitoring, a storage account needs to be selected either by automated deployment destination or manually.</li></ul></li><li value="7"><a name="subnet_arm"></a>On the Subnets page:
+			<ul><li>Select a network from the <b>Network</b> list.</li><li>Select one or more subnets from the <b>Available Subnets</b> list, and click the down arrow to move them to the <b>Configured Subnets</b> list.</li></ul><p>See <a href="networking.htm" class="hreflinks">Configuring Networks</a> to learn how to assign networks to zones.</p></li><li value="8"><a name="storage_arm"></a>On the Storage page, to make unmanaged storage available for this destination, select one or more unmanaged storage accounts from the <b>Available Storage</b> list, and click the down arrow to move them to the <b>Configured Storage</b> list. <p>Managed storage isn't shown in the list, because it's always available for every destination.</p></li><li value="9"><a name="attrib_arm"></a>On the Placement page, you can assign placement attributes to this destination. Placement attributes are used to identify the capabilities of a deployment destination.
+                <ol><li value="1">Click <b>Edit Placement Attributes</b>.</li><li value="2">In the Edit Placement Attributes dialog, in the <b>Not Provided</b> section, select a placement capability that's provided by this destination and click <b>Add</b> to move it to the Provided section.</li><li value="3">Click <b>OK</b> to close the Edit Placement Attributes dialog.</li><p>See <a href="plcmt_attribs.htm">Configuring Attributes for Intelligent Placement</a> for more information.</p></ol></li><li value="10">On the Summary page, review your settings and click <b>Finish</b>.</li></ol><p>Now you need to <a href="#autodeployment_approval_workflow" class="hreflinks">set up an approval workflow to enable automated deployment</a>.</p><h2 id="GCPConfiguredestinationsforautomateddeployment" data-magellan-target="GCPConfiguredestinationsforautomateddeployment"><a name="config_dest_gcp"></a><a name="name_gcp"></a><a name="summary_gcp"></a>GCP: Configure destinations for automated deployment</h2><p class="Note">You must configure a deployment destination for each GCP project. All resources in a GCP deployment must reside in the same project.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Self-Service</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Role of Superuser or Enterprise Admin</p><p>Administrator and All Operator Levels of Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Provisioning</b> tab.</li><li value="2"><a name="managed_system_gcp"></a>In the <b>Automated Deployment Placement</b> section, right-click a GCP cloud account and select <b>Add</b>.</li><li value="3">On the Name page, enter a name that identifies the destination (maximum 100 characters).</li><li value="4"><a name="assignment_gcp"></a>On the Assignment page, specify who has access to this destination.
+            <ul><li>To create a destination that any user without a specific assignment can use, choose <b>Default Destination</b>.</li><li>To create a destination for specific users, choose <b>Assign this destination to these specific users/groups</b>. </li><p>To assign this destination to an organization, on the <b>Organizations</b> tab, select an organization from the drop-down list and click <b>Add</b>. Repeat for additional organizations.</p><p>To assign this destination to a user or group, on the <b>Users/Groups</b> tab, enter a user name or email address and click <b>Add</b>. Repeat for additional users and groups. </p><ul class="NoteMultiple"><li>You can assign a single destination to multiple organizations, users and groups.</li><li>Once you assign a destination to organizations, users or groups, this assignment overrides less specific assignments. For example, if a destination is assigned to a user, the user won't have access to a destination assigned to their group or their organization, or to the default destination. For more information, see <a href="metadata.htm#dest_visibility" class="MCXref xref">Deployment destination visibility</a>.</li></ul></ul><p>If multiple destinations are available to a user, the first destination alphabetically is chosen.</p></li><li value="5"><a name="target_gcp"></a>On the Target page, select a project.</li><li value="6"><a name="attrib_gcp"></a>On the Placement page, you can assign placement attributes to identify the capabilities of this deployment destination.                
+			<ol><li value="1">Click <b>Edit Placement Attributes</b>.</li><li value="2">In the Edit Placement Attributes dialog, in the <b>Not Provided</b> section, select a placement capability that's provided by this destination and click <b>Add</b> to move it to the Provided section.</li><li value="3">Click <b>OK</b> to close the Edit Placement Attributes dialog.</li><p>See <a href="plcmt_attribs.htm">Configuring Attributes for Intelligent Placement</a> for more information.</p></ol></li><li value="7">On the Summary page, review your settings and click <b>Finish</b>.</li></ol><p>Now you need to set up an approval workflow to enable automated deployment. For more information, see <a href="#autodeployment_approval_workflow" class="MCXref xref">Set an approval workflows to enable automated deployment</a></p><h2 id="SCVMMConfiguredestinationsforautomateddeployment" data-magellan-target="SCVMMConfiguredestinationsforautomateddeployment"><a name="config_dest_scvmm"></a><a name="name_scvmm"></a><a name="summary_scvmm"></a>SCVMM: Configure destinations for automated deployment</h2><p>We recommend creating two deployment destinations for each user, group or organization: one pointing to a highly available target (that is, targeting an HA cluster with only HA disks) and one pointing to a non-highly available target. This allows Commander to choose the correct destination, depending on whether the requested service is configured to be highly available or not.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Self-Service</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Role of Superuser or Enterprise Admin</p><p>Administrator and All Operator Levels of Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Provisioning</b> tab.</li><li value="2"><a name="managed_system_scvmm"></a>In the <b>Automated Deployment Placement</b> section, right-click an SCVMM cloud account and select <b>Add</b>.</li><li value="3">On the Name page, enter a name that identifies the destination (maximum 100 characters).</li><li value="4"><a name="assignment_scvmm"></a>On the Assignment page, specify who has access to this destination.
+            
+                
+                
+				<ul><li>To create a destination that any user without a specific assignment can use, choose <b>Default Destination</b>.</li><li>To create a destination for specific users, choose <b>Assign this destination to these specific users/groups</b>. </li><p>To assign this destination to an organization, on the <b>Organizations</b> tab, select an organization from the drop-down list and click <b>Add</b>. Repeat for additional organizations.</p><p>To assign this destination to a user or group, on the <b>Users/Groups</b> tab, enter a user name or email address and click <b>Add</b>. Repeat for additional users and groups. </p><ul class="NoteMultiple"><li>You can assign a single destination to multiple organizations, users and groups.</li><li>Once you assign a destination to organizations, users or groups, this assignment overrides less specific assignments. For example, if a destination is assigned to a user, the user won't have access to a destination assigned to their group or their organization, or to the default destination. For more information, see <a href="metadata.htm#dest_visibility" class="MCXref xref">Deployment destination visibility</a>.</li></ul></ul><p>If multiple destinations are available to a user, the destination with the most capacity is chosen.</p></li><li value="5"><a name="target_scvmm"></a>On the Target page:</li><ul><li>Choose a target destination. A target can be a  host group folder, cluster, or a specific host. Commander uses capacity information (from nightly performance updates) to choose a host on that cluster as the target.</li><li>From <b>When multiple destinations are configured,</b> choose to deploy based on <b>Peak Capacity</b> or <b>Average Capacity</b>. For more information, see <a href="configure_capacity.htm#peak_average" class="hreflinks">Managing Host and Cluster Capacity</a>.</li></ul><li value="6"><a name="network_scvmm"></a>On the Networks page, define the network to which VMs will attach once deployed.</li><li value="7"><a name="storage_scvmm"></a>On the Storage page, select a datastore from the list of available datastores and click the down arrow (or double-click) to move it to the <b>Configured Datastores</b> list.
+				<p>If required, select other datastores to add to the list of configured datastores. Making multiple datastores available:</p><ul><li>ensures that VMs can be automatically deployed to datastores that have free space available
+					</li><li>allows datastores with different storage tiers to be selected for automated deployment
+					</li><li>ensures that VMs with disks on different storage tiers can be deployed to meet service level agreements
+			</li></ul></li><li value="8"><a name="diskformat_scvmm"></a>On the Disk Format page, select the format in which to store the VM's virtual disks.</li><li value="9"><a name="attrib_scvmm"></a>On the Placement page, you can assign placement attributes to this destination. Placement attributes are used to identify the capabilities of a deployment destination.</li><ol><li value="1">Click <b>Edit Placement Attributes</b>.</li><li value="2">In the Edit Placement Attributes dialog, in the <b>Not Provided</b> section, select a placement capability that's provided by this destination and click <b>Add</b> to move it to the Provided section.</li><li value="3">Click <b>OK</b> to close the Edit Placement Attributes dialog.</li><p>See <a href="plcmt_attribs.htm" class="MCXref xref">Configure Placement Attributes</a> for more information.</p></ol><li value="10">On the Summary page, review your settings and click <b>Finish</b>.
+			<p class="Note">For standalone hosts only, the host property appears as "Not set" on the Summary page. Any standalone host will also appear as "Not set" on the Details section for the deployment destination you created.</p></li></ol><p>Now you need to <a href="#autodeployment_approval_workflow" class="hreflinks">set up an approval workflow to enable automated deployment</a>.</p><h2 id="Setanapprovalworkflowstoenableautomateddeployment" data-magellan-target="Setanapprovalworkflowstoenableautomateddeployment"><a name="autodeployment_approval_workflow"></a>Set an approval workflows to enable automated deployment</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Self-Service &gt; Approval tab</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Role of Superuser and Enterprise Admin</p></td></tr></table><p>If you have already set up an approval workflow for new service requests, enable Automatically deploy approved requests on the Automation Options page.</p><p>Otherwise, create an approval workflow, configuring the following options:</p><ul><li>On the <b>Name &amp; Type</b> page, choose <b>When a new request is created</b> from the <b>Apply this workflow</b> menu.</li><li>On the <b>Automation Options</b> page, enable <b>Automatically deploy approved requests</b>. 
+               <p class="Note">If you're using this approval workflow only for automated deployment, you don't need to configure any other options (such as workflow steps). For more information, see <a href="create-approval-wfs-for-service-requests.htm" class="MCXref xref">Create Approval Workflows for Service Requests</a>.</p></li></ul><h2 id="Deletedestinationsforautomateddeployment" data-magellan-target="Deletedestinationsforautomateddeployment"><a name="delete_destination"></a>Delete destinations for automated deployment</h2><p>You can delete a deployment destination by cloud account (in which case the destination is completely deleted), or by organizations and users (in which case you have a choice whether to delete the destination for the selected user, or all users).</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Self-Service</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Role of Superuser or Enterprise Admin</p><p>Administrator and All Operator Levels of Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Provisioning</b> tab.</li><li value="2">In the <b>Automated Deployment Placement</b> section, do one of the following:</li><ul><li>If you're viewing destinations by Organizations and Users, right-click a destination and choose <b>Delete</b>. In the Delete Destination dialog, decide whether to delete the destination for this user, or for all users.
+                    <p class="caution">If you delete the destination for all users, the destination is completely deleted.</p></li><li>If you're viewing destinations by cloud accounts, right-click a destination, select <b>Delete</b>, then click <b>Yes</b> to confirm.<p>The destination is completely deleted.</p></li></ul></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="nRQK2NDYCEWZLeR0NJPTjQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="nRQK2NDYCEWZLeR0NJPTjQ:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#ConfigureAutomatedDeploymentforApprovedServiceRequests">Configure Automated Deployment for Approved Service Requests</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#vCenterConfiguredestinationsforautomateddeployment">vCenter: Configure destinations for automated deployment</a>
+                                                            </li>
+                                                            <li><a href="#AWSConfiguredestinationsforautomateddeployment">AWS: Configure destinations for automated deployment</a>
+                                                            </li>
+                                                            <li><a href="#AzureConfiguredestinationsforautomateddeployment">Azure: Configure destinations for automated deployment</a>
+                                                            </li>
+                                                            <li><a href="#GCPConfiguredestinationsforautomateddeployment">GCP: Configure destinations for automated deployment</a>
+                                                            </li>
+                                                            <li><a href="#SCVMMConfiguredestinationsforautomateddeployment">SCVMM: Configure destinations for automated deployment</a>
+                                                            </li>
+                                                            <li><a href="#Setanapprovalworkflowstoenableautomateddeployment">Set an approval workflows to enable automated deployment</a>
+                                                            </li>
+                                                            <li><a href="#Deletedestinationsforautomateddeployment">Delete destinations for automated deployment</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

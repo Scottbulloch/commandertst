@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Manually Provision vCenter Services</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyles/Standard.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="ManuallyProvisionvCenterServices" data-magellan-target="ManuallyProvisionvCenterServices"><a name="aanchor248"></a><MadCap:concept term="Admin Portal" />Manually Provision vCenter Services</h1><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory &gt; Applications</p><p>or</p><p>Service Requests &gt; Request Details</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator, Operator with Approval Access Rights</p></td></tr></table><p>You can manually provision vCenter services in the following ways:</p><ul><li><b>Deploy a requested service, VM or virtual service</b>: Click <b>Deploy</b> at the appropriate level of the tree in the <a href="fulfill_vm_request.htm" class="hreflinks">Request Details</a> dialog. Note that once a component in a service has been deployed, it's no longer possible to deploy at the service level; you must deploy at the component level. <p class="Note">When deploying an entire service, if the deployment of one or more components fails, Commander will still attempt to deploy other components in the service. If the virtual service container can't be deployed, the entire deployment is halted. You can attempt to redeploy failed components later.</p></li><li><b>Clone a VM</b>: From the Inventory tree, select a VM, then select <b>Actions &gt; Provisioning &gt; Clone VM</b>.</li><li><b>Create a linked clone from a VM or from a template with a snapshot</b>: From the Inventory tree, select a VM, then select <b>Actions &gt; Provisioning &gt; Create Linked Clone</b>.             
+                <p>It's not possible to create a linked clone from a template without an existing snapshot. (If the selected VM doesn't have a snapshot, one will be created.)
+</p><p>A linked clone is created from the most recent snapshot of the parent. Because the linked clone relies heavily on the parent snapshot, the parent or snapshot location should be on a very fast SAN (SSD), especially if multiple linked clones are created from the same parent. The linked clone consists of the snapshot plus the metadata and the delta between the snapshot and the deployed image.</p><p><b>Important</b>: Users with sufficient permissions can delete a linked clone's source VM, but the base disks will remain available to the linked clones. If the base disks are removed, the linked clones will no longer operate properly. Be careful when using Commander reporting to identify unlinked files, as this report may inappropriately show these base disks as unlinked/unused files. See <a href="unlinked_files_report.htm" class="MCXref xref">Unlinked Files Report</a> for more information.</p></li><li><b>Clone a virtual service</b>: From the Inventory tree, select a powered-off VM, then select <b>Actions</b> &gt; <b>Clone Virtual Service</b>.
+                <p class="Note">When cloning a virtual service, if the deployment of one or more VMs fails, the virtual service will be completely removed.</p></li><li><b>Clone a VM or a template to a template</b>: From the Inventory tree, select a powered-off VM, then select <b>Provisioning &gt; Clone to Template</b>.</li><li><b>Deploy a VM from a template</b>: From the Inventory tree, select a template, then select <b>Actions &gt; Provisioning &gt; Deploy to VM</b>.</li><li><b>Convert a VM to a template, or a template to a VM</b>: See <a href="#convert_vm_template" class="MCXref xref">Convert VMs to templates</a> below.</li></ul><h2 id="DeploymentConfigurationpages" data-magellan-target="DeploymentConfigurationpages">Deployment Configuration pages</h2><p>The following sections provide information for the manual deployment wizard. The pages and options displayed depend on the type of components offered by the service. They also depend on whether you're deploying an entire service, a VM, or a virtual service. For example, because it's not possible to customize the VMs within a virtual service, resource customization isn't possible for virtual services. When deploying an entire service, the options also vary depending on whether the service is configured to be deployed as a virtual service or as individual components.</p><h3><a name="name_and_folder_page"></a>Name &amp; Folder page</h3><p>Naming options are not available if you're deploying an entire service as individual components — that is, if you clicked <b>Deploy</b> at the Service level in the Request Details dialog (rather than at the Component level) and the service is configured to be deployed as individual components (rather than as a virtual service).</p><ul><li><b>Let the system name this Service/VM/Virtual Service automatically</b>: See also <a href="configure_auto_provision.htm" class="MCXref xref">Customize Naming Conventions</a>.</li><li><b>Manually name this Service/VM/Virtual Service</b>: Enter a name for the service. The name must be unique in the target folder. If Commander detects that the name isn't unique when you have specified the target (on the next page of the wizard), an error is displayed.<p>Note that you can't use variables in this field, but you can use variables in the <a href="configure_auto_provision.htm" class="hreflinks">global VM naming convention</a>.</p></li><li><b>Placement Options:</b> The option you select here allows Commander to preselect destination choices for you, but you can change those selections throughout this wizard. The available options are:</li><ul><li><b>Available Capacity (Average)</b>: See <a href="configure_capacity.htm#peak_average" class="MCXref xref">Peak versus Average capacity values</a>.</li><li><b>Available Capacity (Peak)</b>: See <a href="configure_capacity.htm#peak_average" class="MCXref xref">Peak versus Average capacity values</a></li><li><b>Last Specified:</b> Uses the placement location that was last used to deploy this service or component. If the service or component has not been previously deployed, the first viable placement location is used.</li><li><b>User Specified:</b> Uses the same placement location as the source; otherwise, uses the first available placement location.</li><li><b>Automated Deployment:</b> Uses the placement options configured for automated deployment. The datastore that's picked is based on the tier of its existing disks as well as the maximum available space. If you see the error "Automated deployment has not been configured", see <a href="config_auto_placement_depl_vms.htm" class="MCXref xref">Configure Automated Deployment for Approved Service Requests</a> to learn how to set up automated deployment.</li></ul><li><b>Make this VM highly available / Make all VMs in this service highly available:</b> To deploy to non-clustered hosts and datastores, clear this option. If you specify that the VM or service is highly available, it can only be placed on clustered hosts and clustered storage. If you specify that a VM or service isn't highly available, it can only be placed on non-clustered hosts and non-clustered storage.</li></ul><ul><li><b>Folder</b>: Select a folder for the new VM.</li></ul><h3><a name="target_resource_pool"></a>Target &amp; Resource Pool page</h3><p>Select the target host or cluster and resource pool for the VM. Commander provides capacity information to guide your decision.</p><h3><a name="components_page"></a>Components page</h3><p>This page appears only when deploying an entire requested service — that is, you clicked Deploy at the Service level in the Request Details dialog, rather than at the Component level.</p><p>All components in the service are listed. Custom components contained in the service are listed for information purposes only.</p><p>Clear the checkboxes next to the components you don't want to deploy at this time. For a service configured to be deployed as a virtual service, if you deselect all VM components, an empty virtual service is created. You can return to the Request Details dialog later to deploy the VMs into the empty virtual service.</p><p>Components are deployed serially, not in parallel.</p><h3><a name="datastore_page"></a><a name="edit_disks_page"></a><a name="select-datastore"></a><a name="add_new_disk"></a>Datastore pages</h3><p>The two Datastore pages of the wizard allow you to select a datastore and configure disks. On the first page, select a datastore in the list to view its available space and used space, as well as reserved space for any in-progress tasks. The second page allows you to select a disk format and edit disks.</p><p>When you deploy an entire service, all VMs and virtual services in the service are deployed with the same datastore options. Storage tiers specified in the service request are ignored, and you can't edit hard disk information.</p><ul class="FirstLevelLessIndentation"><li><b>Show excluded datastores</b>: Shows all datastores, even the ones that are excluded from the list of choices because they are over-provisioned. See also <a href="configure_capacity.htm#set_datastore_capacity_calc" class="MCXref xref">Exclude new datastores from capacity calculations</a>.</li><p class="Note">It's not possible to resize IDE disks, independent disks, or disks involved in a snapshot or linked clone chain.</p><li><b>Select a format in which to store the VM's virtual disks</b>: By default, disks are provisioned in the same format as the source disk.</li><ul><li><b>Same format as source</b>: Use the disk format of the source template or VM.</li><li><b>Thin</b>: Allocate disk space on demand. Supports over-allocation of storage resources.</li><li><b>SEsparse</b>: Allocate disk space as it's used by the guest OS. Supports over-allocation of storage resources. Block size is configurable and space may be reclaimed. 
+            <p class="Note">The SEsparse format is supported only for hardware version 9 or higher. The source VM must have one and only one snapshot.</p></li><li><b>Thick - Lazy Zeroed</b>: Allocate disk space now. Disk blocks are zeroed out on first write.</li><li><b>Thick - Eager Zeroed</b>: Allocate disk space now. All disk blocks are zeroed out during disk creation. This is required to support clustering features such as Fault Tolerance.</li></ul><li><b>Edit Disks</b>: To add, modify and delete disks, click Edit Disks. In the Edit Disks dialog, select <b>Select a datastore</b> from the <b>Location</b> drop-down menu to specify the datastore. The datastore you select determines the options available under Disk Provisioning; these options are also determined by the cloud account type.</li></ul><h3><a name="table_resources_page"></a>Resources page</h3><p>This page allows you to customize VM resources when deploying to a VM that's not a component of a vApp or a service.</p><p>Customize the values for <b>Memory Size</b> and <b>CPU Count</b> as required.</p><p><b>Assign a static IP address from pool when an IP pool is linked to the network</b>: Available only for Windows and VMware-supported Linux VMs. Must be enabled if an IP address from a pool is to be used. Using a customization specification or manual customization is required for an IP address to be assigned (see the <a href="#table_customization_page" class="MCXref xref">Customization page</a> section below). An IP address can only be applied to a guest OS during guest OS customization.</p><p><b>Networks</b>: Configured network adapters are displayed in a list. If you have <a href="networking.htm" class="hreflinks">tagged networks with zones</a>, the Network drop-down list groups networks by zone. To add a network adapter, click Add Network Adapter. The options you can configure for network adapters depend on the host version (for example, adapter settings vary by ESX version).</p><p class="Note">If you have a large number of networks, click <span class="f_Icons_Inline"></span> next to the Network drop-down menu to open a pop-up dialog for easier searching.</p><h3><a name="table_custom_attr_page"></a>Custom Attributes page</h3><p>Custom attributes allow you to provide more metadata about your virtualized infrastructure.</p><p>This page doesn't appear when deploying an entire service that's configured to be deployed as individual VM components.</p><p>For information on custom attributes, see <a href="working-with-custom-attributes.htm" class="MCXref xref">Work with Custom Attributes</a>.</p><p class="Note">Because you would typically set different custom attribute values for a virtual service and its children, custom attribute values set for a virtual service are not inherited by its children. The same holds true for application stacks and auto scaling groups.</p><h3><a name="Parameters"></a>Parameters</h3><p>Set the configuration parameters required for an Open Virtual Format (OVF) or Open Virtual Appliance (OVA) component. You can enter a literal value for a parameter or use a variable.</p><p>The configuration parameters that are displayed depend upon the descriptor file of the OVA/OVF template that's used. This page is only displayed if the descriptor file contains at least one property.</p><ul class="NoteMultiple"><li>When you use variables for a parameter, you can set an available custom attribute for the parameter. This allows users deploying the service to configure some or all parameters. To add a custom attribute for a parameter here, you must first add the custom attribute on the Custom Attributes page of the wizard.</li><li>The default values for the template are displayed on the right side of the page. If you make changes to the configuration parameters, but then want to restore the default values, click Reset to template defaults.</li></ul><h3><a name="table_other_vm_prop_page"></a>Other Properties page</h3><p>When deploying at the service level, values entered on this page are applied only to the components of the service. This means that if the service contains a virtual service component, values entered on this page are not applied to any VMs which are components of the virtual service.</p><p class="Note">If the Expiry Date form element or the Primary Owner form element has been added to the Component request form, users can specify expiry and/or ownership information for requested components (see <a href="new-service-request-form-elements.htm" class="MCXref xref">Service Request Form Elements</a>). Their selection isn't displayed in the manual Service deployment wizard. In this case, you should deploy each component separately by clicking Deploy at the Component level of the Request Details, rather than at the Service level. Doing so ensures that you won't override the requester's individual selections for all components in the service.</p><p>See also <a href="metadata.htm" class="MCXref xref">Order of Precedence for Metadata and Service Settings</a>.</p><ul><li><b>VM/Virtual Service Name</b>: Click <b>Edit</b> to override the service name. You can't use Commander variables in this field. See also <a href="configure_auto_provision.htm" class="MCXref xref">Customize Naming Conventions</a>.</li><li><b>Expiry Date</b>: Click <b>Edit</b> to set or override the expiry date, or to specify that the service will never expire. See also <a href="manage-service-expirations.htm" class="MCXref xref">Manage Service Expirations</a>.</li><li><b>Expiry Group</b>: Click <b>Edit</b> and select an <a href="groups_vm.htm" class="hreflinks">expiry group</a> from the drop-down menu.</li><li><b>Maintenance Group</b>: Click <b>Edit</b> and select a <a href="groups_vm.htm" class="hreflinks">maintenance group</a> from the drop-down menu.</li><li><b>Power Schedule Group</b>: Click <b>Edit</b> and select a <a href="groups_vm.htm" class="hreflinks">power schedule group</a> from the drop-down menu. Displayed for VM components only.</li><li><b>Rightsizing Group</b>: Click <b>Edit</b> and select a <a href="groups_vm.htm" class="hreflinks">rightsizing group</a> from the drop-down menu. Displayed for VM components only.</li><li><p><b>Owners:</b> To edit ownership assignment, click <b>Edit</b>. In the Edit Ownership dialog, if the user you assign is a member of an organization, make sure to select the owner's organization to ensure the service is visible to organization members. To assign users, enter a username or email address. See also <a href="set-resource-ownership.htm" class="MCXref xref">Set Resource Ownership</a>.</p></li><li><b>Service Request</b>: When deploying a service request, the <b>Release</b> checkbox is enabled by default, so that components advance to completion automatically. When the Release checkbox is enabled, if one or more <a href="completion-workflows.htm">completion workflows</a> have been assigned, the service request is automatically transferred to the completion workflow process. If no completion workflows are assigned, once all components in a service are deployed, releasing the components makes the service visible to the requester (for example, the Service Portal user).<p>If there are manual steps in your provisioning process, clear the <b>Release</b> checkbox so that you can carry out these steps before the completion workflow starts. For example, you may need to install software, check operating system patches, or migrate VMs. Click <b>Comment</b> to enter more information for the service request comment log.</p></li></ul><h3><a name="table_customization_page"></a>Customization page</h3><p>This page appears only when a VM is cloned or is deployed from a template with one of the operating systems supported for customization. Customization options are available only when supported by the guest operating system and VMware. Customization specifications must already exist for Windows templates in order to use this option.</p><p><b>Windows</b>: Commander supports unattended VM customization for all Windows operating systems (using the answer file <code>unattend.xml</code>). For Windows Server 2003, Windows XP and Windows 2000, Commander also supports use of the answer file <code>sysprep.inf</code>.</p><p><b>Linux</b>: Commander supports VM customization for any of the Linux versions supported by vCenter.</p><p class="Caption">Customization Page Options</p><div style="overflow: auto; overflow-y: hidden;"><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Standard.css');" class="TableStyle-Standard" cellspacing="0"><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Field names</p></th><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Options</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>More information</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Do not customize
+</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Click Next to advance to the next page of the wizard.</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>&#160;</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Customize using wizard
+</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Complete each of the pages as required.</p><p>If you enter an asterisk (*) for Host Name, Commander will automatically generate a host name based on the VM name. The host name you enter must contain no more than 15 characters, can contain only the characters a-z, A-Z, 0-9, or hyphen (-), and must not start or end with a hyphen (-).</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><ul class="FirstLevelLessIndentation"><li>For a Windows VM, see the appropriate VMware and Microsoft documentation.</li><li>For a Linux VM, follow the procedure in <a href="customize_vm.htm" class="MCXref xref">Manually Customize VMs</a>.</li></ul></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Customize using an answer file</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Complete the <b>Answer File</b> page in the wizard.</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p><a href="customize_vm.htm" class="MCXref xref">Manually Customize VMs</a></p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>Customize using a customization specification
+                                    <br />(User Settings page, Configuration pages, Adapter page)</p></td><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>Customization specifications are XML files used by VMware that contain guest operating system settings for VMs. You create customization specifications in vSphere with the Guest OS Customization wizard, and manage specifications using the Customization Specification Manager in vSphere.</p><p>This option is available only if a customization specification is available for the Windows template.</p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p>The appropriate VMware and Microsoft documentation.</p></td></tr></tbody></table></div><h3><a name="summary_page"></a>Summary page</h3><p>The summary information displayed varies by cloud account type.</p><ul><li><b>Start Deployed VM/Start Deployed Components</b>: If you don't want the deployed components to be started, clear this option.</li><li><b>Set primary owner as administrator</b>: This option can be enabled only if the following conditions exist:
+            <ul><li>You have selected <b>Customize using wizard</b> or <b>Customize using a customization specification</b> in the Customization Page in this wizard. If you're using an Answer file during customization, the option to set the primary owner as an administrator isn't available.</li><li>You have specified the domain administrator during <a href="#table_customization_page" class="hreflinks">customization</a></li><li>You have specified the domain password during <a href="#table_customization_page" class="hreflinks">customization</a></li><li>The primary owner you have entered is a directory services user (see <a href="#table_other_vm_prop_page" class="hreflinks">Other Properties Page</a> above)
+            </li></ul></li><li><b>Policy Actions</b>: If one or more policies will be triggered once deployment occurs, policy actions are listed here.</li></ul><p><b>Important</b>: The VM customization process may proceed for some time after the VM is created. If anyone interrupts the customization process by signing in to the VM, the primary owner won't be added as administrator. To ensure that the service requester isn't prematurely notified that the VM is ready for use, add a <a href="set_up_workflows.htm#wait_for_step" class="hreflinks">Wait For Event step</a> to your completion workflow. In the Wait For drop-down menu, select <b>Guest OS customization to complete</b>, and in the <b>Wait Time</b> field, enter 1800 seconds (30 minutes).</p><h2 id="ConvertVMstotemplates" data-magellan-target="ConvertVMstotemplates"><a name="convert_vm_template"></a>Convert VMs to templates</h2><p>When a vCenter VM is converted to a template, it no longer appears in the Infrastructure view tree, but will appear in the Virtual Machines tab if the tab is selected at the ESX server level or higher. The template appears in both the Applications view tree and in the Virtual Machines tab.</p><p><a name="vcenter"></a>Converting VMs and templates is supported only for vCenter.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator, Operator with Approval Access Rights</p></td></tr></table><ol><li value="1">Click the <b>Infrastructure</b> or <b>Applications</b> tab.</li><li value="2">Select a powered-off VM, then select <b>Actions &gt; Provisioning &gt; Convert to Template</b>.</li><li value="3">Click <b>OK</b>.</li></ol><h2 id="ConverttemplatestoVMs" data-magellan-target="ConverttemplatestoVMs">Convert templates to VMs</h2><p><a name="vcenter"></a>Converting VMs and templates is supported only for vCenter.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator, Operator with Approval Access Rights</p></td></tr></table><ol><li value="1">Select a template, then select <b>Actions &gt; Provisioning &gt; Convert to VM</b>.</li><li value="2">Complete the wizard and click <b>Finish</b>.</li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="2itz3eTyPkKqWpYKfPyZNg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="2itz3eTyPkKqWpYKfPyZNg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#ManuallyProvisionvCenterServices">Manually Provision vCenter Services</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#DeploymentConfigurationpages">Deployment Configuration pages</a>
+                                                            </li>
+                                                            <li><a href="#ConvertVMstotemplates">Convert VMs to templates</a>
+                                                            </li>
+                                                            <li><a href="#ConverttemplatestoVMs">Convert templates to VMs</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

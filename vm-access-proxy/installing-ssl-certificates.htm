@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Additional Resources|Commander VM Access Proxy" data-mc-conditions="General.NotForSPBuildHelp,General.NotForVCmdrBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Install SSL Certificates on VM Access Proxies</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/Standard.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="InstallSSLCertificatesonVMAccessProxies" data-magellan-target="InstallSSLCertificatesonVMAccessProxies"><a name="aanchor272"></a><MadCap:concept term="Access Proxy" />Install SSL Certificates on VM Access Proxies</h1><p>When you install a Commander VM Access Proxy, a Secure Sockets Layer (SSL) certificate is installed to its Tomcat web server that confirms the identity of that server when Commander connects remote control sessions. This default certificate is self-signed; that is, no certificate authority (CA) has validated the identity with a CA certificate.</p><p>If you use the default self-signed certificate, when users attempt to connect to VMs, their browsers will warn them that the connection is untrusted, and they have to decide whether or not to trust it when they initiate their session. However, you can purchase and install a CA signed certificate that will be automatically trusted by users' browsers.</p><p>Certificates copied from other servers or wildcard certificates being reused without completing this process are unsupported. Some certificate authorities offer renewals based on your original signing request.</p><p>To install a new CA signed certificate perform the following tasks:</p><ol><li value="1"><a href="#Remove" class="MCXref xref">Remove the default self-signed certificate</a></li><li value="2"><a href="#Generate" class="MCXref xref">Generate a new self-signed certificate</a></li><li value="3"><a href="#Create" class="MCXref xref">Create a certificate signing request</a></li><li value="4"><a href="#Generate2" class="MCXref xref">Generate a valid certificate through a CA</a></li><li value="5"><a href="#Add" class="MCXref xref">Add the CA signed certificates</a></li><li value="6"><a href="#Reset" class="MCXref xref">Reset the VM Access Proxy</a></li><li value="7"><a href="#Reset2" class="MCXref xref">Reset the connection in Commander</a></li><li value="8"><a href="#Validate" class="MCXref xref">Validate the certificate</a></li></ol><h2 id="Removethedefaultselfsignedcertificate" data-magellan-target="Removethedefaultselfsignedcertificate"><a name="Remove"></a>Remove the default self-signed certificate</h2><p>First, you must remove the default self-signed certificate that was created during the installation of Commander because there are no details to uniquely identify your organization. Before doing so, take a snapshot of the Commander server so that you can restore it to a known good state if necessary.</p><ol><li value="1">Log in to the VM Access Proxy machine.</li><li value="2">Browse to the correct directory:
+                <p class="code">cd /var/data/conf</p></li><li value="3">Enter the following command:
+                <p class="code">sudo keytool -delete -alias tomcat -keystore "keystore" -storepass changeit</p></li><li value="4">Enter the root password again if prompted.</li><li value="5">Confirm that the deletion was successful: <p class="code">keytool -list -v -keystore "keystore" -storepass changeit</p></li></ol><p class="Note">If the <code>remoteaccess</code> container was stopped prior to deleting the certificate, it cannot be started until you have completed the next procedure. Attempting to start it will result in exceptions about the missing certificate.</p><h2 id="Generateanewselfsignedcertificate" data-magellan-target="Generateanewselfsignedcertificate"><a name="Generate"></a>Generate a new self-signed certificate</h2><p>The next step is to install a new self-signed certificate, which will contain details about your organization that must be shared with the CA. This ensures that when you create the signing request, all of your organization’s details are included in the Tomcat web server.</p><ol><li value="1">In the same directory used for the procedure above, issue the following command:
+        <p class="code">sudo keytool -genkey -alias tomcat -keyalg RSA -keystore "keystore" -ext san=dns:proxy.omega.pv,ip:10.10.20.107 -storepass changeit</p><p>or</p><p class="code">sudo keytool -genkey -alias tomcat -keyalg RSA -keystore "keystore" -ext san=dns:proxy.omega.pv -storepass changeit</p><p>You must include at least one Subject Alternative Name for Google Chrome to work. To do so, replace the <code>dns</code> and <code>ip</code> values in this portion of the command, using the specifics that match your Commander server:</p><p class="code">san=dns:fqdn.yourCommander.com,ip:xxx.xxx.xxx.xxx</p><p>Use commas to add as many alternative names as you require.</p><p>For more information on Subject Alternative Names, see <a href="https://support.dnsimple.com/articles/what-is-ssl-san/" target="_blank">What is the SSL Certificate Subject Alternative Name?</a></p></li><li value="2">When prompted, enter the root password again.</li><li value="3">When prompted, provide and confirm the information the certificate contains.</li><ul><li><b>First and Last Name</b>: The fully qualified domain name (FQDN) of the Access Proxy server. For example, <code>proxy.embotics.com</code>.</li><li><b>Organizational Unit</b>: The name of your department within the larger organization. For example, Engineering.</li><li><b>Organization</b>: The name of your organization. For example, Super Corporation.</li><li><b>City or Locality</b>: The city where your organization is based. For example, Toronto.</li><li><b>State or Province</b>: The state or province where your organization is based. For example, Ontario.</li><li><b>Two-letter Country Code</b>: The country where your organization is based. For example, CA for Canada or US for the United States of America. See a <a href="https://en.wikipedia.org/wiki/List_of_FIPS_country_codes" target="_blank">complete list</a>.</li><li><b>Key Password for Alias</b>: Snow Software does not recommend using a password. Press ENTER to proceed past this prompt.</li></ul><li value="4">Confirm that the keystore has one entry:
+                <p class="code">keytool -list -v -keystore "keystore" -storepass changeit</p></li></ol><p class="Note">If the remote access container was previously stopped, it can now be started again without any exceptions because a new certificate has been created and installed.</p><h2 id="Createacertificatesigningrequest" data-magellan-target="Createacertificatesigningrequest"><a name="Create"></a>Create a certificate signing request</h2><p>The next step is to create a certificate signing request (CSR) file which you will submit to a CA. This proves the identity of the server you are asking to validate. If no details about the server have changed, your CA may store your CSR or allow them to be reused. Alternatively, you can use Active Directory Certificate Services as your authority. For more information, see the <a href="https://community.snowsoftware.com/s/article/generatingandinstallingansslcertificate">Generating and Installing an SSL Certificate</a> Snow Globe article.</p><p>Depending on the CA you are working with, you will provide the CSR file either by uploading it through their customer service portal or emailing it to your sales representative. If you aren’t sure how to provide it to your CA, contact their technical support or sales teams.</p><ol><li value="1">Still in the same directory used for the procedure above, issue the command:
+        <p class="code" xml:space="preserve">sudo keytool -certreq -keyalg RSA -alias tomcat -file certreq.csr -keystore "keystore" -ext san=dns:proxy.omega.pv -storepass changeit  (note, you do not need to specify the IP)</p><p>Or if you have more than one alternative name:</p><p class="code">sudo keytool -certreq -keyalg RSA -alias tomcat -file certreq.csr -keystore "keystore" -ext san=dns:proxy.omega.embotics.com,dns:localhost,ip:10.10.20.107,ip:127.0.0.1 -storepass changeit</p></li><li value="2">Copy the <code>certreq.csr</code> file that is generated to your local machine using your preferred method.</li><li value="3">Through an SFTP&#160;client, connect to the Proxy server through IP or FQDN.
+                <p class="tip">When connecting, if a warning is displayed that the connection is untrusted, select the option to always trust this host and add the key to the cache.</p></li><li value="4">Navigate to <code>/var/data/conf</code> in the SFTP&#160;client's remote site area.</li><li value="5">Select the <code>certreq.csr</code> file and download it onto the local machine.</li></ol><h2 id="GenerateavalidcertificatethroughaCA" data-magellan-target="GenerateavalidcertificatethroughaCA"><a name="Generate2"></a>Generate a valid certificate through a CA</h2><p>With the <code>certreq.csr</code> file on your local machine, you can now provide this signing request to your CA. The CA your organization uses may be an Active Directory certificate service, or an external authority such as GoDaddy or Veritas.</p><p>You must consult with your CA and follow their unique procedure to generate a chained certificate including the host, root, and intermediary certificates, or a single file in the p7b format.</p><p>Send the file to your CA, or Active Directory certificate service. For more information, see the <a href="https://community.snowsoftware.com/s/article/generatingandinstallingansslcertificate" target="_blank">Generating and Installing an SSL Certificate</a> Snow Globe article.</p><h2 id="AddtheCAsignedcertificates" data-magellan-target="AddtheCAsignedcertificates"><a name="Add"></a>Add the CA signed certificates</h2><p>To add CA signed certificates to the VM&#160;Access Proxy, you must first upload the certificates to the VM Access Proxy server, and then you can install them.</p><p>The installation procedure is different for p7b and chained certificates. Note that depending on your provider, the instructions may vary from those provided below. If you have a support agreement with a CA, you may want to arrange a call with them, and you can request that Snow Technical Support be present to assist.</p><h3>Uploading the certificates</h3><ol><li value="1">Through an SFTP&#160;client, connect to the Proxy server through IP or FQDN.</li><li value="2">Navigate to <code>/var/data/conf</code>.</li><li value="3">Drag the files returned from the CA on the remote site file listing to copy the file (for example, <code>certnew.p7b</code>) onto the VM&#160;Access Proxy server's <code>/var/data/conf</code> directory.</li><li value="4">If prompted, enter <b>Yes</b>.</li></ol><h3>Installing p7b certificates</h3><ol><li value="1">To browse to the correct directory, enter the following command:                <p class="code">cd /var/data/conf</p></li><li value="2">To install the certificate, enter the following command:
+                <p class="code">sudo keytool -import -trustcacerts -alias tomcat -file certnew.p7b -keystore "keystore" -storepass changeit</p></li></ol><p class="tip">If you receive the error message <code>keytool error: java.security.cert.CertificateException: java.io.EOFException</code> you may have a trailing space in your signed certificate. Open the certificate file in a text editor and remove any spaces leading into or trailing the encrypted content, and import the certificate again.</p><h3>Installing chained certificates</h3><p>If you receive a package with more than one certificate, they must be installed in the proper order and be assigned to the proper alias’s.</p><ol><li value="1">To browse to the correct directory, enter the following command               :<p class="code">cd /var/data/conf</p></li><li value="2">To specify the proper alias and associated certificate type for each certificate, enter the following command:<p class="code" xml:space="preserve">sudo keytool -import -trustcacerts -alias %aliasname% -file %certname% -keystore "keystore" -storepass changeit</p><p xml:space="preserve">Note that you must enter the certificates in the proper order: enter the root certificate first, then the intermediary certificate, and finally the host certificate. If you are not clear which certificate is which, contact your certificate vendor for details.</p><div style="overflow: auto; overflow-y: hidden;"><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Standard.css');" class="TableStyle-Standard" cellspacing="0"><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Type</p></th><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Commonly Named</p></th><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Alias to Use</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>Example</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Root Certificate</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p class="code">*g2-g1.crt</p><p>Within the certificate it will be issued to the authorizer (for example, Comodo).</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p class="code">root</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p class="code"><span style="word-wrap:anywhere;">sudo keytool -import -trustcacerts -alias root -file gd_bundle-g2-g1.crt -keystore "keystore" -storepass changeit</span></p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p>Intermediary Certificate (also known as a Subordinate Certificate)</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p class="code">*.pem</p></td><td class="TableStyle-Standard-BodyE-Regular-Row1"><p class="code">intermed</p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p class="code"><span style="word-wrap:anywhere;">sudo keytool -import -trustcacerts -alias intermed -file gdig2.crt.pem -keystore "keystore" -storepass changeit</span></p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p>Host Certificate</p></td><td class="TableStyle-Standard-BodyB-Regular-Row1"><p class="code">%numbers/letters%.crt</p><p>Within the certificate it will be issued to the proxy server’s hostname.</p></td><td class="TableStyle-Standard-BodyB-Regular-Row1"><p class="code">tomcat</p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p class="code"><span style="word-wrap:anywhere;">sudo keytool -import -trustcacerts -alias tomcat -file e1c2a11d9102cd62.crt -keystore "keystore" -storepass changeit</span></p></td></tr></tbody></table></div></li></ol><p class="Note">If you do not install a CA’s intermediate certificate when one is required, you will receive the following error when attempting to import the certificate for your request: <code>keytool error: java.lang.Exception: Failed to establish chain from reply</code></p><ul class="TipMultiple"><li>If you receive the error message <code>keytool error: java.security.cert.CertificateException: java.io.EOFException</code> you may have a trailing space in your signed certificate. Open the certificate file in a text editor and remove any spaces leading into or trailing the encrypted content, and import the certificate again.</li><li>If you previously had a certificate on the proxy server and are reissuing the certificate, make sure you generate a new certificate (or rekey) and do not attempt to transfer the keystore from an old installation.</li></ul><h2 id="ResettheVMAccessProxy" data-magellan-target="ResettheVMAccessProxy"><a name="Reset"></a>Reset the VM Access Proxy</h2><p>Log in to the VM Access Proxy and issue the command <code>reboot</code>, which will disconnect any active sessions using the VM Access Proxy.</p><h2 id="ResettheconnectioninCommander" data-magellan-target="ResettheconnectioninCommander"><a name="Reset2"></a>Reset the connection in Commander</h2><p>To reset the connection:</p><ol><li value="1">Select <b>Configuration &gt; System</b>.</li><li value="2">Click the <b>Integration</b> tab.</li><li value="3">On the Integration page, for the Console Proxy, click <b>Edit</b>.</li><li value="4">In the VM Access Proxy dialog, click <b>Next</b>, <b>Next</b>, <b>Finish</b><p>After you click through the wizard, the VM Access Proxy connection will be reset.</p></li></ol><h2 id="Validatethecertificate" data-magellan-target="Validatethecertificate"><a name="Validate"></a>Validate the certificate</h2><p>To validate that the certificate has been installed successfully, browse to the following URL address:</p><p class="code">https://&lt;VM Access Proxy FQDN&gt;:8443/RemoteAccess/details</p><p>The certificate should have the secure symbol in the address bar of the browser.</p><p class="Note">If you are changing or applying a new certificate to the VM Access Proxy, you have to restart the Commander Windows service.</p><p>Commander then reads the new certificate and will start to communicate securely.</p></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:05 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:05 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="7vp5sTlL-UarV8jt5XdBgg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="7vp5sTlL-UarV8jt5XdBgg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#InstallSSLCertificatesonVMAccessProxies">Install SSL Certificates on VM Access Proxies</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Removethedefaultselfsignedcertificate">Remove the default self-signed certificate</a>
+                                                            </li>
+                                                            <li><a href="#Generateanewselfsignedcertificate">Generate a new self-signed certificate</a>
+                                                            </li>
+                                                            <li><a href="#Createacertificatesigningrequest">Create a certificate signing request</a>
+                                                            </li>
+                                                            <li><a href="#GenerateavalidcertificatethroughaCA">Generate a valid certificate through a CA</a>
+                                                            </li>
+                                                            <li><a href="#AddtheCAsignedcertificates">Add the CA signed certificates</a>
+                                                            </li>
+                                                            <li><a href="#ResettheVMAccessProxy">Reset the VM Access Proxy</a>
+                                                            </li>
+                                                            <li><a href="#ResettheconnectioninCommander">Reset the connection in Commander</a>
+                                                            </li>
+                                                            <li><a href="#Validatethecertificate">Validate the certificate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

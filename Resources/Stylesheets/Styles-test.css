@@ -1,0 +1,2297 @@
+﻿/*<meta />*/
+
+body
+{
+	line-height: 1.4em;
+	/* TD -- Was #101e2c; Snow Ultra Dark Navy. Now #606f7b; gray to match Snow site.*/
+	color: #606f7b;
+	font-family: "Roboto", Verdana, "Helvetica Neue", "Segoe UI", sans-serif-regular, sans-serif, FontAwesome;
+	font-size: 0.95em;
+}
+
+/* Styles for content and in-this-topic columns.*/
+
+.column
+{
+	float: left;
+	width: 75%;
+	padding: 10px 30px 10px 10px;
+}
+
+.column2
+{
+	float: left;
+	width: 25%;
+	padding: 10px 10px 0px 10px;
+}
+
+code
+{
+	font-size: 1.1em;
+}
+
+br.home-page
+{
+	
+}
+
+html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	
+}
+
+html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+	/* TD -- Added this to prevent horiz scroll bar*/
+	overflow-x: hidden;
+}
+
+html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+h1
+{
+	font-weight: normal;
+	margin-bottom: 8px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+	line-height: 1.1em;
+	font-size: 2.1em;
+	outline: none;
+	/* TD -- Color taken from Snow site.*/
+	color: #222222;
+}
+
+h2
+{
+	font-weight: normal;
+	line-height: 1.1em;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 1.6em;
+	color: #222222;
+	margin-top: 30px;
+}
+
+h2.RelatedTopics
+{
+	mc-auto-number-format: 'Related topics';
+}
+
+h3
+{
+	font-weight: normal;
+	margin-bottom: 10px;
+	mc-heading-level: 0;
+	line-height: 1.1em;
+	font-size: 1.3em;
+	color: #222222;
+	margin-top: 20px;
+}
+
+h4
+{
+	font-weight: normal;
+	margin-bottom: 8px;
+	font-size: 1.1em;
+	color: #222222;
+	margin-top: 20px;
+}
+
+/* TD -- Adds gray bottom border to nav header. This can't be set in skin file. */
+
+nav.title-bar
+{
+	border-bottom-color: #e6e6e6;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	mc-hyphenate: never;
+}
+
+p.Caption
+{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+p.no-margin
+{
+	margin: 0px;
+	font-size: 0.9rem;
+	line-height: 1.5em;
+}
+
+ol
+{
+	list-style-image: none;
+	/* td-Indent was 40px. Reducing some. */
+	padding-left: 30px;
+}
+
+ul
+{
+	padding-left: 30px;
+}
+
+/* td-These next three ul styles move the margin-left: -10px for base class. Originally from mainstyles.css. Note after CMSC-15159 changes, I changed to margin-left 0px.*/
+
+ul.FirstLevelLessIndentation
+{
+	margin-left: 2px;
+}
+
+ul.table
+{
+	font-size: 0.95em;
+}
+
+ul ul
+{
+	margin-left: 0px;
+}
+
+/* td-prevents outline box appearing on selected list item */
+
+ul.menu._Skins_SideMenuInThisTopic.mc-component a
+{
+	outline: none;
+}
+
+/* tdonovan-Next five forces side topic toc to have bold on first entry only */
+
+ul.menu._Skins_SideMenuWithInThisTopicColumn.mc-component li > a
+{
+	font-weight: bold !important;
+}
+
+a:link
+{
+	text-decoration: none;
+	color: #1976d2;
+}
+
+a.ext_link {
+  text-decoration: none;
+	color: #1976d2;
+}
+
+a.ext_link:after {
+  content: " \f08e";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+
+background-repeat: no-repeat;
+	background-position: 41px 10px;
+	line-height: 1.35em;
+	overflow: hidden;
+	padding: 44px 40px 10px 40px;
+	margin: 0px 0px 15px 1px;
+	border-left-style: solid;
+	border-left-width: 4px;
+	border-color: #DAEEFF;
+	-webkit-print-color-adjust: exact !important;
+	/* Chrome, Safari */
+	color-adjust: exact !important;
+	/*Firefox*/
+	background-image: url('../Images/Shared/tip-blue-all-in-one.svg');
+	page-break-inside: avoid;
+
+a.external-link
+{
+	text-decoration: none;
+	color: #1976d2;
+}
+
+a.external-link:after
+{
+	/* Adds fontawesome external link icon to end */
+    content: url('../Images/Shared/external-link.svg');
+    margin-left: 0.25rem;
+}
+
+ul.menu._Skins_SideMenuWithInThisTopicColumn.mc-component li > a:hover
+{
+	font-weight: normal;
+}
+
+ul.off-canvas-list li a:hover
+{
+	text-decoration: none !important;
+}
+
+ul.menu._Skins_menu_proxy_blue.mc-component a:hover
+{
+	text-decoration: underline;
+}
+
+ul.sidenav li a:hover
+{
+	text-decoration: none !important;
+}
+
+a:hover
+{
+	text-decoration: underline !important;
+	color: #606f7b;
+}
+
+ul.menu._Skins_SideMenuWithInThisTopicColumn.mc-component li > a.selected
+{
+	font-weight: normal;
+	background-color: #ffffff;
+	text-decoration: none !important;
+}
+
+ul.menu._Skins_SideMenuWithInThisTopicColumn.mc-component li > a.selected:hover
+{
+	font-weight: normal;
+	background-color: #ffffff;
+	text-decoration: underline !important;
+}
+
+ul.menu._Skins_SideMenuWithInThisTopicColumn.mc-component ul > li > a
+{
+	font-weight: normal !important;
+}
+
+/* 
+ul.menu._Skins_SideMenuWithInThisTopicColumn.mc-component li > a:hover
+{
+	font-weight: bold;
+	text-decoration: none !important;
+}  */
+
+/* td-Commenting out because we shouldn't have a visited state
+a:visited
+{
+	color: #1976d2;
+}
+*/
+
+/* td-Adjustments to padding to account for 4px left border*/
+
+ul.sidenav li a.selected
+{
+	margin-left: -4px;
+}
+
+ul.sidenav ul > li > a.selected
+{
+	padding-left: 26px;
+	margin-left: -4px !important;
+}
+
+ul.sidenav ul ul > li > a.selected
+{
+	padding-left: 38px;
+	margin-left: -4px !important;
+}
+
+ul.sidenav ul ul ul > li > a.selected
+{
+	padding-left: 49px;
+	margin-left: -4px !important;
+}
+
+ul.sidenav ul ul ul ul > li > a.selected
+{
+	padding-left: 64px;
+	margin-left: -4px !important;
+}
+
+/* td-Hides an unwanted hover bolding for selected In-Topic menu links*/
+
+a.icon-no-underline
+{
+	text-decoration: none;
+}
+
+MadCap|breadcrumbsProxy.SnowDocs
+{
+	mc-breadcrumbs-divider: ' / ';
+	font-style: normal;
+	color: #606f7b;
+	font-size: 11px;
+}
+
+a.MCBreadcrumbsLinkSnowDocs.SnowDocs
+{
+	color: #606f7b;
+}
+
+/* td-removed text decoration from hamburg menu links. */
+/* td-adds underline to lined li items in headings in topic snippet */
+
+img
+{
+	border: none;
+}
+
+img.footer-links-herschel
+{
+	height: 33px;
+	width: 33px;
+	max-width: 34px;
+}
+
+img.footer-icons-noBorder
+{
+	border: none;
+	width: 47px;
+	height: 47px;
+	padding-right: 6px;
+}
+
+img.Thumbnail
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+	border-radius: 0px;
+	max-width: 55%;
+	cursor: zoom-in;
+}
+
+img.NoBottomBorder
+{
+	border-bottom-width: 0;
+	border-bottom-color: #ffffff;
+}
+
+img.ThumbnailNoBorders
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+	border-radius: 0px;
+	border-bottom-width: 0;
+	border-bottom-color: #ffffff;
+	max-width: 55%;
+	cursor: zoom-in;
+}
+
+img.ThumbnailBigToBigger
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+	border-radius: 0px;
+	max-width: 100%;
+	cursor: zoom-in;
+}
+
+img.home-button
+{
+	height: 80px;
+	width: 80px;
+}
+
+li
+{
+	margin-bottom: 6px;
+	margin-top: 6px;
+	orphans: 2;
+	widows: 2;
+	padding-left: 5px;
+}
+
+/* Embotics Note and caution styles with extra bits to encourage printing of background from web page. Note that print, tablet, and mobile weren't added yet -- are they needed? */
+/*Removed. Grab them from Desktop copy. */
+
+p.legal-disclaimer
+{
+	font-size: 75%;
+	mc-auto-number-format: 'Snow Software does not own the third party trademarks, software, products, or tools (collectively, the “Third Party Products”) referenced herein. Third Party Product updates, including user interface updates, may not be reflected in this content.';
+}
+
+p.Note
+{
+	background-repeat: no-repeat;
+	background-position: 41px 10px;
+	line-height: 1.35em;
+	overflow: hidden;
+	padding: 44px 40px 10px 40px;
+	margin: 0px 0px 15px 1px;
+	border-left-style: solid;
+	border-left-width: 4px;
+	-webkit-print-color-adjust: exact !important;
+	/* Chrome, Safari */
+	color-adjust: exact !important;
+	/*Firefox*/
+	background-image: url('../Images/Shared/note-green-alt-all-in-one.svg');
+	border-color: #DAF0E2;
+	page-break-inside: avoid;
+}
+
+p.tip
+{
+	background-repeat: no-repeat;
+	background-position: 41px 10px;
+	line-height: 1.35em;
+	overflow: hidden;
+	padding: 44px 40px 10px 40px;
+	margin: 0px 0px 15px 1px;
+	border-left-style: solid;
+	border-left-width: 4px;
+	border-color: #DAEEFF;
+	-webkit-print-color-adjust: exact !important;
+	/* Chrome, Safari */
+	color-adjust: exact !important;
+	/*Firefox*/
+	background-image: url('../Images/Shared/tip-blue-all-in-one.svg');
+	page-break-inside: avoid;
+}
+
+p.caution
+{
+	background-repeat: no-repeat;
+	background-position: 41px 10px;
+	line-height: 1.35em;
+	overflow: hidden;
+	padding: 44px 40px 10px 40px;
+	margin-left: 1px;
+	border-left-style: solid;
+	border-left-width: 4px;
+	border-color: #FFF5DA;
+	-webkit-print-color-adjust: exact !important;
+	/* Chrome, Safari */
+	color-adjust: exact !important;
+	/*Firefox*/
+	background-image: url('../Images/Shared/caution-all-in-one.svg');
+	page-break-inside: avoid;
+}
+
+ul.NoteMultiple
+{
+	line-height: 1.35em;
+	overflow: hidden;
+	padding: 40px 40px 10px 60px;
+	margin: 8px 0px 15px 1px;
+	border-left-style: solid;
+	border-left-width: 4px;
+	border-color: #DAF0E2;
+	-webkit-print-color-adjust: exact !important;
+	/* Chrome, Safari */
+	color-adjust: exact !important;
+	/*Firefox*/
+	background-image: url('../Images/Shared/note-green-alt-all-in-one.svg');
+	background-repeat: no-repeat;
+	background-position: 41px 10px;
+	page-break-inside: avoid;
+}
+
+ul.TipMultiple
+{
+	line-height: 1.35em;
+	overflow: hidden;
+	padding: 40px 40px 10px 60px;
+	margin: 8px 0px 15px 1px;
+	border-left-style: solid;
+	border-left-width: 4px;
+	border-color: #DAEEFF;
+	background-image: url('../Images/Shared/tip-blue-all-in-one.svg');
+	background-repeat: no-repeat;
+	background-position: 41px 10px;
+	-webkit-print-color-adjust: exact !important;
+	/* Chrome, Safari */
+	color-adjust: exact !important;
+	/*Firefox*/
+	list-style-type: disc;
+	page-break-inside: avoid;
+}
+
+p.scrollup	/* Do not display element in default view. */
+{
+	visibility: hidden;
+}
+
+/*Herschel template note
+p.note
+{
+	margin-top: 0pt;
+	margin-bottom: 12pt;
+	mc-auto-number-format: '{color red}{b}Note: {/b}{/color} ';
+	padding-left: 0px;
+}*/
+
+p.code
+{
+	text-align: left;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: .33rem;
+	margin-bottom: 0;
+	font-family: "Courier New", Courier, monospace, "Lucida Console";
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0;
+	line-height: 1.09rem;
+	text-decoration: none;
+	vertical-align: baseline;
+	overflow: auto;
+	-ms-word-wrap: normal;
+	word-wrap: normal;
+	overflow-wrap: normal;
+	white-space: pre;
+	font-size: .95rem;
+}
+
+pre
+{
+	text-align: left;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: .33rem;
+	margin-bottom: 0;
+	font-family: "Courier New", Courier, monospace, "Lucida Console";
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0;
+	line-height: 1.09rem;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: .75rem;
+	color: #3d3d3d;
+	background-color: #eae8e8 !important;
+	border-radius: 4px;
+	border: 1px solid #d6d4d4 !important;
+	overflow: auto;
+	-ms-word-wrap: normal;
+	word-wrap: normal;
+	overflow-wrap: normal;
+	white-space: pre;
+}
+
+a.Popup
+{
+	text-decoration: underline dotted;
+	color: #404040;
+}
+
+.MCPopupThumbnail:hover
+{
+	border: solid 1px #0093c9;
+}
+
+.MCPopupContainer
+{
+	background-color: #FFFFFF;
+	border: solid 1px #FFFFFF;
+	position: absolute;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	z-index: 1001;
+	padding: 5px;
+}
+
+.MCPopupFullImage
+{
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	cursor: zoom-out;
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #0093c9;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+/* td - dropdown styles to match react piece */
+
+.dropDownHead
+{
+	padding-left: 27px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+MadCap|dropDown	/* MadCap|dropDown: Drop downs */
+{
+	margin-bottom: 3px;
+	margin-top: 3px;
+	mc-open-image-alt-text: Close section;
+	mc-closed-image-alt-text: Open section;
+	mc-image-spacing: 0;
+	mc-open-image: none;
+	mc-closed-image: none;
+	mc-image-position: none;
+}
+
+MadCap|dropDownHead
+{
+	font-size: 1.0em;
+	color: #3D4852;
+	font-weight: bold;
+}
+
+MadCap|dropDownHead.heading	/* MadCap|dropDownHead.heading: Drop down with heading */
+{
+	font-family: "Roboto", Verdana, "Helvetica Neue", "Segoe UI", sans-serif-regular, sans-serif;
+	font-weight: 600;
+	font-size: 1.429em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-decoration: none !important;
+}
+
+.dropDown.MCDropDown_Closed > .dropDownHead > .dropDownHotspot:after	/* FontAwesome : fa-angle-down for closed */
+{
+	font-family: "FontAwesome";
+	content: "\f107";
+	padding: 0 27px 0 0;
+	display: inline-block;
+	float: right;
+	color: #3D4852;
+	display: block;
+}
+
+.dropDown.MCDropDown_Open > .dropDownHead > .dropDownHotspot:after	/* FontAwesome : fa-angle-up for closed open */
+{
+	font-family: "FontAwesome";
+	content: "\f106";
+	padding: 0 27px 0 0;
+	display: inline-block;
+	float: right;
+	display: block;
+}
+
+MadCap|dropDownHotspot
+{
+	/* color: inherit; */
+	text-decoration: none !important;
+	display: block;
+}
+
+.MCDropDown_Open a.MCDropDownHotSpot
+{
+	text-decoration: none !important;
+}
+
+MadCap|dropDownHotspot:hover
+{
+	text-decoration: none !important;
+}
+
+MadCap|dropDownHotspot:focus
+{
+	text-decoration: none !important;
+}
+
+.dropDownHotspot:empty	/* [ REMOVED .dropDownHotspot[name] selector as causes bug if bookmark in hotspot - need to review if it's required. ] Fix for issue where bookmark (which inserts a 'name' property) or an empty tag is included in dropdownhotspot; this extra link tag will cause a duplicate icon, so we need to hide it */
+{
+	display: none;
+}
+
+MadCap|dropDownBody
+{
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+	margin-right: 0em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 27px;
+	padding-right: 0em;
+	width: auto;
+}
+
+/*
+.MCDropDown_Closed a.MCDropDownHotSpot,
+.MCDropDown_Open a.MCDropDownHotSpot
+{
+	text-decoration: none !important;
+	color: #3D4852;
+	padding-left: 27px;
+	display: block;
+} */
+
+MadCap|xref
+{
+	text-decoration: none;
+	color: #1976d2;
+	mc-format: ;
+}
+
+MadCap|xref:hover
+{
+	text-decoration: underline;
+	color: #606F7B;
+}
+
+.xref:hover
+{
+	color: #0093c9;
+	text-decoration: underline;
+}
+
+div.home-layout
+{
+	padding: 2% 5%;
+	/* background: #fafafa; td--added this in.*/
+	margin-bottom: -5px;
+	/* td--added this in.*/
+}
+
+div.home-layout-85-max-web
+{
+	padding: 2% 5%;
+	/* background: #fafafa; td--added this in.*/
+	margin-bottom: -5px;
+	/* td--added this in.*/
+	max-width: 85%;
+}
+
+div.home-section
+{
+	padding: 3% 0;
+	border-bottom: solid 1px #dadada;
+	width: 130%;
+}
+
+div.home-section-auto
+{
+	padding: 3% 0;
+	border-bottom: solid 1px #dadada;
+}
+
+div.home-section:last-of-type	/*Removes the border on the last section of the home page*/
+{
+	border-bottom: none;
+}
+
+/* TD--Reduces the size of search filter menu items. This isn't adjustable through skin editor. */
+
+.search-filter-content ul
+{
+	font-size: 0.8em;
+}
+
+/* TD--By default this was auto, but when the accordian menu is expanded, the scroll bar would appear and the text would jump over, which was distracting
+ */
+
+.sidenav-wrapper
+{
+	overflow-y: scroll;
+}
+
+/* TD--no padding so that background hover on list items goes to full edge */
+
+.sidenav-container
+{
+	padding-left: 14px;
+	padding-right: 0px;
+}
+
+/* TD--Styles for button to launch REST docs */
+
+.button
+{
+	width: auto;
+	max-width: 300px;
+	padding: 10px;
+	background: #ffffff;
+	text-align: center;
+	border: 1px solid #0093c9;
+	border-radius: 4px;
+	border-color: #0093c9;
+	margin-left: 0px;
+}
+
+.button:hover
+{
+	background: #0093c9;
+	border: #0093c9;
+	outline: none 0px transparent;
+}
+
+/* TD-- Updated style for previous and next topic toolbar buttons after Flare 17 upgrade */
+
+._Skins_ToolbarSnowDocsBottomLeft.mc-component .button.previous-topic-button
+{
+	
+}
+
+._Skins_ToolbarSnowDocsBottomLeft.mc-component .button.previous-topic-button .button-icon-wrapper::after
+{
+	padding-top: 5px;
+	content: "Previous";
+	color: #606F7B;
+	font-family: "Roboto", Verdana, "Helvetica Neue", "Segoe UI", sans-serif-regular, sans-serif;
+	line-height: 28px;
+}
+
+._Skins_ToolbarSnowDocsBottomRight.mc-component .button.next-topic-button
+{
+	
+}
+
+._Skins_ToolbarSnowDocsBottomRight.mc-component .button.next-topic-button .button-icon-wrapper::after
+{
+	padding-top: 5px;
+	content: "Next";
+	color: #606F7B;
+	font-family: "Roboto", Verdana, "Helvetica Neue", "Segoe UI", sans-serif-regular, sans-serif;
+	line-height: 28px;
+}
+
+/* TD--Updated style for previous and next topic toolbar buttons hover after Flare 17 upgrade */
+
+._Skins_ToolbarSnowDocsBottomLeft.mc-component .button.previous-topic-button:hover
+{
+	background-color: #3778B0 !important;
+}
+
+._Skins_ToolbarSnowDocsBottomRight.mc-component .button.next-topic-button:hover
+{
+	background-color: #3778B0 !important;
+}
+
+._Skins_ToolbarSnowDocsBottomLeft.mc-component .button.previous-topic-button .button-icon-wrapper:hover::after
+{
+	content: "Previous";
+	color: white;
+	font-family: "Roboto", Verdana, "Helvetica Neue", "Segoe UI", sans-serif-regular, sans-serif;
+}
+
+._Skins_ToolbarSnowDocsBottomRight.mc-component .button.next-topic-button .button-icon-wrapper:hover::after
+{
+	content: "Next";
+	color: white;
+	font-family: "Roboto", Verdana, "Helvetica Neue", "Segoe UI", sans-serif-regular, sans-serif;
+}
+
+/* TD-- This prevents the black outline that showed by default on the Prev and Next buttons in Chrome*/
+
+.button:focus
+{
+	
+}
+
+a.button-text
+{
+	text-decoration: none;
+	color: #0093c9;
+}
+
+a.button-text:hover
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	mc-breadcrumbs-prefix: '';
+	margin-bottom: 1px;
+	padding-bottom: 20px;
+	font-size: 0.7em;
+	font-style: italic;
+	color: #606f7b;
+}
+
+a.home-button
+{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.home-tiles
+{
+	text-decoration: none;
+	color: #45494c;
+}
+
+a.footer-links-herschel
+{
+	text-decoration: none;
+	color: #101e2c;
+}
+
+a.footer-links-herschel:hover
+{
+	color: #606f7b;
+}
+
+a.home-button > table
+{
+	width: 100%;
+}
+
+a.home-button:hover
+{
+	background-color: transparent;
+}
+
+a.home-tiles
+{
+	text-decoration: none;
+	color: #45494c;
+}
+
+a.home-tiles:hover
+{
+	color: #0093c9;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	text-decoration: underline;
+	color: #606f7b;
+}
+
+div.topic-hero
+{
+	padding: 5%;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #2a455d;
+}
+
+div.topic-hero h1
+{
+	color: #fff;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+div.home-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #b9bec1;
+	padding: 2%;
+	/* height:225px;*/
+	width: 0px;
+	border-radius: 1px;
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 20%;
+	margin-left: 19%;
+	border-color: #999999;
+	border-width: 1px;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 20%;
+	margin-left: 2%;
+	border-color: #999999;
+	border-width: 1px;
+}
+
+/*TD -- Added this to try to get a third tile. For two, width was 30%. For the third, I made width 20%. Need to adjust for mobile view.*/
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 20%;
+	margin-left: 2%;
+	border-color: #999999;
+	border-width: 1px;
+}
+
+div.article-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.article-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.article-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.article-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #dadada;
+	border-radius: 1px;
+}
+
+div.article-tiles > div:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.8s cubic-bezier(.25,.8,.25,1);
+}
+
+div.article-tiles > div:nth-child(1)
+{
+	width: 18%;
+	margin-left: 0%;
+	background: white;
+}
+
+div.article-tiles > div:nth-child(2)
+{
+	width: 18%;
+	margin-left: 2%;
+	background: white;
+}
+
+div.article-tiles > div:nth-child(3)
+{
+	width: 18%;
+	margin-left: 2%;
+	background: white;
+}
+
+div.article-tiles > div:nth-child(4)
+{
+	width: 18%;
+	margin-left: 2%;
+	background: white;
+}
+
+div.article-tiles > div:nth-child(5)
+{
+	width: 18%;
+	margin-left: 2%;
+	background: white;
+}
+
+div.article-tiles img
+{
+	max-width: 90%;
+}
+
+div.home-footer	/*Controls the look of the footer in the Home master page.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.home-footer > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.home-footer > div:nth-child(2)
+{
+	width: 75%;
+	margin-left: 0%;
+}
+
+p.footer-sub
+{
+	color: #ffffff;
+	font-family: "Roboto", Verdana, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif-regular, sans-serif;
+	font-size: 10px;
+}
+
+.footer
+{
+	padding: 25px 25px 10px 25px;
+	background-color: #FFF;
+	border-top: #e6e6e6;
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding-left: 5%;
+}
+
+.footer-logo
+{
+	max-width: 100%;
+	margin: 0;
+	text-align: left;
+	font-size: 11px;
+}
+
+.footer-links a
+{
+	padding-right: 15px;
+}
+
+.footer-icons
+{
+	text-align: right;
+}
+
+/*Not sure why, but a 10px padding right was placed here. Commented out.*/
+
+.footer-icons > a:first-of-type
+{
+	/* padding-right: 10px; */
+}
+
+pre
+{
+	text-align: left;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: .33rem;
+	margin-bottom: 0;
+	font-family: "Courier New", Courier, monospace, "Lucida Console";
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0;
+	line-height: 1.09rem;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: .75rem;
+	color: #3d3d3d;
+	background-color: #eae8e8 !important;
+	border-radius: 4px;
+	border: 1px solid #d6d4d4 !important;
+	overflow: auto;
+	-ms-word-wrap: normal;
+	word-wrap: normal;
+	overflow-wrap: normal;
+	white-space: pre;
+}
+
+pre.Code_Grayed
+{
+	text-align: left;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: .33rem;
+	margin-bottom: 0;
+	font-family: "Courier New", Courier, monospace, "Lucida Console";
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0;
+	color: #000000;
+	mc-hyphenate: never;
+	text-indent: 0;
+	line-height: 1.09rem;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: .75rem;
+	color: #3d3d3d;
+	background-color: #eae8e8 !important;
+	border-radius: 4px;
+	border: 1px solid #d6d4d4 !important;
+	overflow: auto;
+	-ms-word-wrap: normal;
+	word-wrap: normal;
+	overflow-wrap: normal;
+	white-space: pre;
+}
+
+span.f_Icons	/* Font Awesome Icons */
+{
+	font-size: 1.20rem;
+	font-family: FontAwesome;
+}
+
+span.f_Icons_Inline	/* Font Awesome Icons that are smaller to keep line height. */
+{
+	font-size: 0.95rem;
+	font-family: FontAwesome;
+}
+
+/* TD - Next entries are a jOConnor fix - These change the triangle icons pointing directions in the left-nav side menu and the mobile side menu.*/
+
+.is-accordion-submenu-parent > a span.submenu-toggle
+{
+	transform: scaleY(1);
+	transform: rotate(-90deg) !important;
+	/* 
+	position: initial;
+    margin-top: 20px; */
+}
+
+.is-accordion-submenu-parent > a span.submenu-toggle-container
+{
+	outline: none;
+}
+
+.is-accordion-submenu-parent[aria-expanded="true"] > a span.submenu-toggle
+{
+	transform: rotate(0deg) !important;
+	-webkit-transform: scaleY(1);
+	/* position: initial;
+    margin-top: 20px; */
+}
+
+.submenu-toggle-container[aria-expanded="true"] > span.submenu-toggle,
+.is-accordion-submenu-parent > a[aria-expanded="true"] > .submenu-toggle-container > span.submenu-toggle
+{
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	transform: scaleY(-1);
+	transform: rotate(0deg) !important;
+}
+
+/* These three are to swap in a chevron icon */
+
+.is-accordion-submenu-parent > a span.submenu-toggle::before
+{
+	font-family: FontAwesome;
+	color: #a1a8ac;
+	content: '\f078';
+	display: block;
+	width: 0;
+	height: 0;
+	margin-top: -16px;
+	margin-left: -8px;
+	font-size: small;
+}
+
+.is-accordion-submenu-parent[aria-expanded="true"] > a span.submenu-toggle::before
+{
+	font-family: FontAwesome;
+	color: #a1a8ac;
+	content: '\f078';
+	display: block;
+	width: 0;
+	height: 0;
+	margin-top: -14px;
+	margin-left: 2px;
+}
+
+/*TD - Removes TOC link underline. This option isn't provided in the Flare skin editor.*/
+/*This hides the div backgroud. So the foundation accordian icon displays properly.*/
+
+ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle
+{
+	border-top-color: transparent !important;
+}
+
+/*ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle
+{
+	border-top-color: #45494c;
+}
+ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle:hover
+{
+	border-top-color: #303335;
+} */
+
+a.MCBreadcrumbsLink
+{
+	text-decoration: none;
+	color: #606f7b;
+}
+
+.body-container
+{
+	padding-bottom: 1.5em;
+	padding-left: 3.2em;
+	padding-right: 3.3em;
+	padding-top: 1.8em;
+}
+
+/* TD -- Added. The paragraph (p) tag should inherit styles from the table cell (td) tag. */
+
+td p
+{
+	line-height: 1.2em;
+}
+
+/* TD -- Added. The paragraph (p) tag should inherit styles from the table cell (th) tag. */
+
+th p
+{
+	line-height: 1.0em;
+}
+
+/* TD -- Added. The li in a table should inherit styles from the table cell (td) tag. */
+
+td li
+{
+	font-size: 0.9em;
+	line-height: 1.2em;
+	margin-left: -15px;
+}
+
+tr
+{
+	page-break-inside: avoid;
+}
+
+/* td-These two entries add a bit of line height to search results. Can't seem to set it through skin editor. */
+
+#resultList .description
+{
+	line-height: 1.3em;
+}
+
+#resultList .url cite
+{
+	line-height: 1.4em;
+}
+
+#scrollup
+{
+	background: url('../Images/scroll.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 10px;
+	right: 25px;
+	display: none;
+	text-indent: -9999px;
+	z-index: 99;
+	border-radius: 2px;
+}
+
+/* MadCap Table Style: Taken from H&M used by Variable Ref Entries*/
+
+table.help-table
+{
+	width: 100%;
+	border: none;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+table.help-table th,
+table.help-table td
+{
+	padding: 5px;
+	text-align: left;
+}
+
+table.help-table th
+{
+	background: #dcdcdc;
+	border: none;
+}
+
+table.help-table td
+{
+	border: none;
+	/* TD - Added this because some variables were long and the main div went under the side menu. Was break-all, break-word might be less extreme.*/
+	word-break: break-word;
+}
+
+table.help-table tbody tr:nth-child(2n+0)
+{
+	background: #FFFFFF;
+}
+
+table.help-table td.help-table-group
+{
+	background: #AAAAAA;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+MadCap|popup
+{
+	color: #0093c9;
+}
+
+MadCap|popup:focus
+{
+	color: #0093c9;
+}
+
+MadCap|popup:hover
+{
+	color: #0093c9;
+	text-decoration: underline;
+}
+
+MadCap|popupHead
+{
+	color: #404040;
+	text-decoration: underline dotted;
+}
+
+/* MadCap|popup:hover
+{
+	border: solid 2px #000000;
+}  */
+
+/* Strangely, there's no way to set table width within a Flare table style. However, adding this style rule should add the override to what's set in the tablestyles. Taken from www.uaeurope.com/articles/TablesMadCapFlare.html */
+
+table.TableStyle-Standard
+{
+	width: 100% !important;
+}
+
+td
+{
+	margin: 8px;
+	vertical-align: top;
+}
+
+td.v-align-mid
+{
+	vertical-align: middle;
+}
+
+ol ol
+{
+	list-style: lower-alpha;
+}
+
+ol ol ol
+{
+	margin-left: -10px;
+	list-style-type: lower-roman;
+}
+
+th
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	vertical-align: inherit;
+}
+
+span.f_Icons_InlineNoPrintstyles
+{
+	font-family: FontAwesome;
+	font-size: 0.95rem;
+}
+
+span.hide-when-full-browser	/* Do not display element in default view. */
+{
+	display: none !important;
+}
+
+a
+{
+	outline: none 0px transparent;
+	color: #1976d2;
+}
+
+/* td -- removes underline in search bar when selected in FireFox. */
+
+.search-bar .search-field
+{
+	outline: none;
+}
+
+MadCap|dropDownHead
+{
+	padding-top: 14px;
+	padding-bottom: 14px;
+	background: #F0F2F5;
+	color: #3D4852;
+}
+
+a.MCDropDownHotSpot
+{
+	color: #3D4852;
+	text-decoration: none !important;
+}
+
+/* Print Style changes.
+------------------------------------------------------------------------------------ */
+
+@media print
+{
+	body
+	{
+		font-size: 10pt;
+		margin: 8px;
+		line-height: 13px;
+	}
+
+	h1
+	{
+		margin-left: 0;
+		mc-auto-number-class: ChapAutoNum;
+		mc-auto-number-format: 'CH:CHAPTER {chapnum} ';
+		padding-left: 0;
+		mc-auto-number-position: none;
+		color: #000000;
+		mc-hyphenate: never;
+		page-break-before: auto;
+		line-height: 22pt;
+		mc-toc-depth: 1;
+		padding-bottom: 5p;
+		mc-heading-level: 1;
+		margin-top: 20pt;
+		font-size: 24pt;
+		margin-bottom: 12pt;
+	}
+
+	h2
+	{
+		font-weight: normal;
+		page-break-before: avoid;
+		mc-toc-depth: 2;
+		font-size: 19pt;
+		mc-hyphenate: never;
+		line-height: 19pt;
+		mc-heading-level: 2;
+	}
+
+	h3
+	{
+		font-weight: normal;
+		page-break-before: avoid;
+		mc-toc-depth: 0;
+		mc-hyphenate: never;
+		line-height: 18pt;
+		mc-heading-level: 3;
+		font-size: 17pt;
+	}
+
+	h4
+	{
+		font-weight: normal;
+		line-height: 14pt;
+		mc-heading-level: 0;
+		font-size: 16pt;
+	}
+
+	/* td-adds bottom border to images to address known PDF issue where bottom is cropped. */
+
+	img
+	{
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-bottom-width: 1px;
+		border-bottom-color: #999999;
+		border-bottom-style: solid;
+	}
+
+	img.noBorders
+	{
+		border-bottom-width: 0;
+		border-bottom-color: #ffffff;
+	}
+
+	img.footer-links-herschel
+	{
+		max-width: 41px;
+	}
+
+	.img.imgThumbnail
+	{
+		max-width: 100%;
+	}
+
+	img.Thumbnail
+	{
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-bottom-color: #999999;
+		border-bottom-style: solid !important;
+		border-bottom-width: 1px;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	img.ThumbnailNoBorders
+	{
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-bottom-color: #ffffff;
+		border-bottom-style: solid !important;
+		border-bottom-width: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.MCPopupThumbnail:hover
+	{
+		border: solid 1px #999999;
+	}
+
+	img.ThumbnailBigToBigger
+	{
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-bottom-color: #999999;
+		border-bottom-style: solid !important;
+		border-bottom-width: 1px;
+		max-width: 100%;
+	}
+
+	/* td-Taken from mainstyles. This is the Mini-TOC size spacing. Used for headings-in-topic.flsnp. p.MiniTOC1 controls the styling. */
+
+	MadCap|miniTocProxy
+	{
+		border-top: 0;
+		margin-left: 0.25in;
+		margin-right: 0.25in;
+		padding-left: 0;
+		page-break-inside: avoid;
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-bottom: 5px;
+	}
+
+	/* td-this class will keep something from printing. Used in intro text for headings-in-topic snippet.*/
+
+	.no-print,
+	.no-print *
+	{
+		display: none !important;
+	}
+
+	MadCap|dropDown
+	{
+		display: block;
+		border-bottom-width: 0;
+		border-bottom-color: #ffffff;
+	}
+
+	.dropDownBody
+	{
+		padding-top: 0.25em;
+		display: block !important;
+	}
+
+	/* td-Was in MainStyles. needed? */
+
+	MadCap|tocProxy
+	{
+		border-top: none;
+		margin-right: 0.25in;
+		mc-heading-level: 3;
+		mc-toc-depth: 3;
+		padding-bottom: 3px;
+	}
+
+	MadCap|xref
+	{
+		text-decoration: none;
+		mc-format: "{para}";
+		color: #1976d2;
+	}
+
+	p
+	{
+		mc-hyphenate: never;
+		line-height: 1.1em;
+	}
+
+	/* td-Taken from mainstyles. Sets styling for mini-toc for PDFs. Used for headings-in-topic.flsnp.*/
+
+	p.MiniTOC1
+	{
+		font-weight: normal;
+		color: #0093c9;
+		mc-leader-format: ' ';
+		mc-pagenum-display: none;
+		padding-top: 3px;
+		line-height: 0.85em;
+		margin-top: 0px;
+		margin-bottom: 4px;
+	}
+
+	p.TOC1
+	{
+		font-size: 12pt;
+		font-weight: normal;
+		page-break-after: avoid;
+		color: #000000;
+		mc-leader-format: '.';
+		margin-top: 5px;
+		margin-bottom: 2px;
+	}
+
+	p.TOC2
+	{
+		font-weight: normal;
+		margin-bottom: 2px;
+		margin-left: 0.25in;
+		color: #000000;
+		font-size: 12pt;
+		margin-top: 5px;
+	}
+
+	p.TOC3
+	{
+		font-weight: normal;
+		margin-bottom: 2px;
+		margin-left: 0.35in;
+		color: #000000;
+		font-size: 12pt;
+		margin-top: 5px;
+	}
+
+	p.TOC4
+	{
+		font-size: 12pt;
+		font-weight: normal;
+		margin-bottom: 6px;
+		margin-left: 0;
+		color: #000000;
+		margin-top: 6px;
+	}
+
+	p.TOCHeading
+	{
+		color: #47484a;
+		font-size: 90pt;
+		font-weight: normal;
+		letter-spacing: -1px;
+		line-height: 92pt;
+		margin: 0;
+		mc-heading-level: 0;
+		text-align: center;
+	}
+
+	p.page-break
+	{
+		page-break-after: always;
+	}
+
+	ol
+	{
+		list-style-image: none;
+		padding-left: 0;
+	}
+
+	ul
+	{
+		margin-left: 40px;
+		padding-left: 25px;
+	}
+
+	ol ol
+	{
+		margin-left: 30px;
+	}
+
+	ol ol ol
+	{
+		margin-left: 30px;
+	}
+
+	/* TD -- Added. The a href tag should inherit styles from the table cell (td) tag. 
+
+	td a
+	{
+		font-size: 0.85em;
+	}*/
+
+	tr
+	{
+		page-break-inside: avoid;
+	}
+
+	.img.imgThumbnail
+	{
+		max-width: 90% !important;
+		border-radius: 0px;
+		width: 90% !important;
+	}
+
+	/* TD -- hiding these and substituting ones from mainstyles
+	img.Thumbnail
+	{
+		max-width: 100%;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-bottom-color: #999999;
+		border-bottom-style: solid !important;
+		border-bottom-width: 1px;
+	}
+
+		img.ThumbnailBigToBigger
+	{
+		max-width: 100%;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-bottom-color: #999999;
+		border-bottom-style: solid !important;
+		border-bottom-width: 1px;
+	} */
+
+	ul
+	{
+		/* list-style-image: url('../Images/Bullet1Print.eps'); */
+		margin-left: 10px;
+		padding-left: 25px;
+	}
+
+	ul ul
+	{
+		/* list-style-image: url('../Images/Bullet2Print.eps'); */
+		margin-left: 15px;
+	}
+
+	li
+	{
+		mc-hyphenate: never;
+		orphans: 2;
+		widows: 2;
+		line-height: 14px;
+	}
+
+	td li
+	{
+		font-size: 0.85em;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		font-size: 12pt;
+		page-break-after: avoid;
+	}
+
+	MadCap|expandingHead
+	{
+		color: #0093c9;
+	}
+
+	th
+	{
+		vertical-align: top;
+	}
+
+	ul.FirstLevelLessIndentation
+	{
+		margin-left: 30px;
+	}
+
+	MadCap|dropDownBody
+	{
+		padding-top: 2pt;
+		display: inline-block;
+	}
+
+	code
+	{
+		font-size: 1.0em;
+	}
+
+	p.code
+	{
+		font-size: 1.0em;
+	}
+
+	span.f_Icons_Inline
+	{
+		font-size: 10 pt;
+		line-height: 13px;
+		font-family: FontAwesome;
+	}
+
+	img.footer-icons-noBorder
+	{
+		border-bottom-width: 0;
+	}
+
+	span.f_Icons_InlineNoPrintstyles
+	{
+		font-family: FontAwesome;
+		font-size: smaller;
+	}
+
+	MadCap|dropDownHead
+	{
+		padding-top: 14px;
+		padding-bottom: 8px;
+		background: #F0F2F5;
+		background-color: #F0F2F5;
+		font-size: 16px;
+	}
+
+	MadCap|dropDownHead.heading
+	{
+		font-weight: normal;
+		font-size: 17px;
+		color: #222222;
+		padding-bottom: 0px;
+		padding-top: 0px;
+	}
+
+	p.Note
+	{
+		margin-top: 15px;
+		background-repeat: no-repeat !important;
+	}
+	p.tip
+	{
+		margin-top: 15px;
+		background-repeat: no-repeat !important;
+	}
+	p.caution
+	{
+		margin-top: 15px;
+		background-repeat: no-repeat !important;
+	}
+	ul.NoteMultiple
+	{
+		margin-top: 15px;
+	}
+
+	ul.TipMultiple
+	{
+		margin-top: 15px;
+	}
+
+}
+
+/* Tablet styles.
+-----------------------*/
+
+@media tablet
+{
+	/* For tablet size, the third In-This-Topic column isn't displayed and content column goes to full width. SideMenuInThisTopic.flskn has entries to stop display of column for mobile and tablet sizes.*/
+
+	.column
+	{
+		float: left;
+		width: 100%;
+		padding: 10px 30px 10px 10px;
+	}
+
+	.column2
+	{
+		float: left;
+		width: 25%;
+		padding: 10px 10px 0px 10px;
+		display: none;
+	}
+
+	/* Added this smaller logo for mobile size.
+.title-bar-layout a.logo {
+    width: 302px;
+    height: 55px;
+    background: transparent url('Images/docs-home-wide-right-stack-normal-14-mobile.png') no-repeat left center;
+}*/
+
+	.footer
+	{
+		padding: 2% 2% 1%;
+	}
+
+	html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	div.home-footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.home-footer > div:nth-child(2)
+	{
+		width: 75%;
+		margin-left: 0%;
+	}
+
+	span.hide-when-table	/* Do not display element in tablet view. */
+	{
+		display: none;
+	}
+
+	p.scrollup
+	{
+		visibility: visible;
+		display: inline;
+	}
+
+	div.home-layout-85-max-web
+	{
+		max-width: 100%;
+	}
+}
+
+@media mobile
+{
+	br.mobile-br
+	{
+		display: none;
+	}
+
+	div.topic-hero h1
+	{
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	div.home-tiles p
+	{
+		line-height: 1.2;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10px;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	/*td added this*/
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 10px;
+	}
+
+	div.article-tiles > div
+	{
+		margin-bottom: 10px;
+	}
+
+	div.article-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles > div:nth-child(5)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.article-tiles img
+	{
+		width: 75%;
+	}
+
+	.footer-icons
+	{
+		text-align: center;
+	}
+
+	.footer
+	{
+		padding: 5% 7%;
+		text-align: center;
+	}
+
+	.footer-logo
+	{
+		text-align: center;
+		font-size: 10;
+	}
+
+	div.home-footer > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.home-footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin: 3% 0;
+	}
+
+	div.home-section
+	{
+		width: auto;
+	}
+
+	.body-container
+	{
+		padding-left: 1em;
+		padding-bottom: 1em;
+		padding-right: 0;
+		padding-top: 1em;
+	}
+
+	MadCap|topicToolbarProxy
+	{
+		display: none;
+	}
+
+	.buttons._Skins_Toolbar.mc-component
+	{
+		display: none;
+	}
+
+	/* Thumbnail Popup -- modified so that the popup doesn't occur for mobile view.*/
+
+	.MCPopupThumbnailLink
+	{
+		pointer-events: none !important;
+		cursor: default !important;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+	}
+
+	/* td-Next three changes are to try to get thumbnails to stay big. */
+
+	.img.imgThumbnail
+	{
+		max-width: 100%;
+	}
+
+	img.Thumbnail
+	{
+		max-width: 100%;
+	}
+
+	img.ThumbnailBigToBigger
+	{
+		max-width: 100%;
+	}
+
+	img.home-button
+	{
+		
+	}
+
+	br.home-page
+	{
+		display: none;
+	}
+
+	span.hide-when-mobile	/* Do not display element in mobile view. */
+	{
+		display: none;
+	}
+
+	h2.a
+	{
+		
+	}
+
+	p.scrollup
+	{
+		display: none;
+	}
+
+	div.home-layout-85-max-web
+	{
+		
+	}
+}
+
+/* td-Commenting out because we shouldn't have a visited state
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #606f7b;
+}  */

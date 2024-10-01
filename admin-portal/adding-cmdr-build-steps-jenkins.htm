@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Add Commander Steps to Jenkins Jobs</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="AddCommanderStepstoJenkinsJobs" data-magellan-target="AddCommanderStepstoJenkinsJobs"><a name="aanchor205"></a><MadCap:concept term="Admin Portal" />Add Commander Steps to Jenkins Jobs</h1><p>After you have installed the Commander Jenkins plugin and configured its connection to your Commander installation (see <a href="configuring-vcmdr-jenkins-plugin.htm" class="MCXref xref">Configure the Commander Jenkins Plugin</a>), you can add Commander build steps in freestyle and multi-configuration Jenkins projects.</p><p>You can add multiple Commander build steps to a project, and they can be added before and after other common build steps. Standard Jenkins environment variables may be used to pass data/parameters between Commander build steps to non-Commander build steps.</p><p class="Note">The following procedure only provides information on the Commander build steps that you can add to a Jenkins project. It doesn't provide guidance on basic Jenkins project configuration or scripting.</p><p>To add Commander build steps to a Jenkins project, do the following:</p><ol><li value="1">From the Jenkins dashboard, select your project.</li><li value="2">Click <b>Configure</b>.</li><li value="3">After you project loads, on the <b>General</b> tab, scroll down to the <b>Build</b> section, select <b>Add build step &gt; Commander Services</b>.
+<p><img alt="Adding the Commander Services build step." title="Commander Services" style="height: auto;max-width: 99.99%;width: auto;" src="Images/vcmdr-build-step.png" /></p></li><li value="4">In the <b>Commander Services</b> section that's added, select the build step that you want to use from the <b>Action</b> drop-down and configure it as appropriate. You can select any of the following actions:</li><ul><li><a href="#Request" class="MCXref xref">Request New Service</a></li><li><a href="#Wait-for-service-req" class="MCXref xref">Wait For Service Request Completion</a>.
+This step can be used when a Request New Service step has already been added to the job.</li><li><a href="#Run" class="MCXref xref">Run Command Workflow</a></li><li><a href="#Wait-for-cmd-workflow" class="MCXref xref">Wait for Command Workflow Completion</a>.
+This step can be used when a Run Command Workflow has already been added to the job.</li></ul><p>Click the links above for detailed information for each build step.</p><p>You can add multiple Commander build steps. You can also add them before or after other Jenkins build steps. However, their order is significant, especially for the Wait for Completion build steps, as explained below.</p><p class="Note">For each Commander build step, you can adjust the default Timeout and Polling Interval values to best suit your Jenkins job and your network requirements.</p><li value="5">After you have configured a Commander build step, drag it to the appropriate spot in your build job.</li><li value="6">When you have finished adding the required build steps, click <b>Save</b> or <b>Apply</b> to save your changes.</li></ol><h2 id="RequestNewService" data-magellan-target="RequestNewService"><a name="Request"></a>Request New Service</h2><p>This build step allows the Jenkins job to request an existing <a href="make_service_available.htm">service</a> (for example, a Windows VM or CentOS VM) from the Commander instance's Service Catalog.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/jenkins-req-new-service.png" data-mc-popup-alt="Jenkins Request New Service"><img class="MCPopupThumbnail img imgThumbnail" data-mc-width="936" data-mc-height="681" src="Images/jenkins-req-new-service_thumb_0_0.png" alt="Jenkins Request New Service" tabindex="" /></a></p><p>To have the build step to request the service, configure the following: </p><ul><li><b>Service Name</b>— In this field enter the name of the service exactly as it's listed in the Commander Service Catalog, then click <b>Lookup</b>.
+                <p>An existing service is returned as a JSON payload in the JSON&#160;Service Request field, as shown in the example above. If there is no matching service, an error is returned.</p></li><li><b>JSON&#160;Service Request</b> — This field displays a service request  that's successfully looked-up as a JSON&#160;payload. You can adjust some configuration parameters of the payload as appropriate for the service request. For example, you might adjust the requested number of CPUs or physical memory if the service request permits these values to be configured by users requesting the service.                <p>You may also use environment variables in the text. Regular Jenkins syntax will be used to resolve the variables — either "$xyz", "${xyz}" or "${a.b}" but not "$a.b", while ignoring "$". Note that the plugin performs no verification of the input.</p></li><li><b>Wait For Completion</b> — Enable or clear this option to set whether you want the build job to wait for the request's completion before executing the next build step.
+                <ul><li><b>If enabled</b> — Jenkins will wait for the request's completion before executing the next build step. That is, execute the service request synchronously.                       <p>For synchronous requests, the build console log will provide details about the request. If it's successful, <code>VCOMMANDER_REQUESTED_SERVICEx_COMPONENTy_NAME</code> and <code>VCOMMANDER_REQUESTED_SERVICEx_COMPONENTy_TYPE</code> environment variables are created, which indicate the deployed component name and type. <code>x</code> is the service index and <code>y</code> is the component index. Indexes start from 1.</p></li><li><b>If cleared</b> — Jenkins won't wait for the request's completion before executing the next build step. That is, execute the service request asynchronously.
+                        <p>For an asynchronous execution, you may add a separate Wait For Service Request Completion build step at some point in the job after a Request New Service step to check the service request's results. For more information see <a href="#Wait-for-service-req" class="MCXref xref">Wait For Service Request Completion</a> below.</p></li></ul></li><p>After a service request is made, a <code>VCOMMANDER_REQUESTED_SERVICE_ID</code> environment variable is generated that provides an ID&#160;for the service request. This service ID can be used by other build steps.</p></ul><p class="Note">Commander service requests may take a few minutes to complete. If required, you can adjust the Timeout and Polling values. Also, if you're using an asynchronous execution, you can add a separate Wait For Service Request Completion build step.</p><h3><a name="Wait-for-service-req"></a>Wait For Service Request Completion</h3><p> If you add an async Commander service request step, your job can perform some parallel processing after the service request is started. However, you can also add a separate Wait For Service Request Completion step later, to ensure that the service request completes before attempting other steps that may be dependent on it.</p><p>If you add a Wait For Service Request Completion action, the <b>Request ID</b> field must provide  the <code>VCOMMANDER_REQUESTED_SERVICE_ID</code> of the aysnc service request that the wait is for. If there are multiple async Commander service requests in the job, the Wait For Service Request Completion step will obtain the service ID of the last request.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/jenkins-wait-for-serv-complete.png" data-mc-popup-alt="Jenkins Wait for Service Request Completion"><img class="MCPopupThumbnail img imgThumbnail" data-mc-width="936" data-mc-height="281" src="Images/jenkins-wait-for-serv-complete_thumb_0_0.png" alt="Jenkins Wait for Service Request Completion" tabindex="" /></a></p><h2 id="RunCommandWorkflow" data-magellan-target="RunCommandWorkflow"><a name="Run"></a>Run Command Workflow</h2><p>This build step enables your Jenkins job to run a <a href="manage_workflows.htm#Command" class="MCXref xref">Command Workflows</a> in Commander.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/jenkins-run-cmd-wf.png" data-mc-popup-alt="Jenkins Run Command Workflow"><img class="MCPopupThumbnail img imgThumbnail" data-mc-width="939" data-mc-height="435" src="Images/jenkins-run-cmd-wf_thumb_0_0.png" alt="Jenkins Run Command Workflow" tabindex="" /></a></p><p>For the build step to run a command workflow, you must configure the following: </p><ul><li><b>Target Type</b>: The types of target that you want to run the command workflow on. These can be:
+                <ul><li><b>Any Target Type</b> — Select this option if you want to use the command workflow for any type of service or cloud account.</li><li>Auto Scaling Group</li><li>Database</li><li>Load Balancer</li><li>Cloud Account</li><li>Stack</li><li>Virtual Service</li><li>VM</li><li>No Inventory Target</li></ul><p>
+You may also use environment variables in this field. Regular Jenkins syntax is used to resolve variables — either "$xyz", "${xyz}" or "${a.b}" but not "$a.b", while ignoring "$". Note that the plugin performs no verification of the input.</p></li><li>Select the types of services or infrastructure that you want the command workflow to be run on</li><li><b>Target Name</b> — &#160;The name of the target that you want to run the command workflow on. You can use the name of an existing target in the Commander service catalog. You may also use environment variables in this field. For example, you can use an environment variable created from a previous build step in the same job (for example, <code>${VCOMMANDER_REQUESTED_SERVICE1_COMPONENT1_NAME}</code>).</li><li><b>Workflow Name</b> — The name of an existing Commander workflow to run.</li><li><b>Wait For Completion</b> — Enable or clear this option to set whether you want the build job to wait for the workflow's completion before executing the next build step.<ul><li><b>If enabled</b> — Jenkins will wait for the workflow's completion before executing the next build step (that is, execute the workflow synchronously).                        <p>For synchronous requests, the build console log will provide details about the workflow. If it's successful, a <code>VCOMMANDER_WORKFLOW_TASK_ID</code> environment variable is created, which provides the ID of the task running the workflow.</p></li><li><b>If cleared</b> — Jenkins won't&#160;wait for the workflow's completion before executing the next build step (that is, execute the workflow asynchronously).
+                        <p>For an asynchronous execution, you can add a separate Wait For Command Workflow build step after a Run Command Workflow step to check the workflow's results.</p></li></ul></li></ul><p>When the Jenkins build requests the workflow, it creates a <code>VCOMMANDER_WORKFLOW_TASK_ID</code> environment variable that will be shown in the build console log.</p><h3><a name="Wait-for-cmd-workflow"></a>Wait for Command Workflow Completion</h3><p> If you add an async Commander command workflow step, your job can perform some parallel processing after the command workflow is started. However, you can also add a separate Wait For Command Workflow Completion step later, to ensure that the workflow completes before attempting other steps that may be dependent on it.</p><p>If you add a Wait For Command Workflow Completion action, the <b>Request ID</b> field must provide the <code>VCOMMANDER_WORKFLOW_TASK_ID</code> of the aysnc command workflow that the wait is for. If there are multiple async command workflows in the job, this wait step will obtain the task ID of the last workflow.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/jenkins-wait-for-cmd-wf.png" data-mc-popup-alt="Jenkins Wait for Command Workflow Completion"><img class="MCPopupThumbnail img imgThumbnail" data-mc-width="934" data-mc-height="285" src="Images/jenkins-wait-for-cmd-wf_thumb_0_0.png" alt="Jenkins Wait for Command Workflow Completion" tabindex="" /></a></p></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="JbhW3mzo_kSgVe8awh68bA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="JbhW3mzo_kSgVe8awh68bA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#AddCommanderStepstoJenkinsJobs">Add Commander Steps to Jenkins Jobs</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#RequestNewService">Request New Service</a>
+                                                            </li>
+                                                            <li><a href="#RunCommandWorkflow">Run Command Workflow</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

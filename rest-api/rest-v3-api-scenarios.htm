@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Sample Code</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="SampleCode" data-magellan-target="SampleCode">Sample Code</h1><p>The following section provides sample code to perform common scenarios or tasks with the Commander API. </p><h2 id="Authenticate" data-magellan-target="Authenticate">Authenticate</h2><ol><li value="1">Logging in with JWT and renewing the token for subsequent API calls.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python </a></span><div class="MCDropDownBody dropDownBody"><pre class="Code_Grayed" xml:space="preserve">
+import requests
+					
+baseurl = "https://localhost:8443"
+username = ""
+password = ""
+					
+#Get a token
+tokenurl = "/rest/v3/tokens"
+tokenposturl = baseurl+tokenurl
+print( 'Token Get URL: ' + tokenposturl)
+tokenbody = { "username": username, "password": password}
+tokenresult = requests.post(tokenposturl, json=tokenbody , verify=False) 
+tokenresult = tokenresult.json()
+authtoken = tokenresult["token"]
+print ('Token aquired: ' + authtoken)
+					
+#Refresh an existing token
+tokenrefreshurl = "/rest/v3/tokens/refresh"
+tokenposturl = baseurl+tokenrefreshurl
+tokenrefreshbody = { "token": authtoken}
+tokenrefreshresult = requests.post(tokenposturl, json=tokenrefreshbody , verify=False) 
+tokenrefreshresult = tokenrefreshresult.json()
+authtoken = tokenrefreshresult["token"]
+print('Refreshed Token Aquired:' + authtoken)	
+				</pre></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><pre class="Code_Grayed" xml:space="preserve">
+$BaseURL = "https://localhost:8443"
+$user = ""
+$pass = ""
+					
+#Get a token   
+Write-host "Requesting a new token"
+$TokenBody = "{
+      ""username"": ""$user"",
+      ""password"": ""$pass""
+      }"				 
+$Tokenendpoint = "/rest/v3/tokens"
+$TokenpostURL = $BaseURL + $Tokenendpoint
+$Tokenresult = Invoke-RestMethod $TokenpostURL -Method POST -Body $TokenBody -ContentType 'application/json' -SkipCertificateCheck
+    IF ($Tokenresult) {
+        $authToken = $Tokenresult.token
+        $headers = @{Authorization = ("Bearer $authToken") }
+        Write-host "Token Acquired"
+    }
+    else {
+        Write-host "Failed to aquire token for $user"
+    }
+					
+#Refresh JWT Token 
+    $refreshURL = $BaseURL+"/rest/v3/tokens/refresh"
+    $refreshBody = "{ ""token"": ""$authToken""}"
+    $refreshResult = Invoke-RestMethod -Method POST $refreshURL -Body $refreshBody -ContentType 'application/json' -SkipCertificateCheck
+    $authToken = $refreshResult.token
+    $headers = @{"Authorization" = "Bearer $authToken" }	
+				</pre></div></div></ol><h2 id="Adduserstoanorganization" data-magellan-target="Adduserstoanorganization">Add users to an organization</h2><p>In this scenario, you create an organization and a user, and then add the user as a member of the organization.  </p><ol><li value="1">Create an organization named <code>myNewOrganization</code>. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python </a></span><div class="MCDropDownBody dropDownBody"><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/organizations'
+payload = {"name":"myNewOrganization"}
+response = requests.post(url, headers=header, json=payload, verify=False) 		
+			</pre></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+"name"="myNewOrganization"
+}
+$jsonRequest = $request | ConvertTo-Json
+
+try {
+	$url = "https://localhost:8443/rest/v3/organizations"
+	$responseData = Invoke-WebRequest -Uri $url -Method Post -Headers $headers -Body $jsonRequest
+	$statusCode = $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}		
+			</pre></div></div><li value="2">Create a user with username <code>mynewuser</code> and password <code>secret</code>.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/users'
+payload = {"name":"mynewuser", "password":"secret"}
+response = requests.post(url, headers=header, json=payload, verify=False) 						
+			</pre></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"name"="mynewuser"
+	"password"="secret"
+} 
+$jsonRequest = $request | ConvertTo-Json
+
+try {
+	$url = "https://localhost:8443/rest/v3/users"
+	$responseData = Invoke-WebRequest -Uri $url -Method Post -Headers $headers -Body $jsonRequest 
+	$statusCode = $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}	
+				</pre></div></div><li value="3">Add the user to the organization.</li><p> The user <code>mynewuser</code> is added as a member of the organization <code>myNewOrganization</code>. The user is given a role of <code>CUSTOMER</code> in the organization. </p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/organizations/' + "myNewOrganization" + '/' + 'members'
+payload = {"username":"mynewuser", "role":"CUSTOMER"}
+response = requests.post(url, headers=header, json=payload, verify=False)
+			</pre></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"username"="mynewuser"
+	"role"="CUSTOMER"
+} 
+$jsonRequest = $request | ConvertTo-Json
+
+try {
+	$url = "https://localhost:8443/rest/v3/organizations/" + "myNewOrganization" + "/members"
+	$responseData = Invoke-WebRequest -Uri $url -Method Post -Headers $headers -Body $jsonRequest 
+	$statusCode = $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+				</pre></div></div></ol><p><h2 id="Applycustomattributestovirtualmachines" data-magellan-target="Applycustomattributestovirtualmachines">Apply custom attributes to virtual machines</h2><p>In this scenario, you look up a virtual machine by name and apply a custom attribute.</p><ol><li value="1">Filter the collection of virtual machines by name to find the virtual&#160;machine ID.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/virtual-machines?filter=name -eq ' + vm_name
+response = requests.get(url,headers=headers,verify=False)
+data = response.json()
+vm_id = (data['items'][0]['id'])
+						</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$vm_name = "centos-vm"
+	$url = "https://localhost:8443/rest/v3/virtual-machines?filter=name -eq " + $vm_name
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers 
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$vm_id = $jsonResponse.items[0].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+						</pre></p></div></div><li value="2">Apply the custom attribute to the virtual machine.</li><p>The custom attribute named <code>SLA</code> is applied to the virtual machine. The custom attribute is given a value of <code>Gold</code>. </p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/virtual-machines/' + str(vm_id) + '/attributes'
+payload = {"name":"SLA", "value":"Gold"}
+response = requests.post(url, headers=headers, json=payload, verify=False)			
+						</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"name"="SLA"
+	"value"="Gold"
+}
+$jsonRequest = $request | ConvertTo-Json
+
+try {
+	$url = "https://localhost:8443/rest/v3/virtual-machines/" + $vm_id.ToString() + "/attributes"
+	$responseData = Invoke-WebRequest -Uri $url -Method Post -Headers $headers -Body $jsonRequest
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__
+}
+						</pre></p></div></div></ol><p><h2 id="Assignanorganizationalownertoavirtualmachine" data-magellan-target="Assignanorganizationalownertoavirtualmachine"> Assign an organizational owner to a virtual machine</h2><p>In this scenario, you look up a virtual machine by name and assign it an organizational owner. </p><ol><li value="1">Filter the collection of virtual machines by name to find the virtual machine ID.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/virtual-machines?filter=name -eq ' + vm_name
+response = requests.get(url,headers=headers,verify=False)
+data = response.json()
+vm_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$vm_name = "centos-vm"
+	$url = "https://localhost:8443/rest/v3/virtual-machines?filter=name -eq " + $vm_name
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers 
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$vm_id = $jsonResponse.items[1].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="2">Assign the virtual machine to the organization.</li><p>The organization <code>myNewOrganization</code> is assigned as the owner of the virtual machine <code>centos-vm</code>. </p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/virtual-machines/' + str(vm_id) + '/organization'
+payload = {"name":"myNewOrganization"}
+response = requests.put(url,headers=headers,json=payload,verify=False)	
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"name"="myNewOrganization"
+}
+$jsonRequest = $request | ConvertTo-Json
+
+try {
+	$url = "https://localhost:8443/rest/v3/virtual-machines/" + $vm_id.ToString() + "/organization"
+	$responseData = Invoke-WebRequest -Uri $url -Method Put -Headers $headers -Body $jsonRequest
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__
+}		
+								</pre></p></div></div></ol><h2 id="Deployavirtualmachine" data-magellan-target="Deployavirtualmachine">Deploy a virtual machine</h2><p>In this scenario, you select a service from the catalog and generate its request form. Reconfigure the request form by increasing the number of CPUs, then submit it. Because there is a deployment destination and an approval workflow, the virtual machine auto-deploys when the service request is submitted.  </p><ol><li value="1">Find the ID of the service named <code>VMware</code> from the service catalog. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/services?filter=name -eq ' + "VMware"
+response = requests.get(url,headers=headers,verify=False)
+data = response.json()
+service_id = data['items'][0]['id']
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/services?filter=name -eq " + "VMware"
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers 
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$service_id = $jsonResponse.items[0].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="2">Generate the request form for the service.</li><p>The request form is a JSON document that contains the configurable attributes of the service. The administrator controls which attributes of each service are configurable, so the request form varies by service.</p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/services/' + str(service_id) + '/request-form'
+response = requests.get(url,headers=headers,verify=False)
+request_form = response.json()
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/services/" + $service_id.ToString() + "/request-form"								
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers 
+	$requestForm = $responseData | ConvertFrom-JSON
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}						
+								</pre></p></div></div><li value="3">Reconfigure the request form to increase the number of CPUs.</li><p>In this scenario, the administrator has made the CPU Count a configurable property of the service. The CPU Count may be reconfigured, but it isn't required.</p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+request_form['components'][0]['CPU Count'] = 2
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$requestForm.components[0]."CPU Count" = 2
+								</pre></p></div></div><li value="4">Submit the complete service request. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/service-requests'
+payload = request_form
+response = requests.post(url,headers=headers,json=payload,verify=False)
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/service-requests"
+	$jsonRequest = $requestForm | ConvertTo-JSON
+	$responseData = Invoke-WebRequest -Uri $url -Method Post -Headers $headers -Body $jsonRequest 
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div></ol><h2 id="CreateanAWSdeploymentdestination" data-magellan-target="CreateanAWSdeploymentdestination">Create an AWS deployment destination</h2><p>In this scenario, you create an AWS deployment destination. </p><p>To create a deployment destination, you find the supporting resources for the cloud account type, and reference those resources in the creation request. </p><ol><li value="1">Find the cloud account that the target of the deployment destination belongs to, filtering by cloud account type. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/cloud-accounts?filter=type -eq AWS'
+data = response.json()
+cloud_account_id = (data['items'][0]['id'])
+					</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/cloud-accounts?filter=type -eq AWS"
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$cloud_account_id = $jsonResponse.items[0].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+					</pre></p></div></div><li value="2">Find the region that the target belongs to, filtering by cloud account and region name.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/regions?filter=(cloud_account_id -eq ' + cloud_account_id + ')' + ' -and ' + '(name -eq us-east-1)'
+data = response.json()
+region_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/regions?filter=(cloud_account_id -eq " + $cloud_account_id + ")" +&#160;" -and " + "(name -eq us-east-1)"
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$region_id = $jsonResponse.items[0].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="3">Find the virtual cloud that's the target of the destination, filtering by cloud account and region. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/virtual-clouds?filter=(cloud_account_id -eq ' + cloud_account_id + ')' + ' -and ' + '(region_id -eq ' + region_id +&#160;')'
+data = response.json()
+target_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/virtual-clouds?filter=(cloud_account_id -eq " + $cloud_account_id +&#160;")" + " -and " + "(region_id -eq " + $region_id +&#160;")"	
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$target_id = $jsonResponse.items[0].id	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="4"> Find the subnets applicable to the destination, filtering by the target virtual cloud. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/subnets?filter=virtual_cloud_id -eq ' + target_id
+data = response.json()
+subnet_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/subnets?filter=virtual_cloud_id -eq " + $target_id
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$subnet_id = $jsonResponse.items[0].id	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="5">Optionally, add a key pair to the destination. To find key pairs applicable to the destination, filter by the cloud account. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/key-pairs?filter=cloud_account_id -eq ' + cloud_account_id
+data = response.json()
+key_pair_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/key-pairs?filter=cloud_account_id -eq " + $cloud_account_id
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$key_pair_id = $jsonResponse.items[0].id	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="6">Optionally, add security groups to the destination. To find security groups applicable to the target, filter by the virtual cloud.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/security-groups?filter=virtual_cloud_id -eq ' + virtual_cloud_id
+data = response.json()
+security_group_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/security-groups?filter=virtual_cloud_id -eq " + $virtual_cloud_id
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$security_group_id = $jsonResponse.items[0].id	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="7">In the common section of the deployment destination creation request, configure the cloud account, the target virtual cloud, and a unique name for the destination. Configure the AWS specific resource references in the <code>aws</code> property, and submit the request. Because <code>users</code> and <code>organizations</code> weren't configured, the deployment destination is globally accessible. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">JSON</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+{
+	"name":"AWS-deployment-destination",
+	"cloud_account" : {
+		"id": 15564808
+	},
+	"target": {
+		"id": 15565024,
+		"type": "VIRTUAL_CLOUD"
+	},
+	"users": [],
+	"organizations": [],
+	"placement_attributes": [],
+	"aws": {
+		"key_pair": {
+			"id": 93323265
+		},
+		"security_groups: [
+			{
+				"id": 6332142
+			}
+		],
+		"iam_role": "UserAccess-Role",
+		"subnets": [
+			{
+				"id": 14352408
+			}
+		],
+		"region": {
+			"id": 14352412
+		}
+	}
+}
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations
+payload = {"name": "AWS-deployment-destination, ...}
+response = requests.post(url, headers=header, json=payload, verify=False)
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"name": "AWS-deployment-destination",
+	...
+}
+$jsonRequest = $request | ConvertTo-Json
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations
+	$responseData = Invoke-WebRequest -Uri $url -Method Post -Headers $headers  -Body $jsonRequest
+	$statusCode $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div></ol><h2 id="CreateaVMwaredeploymentdestination" data-magellan-target="CreateaVMwaredeploymentdestination">Create a VMware deployment destination</h2><p>In this scenario, you create a VMware deployment destination. </p><p>To create a deployment destination, you find the supporting resources for the cloud account type, and reference those resources in the creation request. In this scenario, the destination targets a host, and you use both datastores and datastore clusters as storage. You assign both standard networks and distributed portgroups to the destination. </p><ol><li value="1">Find the cloud account that the target of the deployment destination belongs to, filtering by cloud account type. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/cloud-accounts?filter=type -eq VMWARE_VCENTER'
+data = response.json()
+cloud_account_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/cloud-accounts?filter=type -eq VMWARE_VCENTER"
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$cloud_account_id = $jsonResponse.items[0].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="2">Find the datacenter that the target belongs to, filtering by cloud account and datacenter name.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/datacenters?filter=(cloud_account_id -eq ' + cloud_account_id + ')' + ' -and ' + '(name -eq Shared)'
+data = response.json()
+datacenter_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/datacenters?filter=(cloud_account_id -eq " + $cloud_account_id + ")" +&#160;" -and " + "(name -eq Shared)"
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$datacenter_id = $jsonResponse.items[0].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="3">Find the host that's the target of the destination, filtering by cloud account and datacenter.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/hosts?filter=(cloud_account_id -eq ' + cloud_account_id + ')' + ' -and ' + '(datacenter_id -eq ' + datacenter_id +&#160;')'
+data = response.json()
+target_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/hosts?filter=(cloud_account_id -eq " + $cloud_account_id +&#160;")" + " -and " + "(datacenter_id -eq " + $datacenter_id +&#160;")"	
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$target_id = $jsonResponse.items[0].id	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="4">Find the storage to use for the destination. You can use any combination of datastores and datastore clusters as storage. To find storage that's valid for the destination, filter the datastores and datastore clusters by the target host. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/datastores?filter=host_id -eq ' + host_id
+data = response.json()
+datastore_id = (data['items'][0]['id'])
+									
+url = 'https://localhost:8443/rest/v3/datastore-clusters?filter=datacenter_id -eq ' + datacenter_id
+data = response.json()
+datastore_cluster_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/datastores?filter=host_id -eq " + $host_id
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$datastore_id = $jsonResponse.items[0].id	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+									
+try {
+	$url = "https://localhost:8443/rest/v3/datastore-clusters?filter=datacenter_id -eq " + $datacenter_id
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$datastore_cluster_id = $jsonResponse.items[0].id	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="5">Since you're not connecting to the same network as the source, find the networks to use for the destination. You can use any combination of standard networks and distributed portgroups, both of which are available in the networks collection. To find networks that are valid for the destination, filter by the target host.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/networks?filter=host_id -eq ' + host_id
+data = response.json()
+network_id = (data['items'][0]['id'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/networks?filter=host_id -eq " + $host_id
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$network_id = $jsonResponse.items[0].id	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="6">In the common section of the deployment destination create request, reference the cloud account, the target host, and configure a unique name for the destination.  In the <code>vmware_vcenter</code> property, configure the datacenter as the location, and reference the storage resources. Configure the destination to not use the same networks as the source, and configure the networks. Don't assign NICs a static IP address. Disable fenced networking, and submit the request. Because users and organizations weren't configured for the destination, the destination is globally accessible.  </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">JSON</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+{
+	"name":"VMware-deployment-destination",
+	"cloud_account" : {
+		"id": 15564808
+	},
+	"target": {
+		"id": 15565024,
+		"type": "HOST"
+	},
+	"users": [],
+	"organizations": [],
+	"placement_attributes": [],
+	"vmware_vcenter": {
+		"location": {
+			"id": 196947,
+			"type": "DATACENTER"
+		},
+		"connect_to_same_network_as_source_service": false,
+		"networks": [
+			{
+				"id": 197342,
+				"type": "DISTRIBUTED_PORTGROUP"
+			},
+			{
+				"id": 197341,
+				"type": "NETWORK"
+			}
+		],
+		"assign_nics_static_ip_from_pool": false,
+		"enable_fenced_networks": false,
+		"fenced_networking_configuration": null,
+		"storage": [
+			{
+				"id": 196993,
+				"type": "DATASTORE"
+			},
+			{
+				"id": 12345,
+				"type": "DATASTORE_CLUSTER"
+			}
+		],
+		"disk_format": "SAME_AS_SOURCE",
+		"calculate_capacity_using": "PEAK"
+	}
+}
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations
+payload = {"name": "VMware-deployment-destination, ...}
+response = requests.post(url, headers=header, json=payload, verify=False)
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"name": "VMware-deployment-destination",
+	...
+}
+$jsonRequest = $request | ConvertTo-Json
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations
+	$responseData = Invoke-WebRequest -Uri $url -Method Post -Headers $headers  -Body $jsonRequest
+	$statusCode $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div></ol><h2 id="Addusersandorganizationstoadeploymentdestination" data-magellan-target="Addusersandorganizationstoadeploymentdestination">Add users and organizations to a deployment destination</h2><p>In this scenario, you modify a deployment destination to make it accessible to a limited set of users and organizations. You update the users and organizations by replacing the existing sets with new sets. </p><ol><li value="1">Get the current set of users and organizations the destination is accessible to.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations/12345
+response = requests.get(url,headers=headers,verify=False)
+data = response.json()
+users =  (data['users'])
+organizations =  (data['organizations'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations/12345
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$users = $jsonResponse.users	
+	$organizations = $jsonResponse.organizations	
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="2">Replace the existing set of users and organizations with new sets, and submit the update request. The destination is accessible only to the configured users and organizations. It isn't globally accessible. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations/12345
+payload = {"users":["existingUser", "newUser"], "organizations": ["existingOrganization", "newOrganization"]}
+response = requests.patch(url, headers=header, json=payload, verify=False)
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"users"=["existingUser", "newUser"],
+	"organizations"=["existingOrganization", "newOrganization"]
+}
+$jsonRequest = $request | ConvertTo-Json
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations/12345
+	$responseData = Invoke-WebRequest -Uri $url -Method Patch -Headers $headers  
+	$statusCode = $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div></ol><h2 id="Addplacementattributestoadeploymentdestination" data-magellan-target="Addplacementattributestoadeploymentdestination">Add placement attributes to a deployment destination</h2><p>In this scenario, you update a deployment destination by adding placement attributes. You add one provided placement attribute, and one selectable placement attribute. To update placement attributes, you replace the existing set with a new set. </p><ol><li value="1">Get the current set of placement attributes associated with the destination.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations/12345
+response = requests.get(url,headers=headers,verify=False)
+data = response.json()
+placement_attributes = (data['placement_attributes'])
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers  
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$placement_attributes = $jsonResponse.placement_attributes
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div><li value="2">Add the new placement attributes to the set, and submit the update request. Because the attribute <code>fixed-placement-attribute</code> is a provided placement attribute, it has no value. The <code>selectable-placement-attribute</code> has a value of <code>some value</code>. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations/12345
+payload = {"placement_attributes":[{"name":"fixed-placement-attribute", "values": []},{"name":"selectable-placement-attribute", "values":["some value"]}]}
+response = requests.patch(url, headers=header, json=payload, verify=False)
+								</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"placement_attributes"=[
+		{
+			"name":"fixed-placement-attribute", 
+			"values": []
+		},
+		{
+			"name": "selectable-placement-attribute",
+			"values": ["some value"]
+		}							
+	]
+}
+$jsonRequest = $request | ConvertTo-Json
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations
+	$responseData = Invoke-WebRequest -Uri $url -Method Patch -Headers $headers -Body $jsonRequest 
+	$statusCode	= $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+								</pre></p></div></div></ol></p></p><h2 id="Configureperdestinationquotasfororganizations" data-magellan-target="Configureperdestinationquotasfororganizations">Configure per-destination quotas for organizations</h2><p>In this scenario, you configure a destination quota for an organization. The organization is named <code>myOrganization</code> and the deployment destination is named <code>VMWare-dest</code>. You assign the organization to the deployment destination, and update the organization with a quota for the destination. Like global quotas, a destination can have either a cost quota or a resource quota, but not both. In this example, you configure a cost quota for the organization. </p><ol><li value="1">Filter the collection of deployment destinations by name to find the deployment destination ID.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations?filter=name -eq VMware-dest'
+response = requests.get(url,headers=headers,verify=False)
+data = response.json()
+destination_id = (data['items'][0]['id'])
+						</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations?filter=name -eq VMware-dest"
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers 
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$destination_id = $jsonResponse.items[0].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+						</pre></p></div></div><li value="2">Assign the organization to the deployment destination. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations/12345
+payload = {"organizations": ["myOrganization"]}
+response = requests.patch(url, headers=header, json=payload, verify=False)
+						</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"organizations"=["myOrganization"]
+}
+$jsonRequest = $request | ConvertTo-Json
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations/12345
+	$responseData = Invoke-WebRequest -Uri $url -Method Patch -Headers $headers  
+	$statusCode = $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+						</pre></p></div></div><li value="3">Update the organization with a cost quota for the deployment destination. Reference the deployment destination ID, and configure a quota limit of $2000.00 for the organization. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/organizations/myOrganization
+payload = {"destination_quotas": [{"deployment_destination_id": 12345, "cost_quota":{"daily_cost": 2000.00}}]}
+response = requests.patch(url, headers=header, json=payload, verify=False)
+						</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"destination_quotas"=[{"deployment_destination_id": 12345, "cost_quota":{"daily_cost": 2000.00}}]
+}
+$jsonRequest = $request | ConvertTo-Json
+try {
+	$url = "https://localhost:8443/rest/v3/organizations/myOrganization
+	$responseData = Invoke-WebRequest -Uri $url -Method Patch -Headers $headers  
+	$statusCode = $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+						</pre></p></div></div></ol><h2 id="Configureperdestinationquotasfororganizationmembers" data-magellan-target="Configureperdestinationquotasfororganizationmembers">Configure per-destination quotas for organization members</h2><p>In this scenario, you configure a destination quota for an organization member. You assign the organization to the deployment destination, and update the organization member with a quota for the destination. Because the organization has a destination cost quota, the organization member can either have a destination cost quota, or no quota. </p><p>&#160;</p><p>In this example, the user <code>myOrgMember</code> is a member of organization <code>myOrganization</code>. The deployment destination is named <code>VMware-dest</code>.</p><ol><li value="1">Filter the collection of deployment destinations by name to find the deployment destination ID.</li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations?filter=name -eq VMware-dest'
+response = requests.get(url,headers=headers,verify=False)
+data = response.json()
+destination_id = (data['items'][0]['id'])
+						</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations?filter=name -eq VMware-dest"
+	$responseData = Invoke-WebRequest -Uri $url -Method Get -Headers $headers 
+	$jsonResponse = $responseData | ConvertFrom-JSON
+	$destination_id = $jsonResponse.items[0].id
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+						</pre></p></div></div><li value="2">Assign the organization to the deployment destination. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/deployment-destinations/12345
+payload = {"organizations": ["myOrganization"]}
+response = requests.patch(url, headers=header, json=payload, verify=False)
+						</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"organizations"=["myOrganization"]
+}
+$jsonRequest = $request | ConvertTo-Json
+try {
+	$url = "https://localhost:8443/rest/v3/deployment-destinations/12345
+	$responseData = Invoke-WebRequest -Uri $url -Method Patch -Headers $headers  
+	$statusCode = $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+						</pre></p></div></div><li value="3">Update the organization member with a cost quota for the deployment destination. Reference the deployment destination ID, and configure a quota limit of $100.00 for the organization member. </li><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Python</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+url = 'https://localhost:8443/rest/v3/organizations/myOrganization/members/myOrgMember
+payload = {"destination_quotas": [{"deployment_destination_id": 12345, "cost_quota":{"daily_cost": 100.00}}]}
+response = requests.patch(url, headers=header, json=payload, verify=False)
+						</pre></p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">PowerShell</a></span><div class="MCDropDownBody dropDownBody"><p><pre class="Code_Grayed" xml:space="preserve">
+$request = @{
+	"destination_quotas"=[{"deployment_destination_id": 12345, "cost_quota":{"daily_cost": 100.00}}]
+}
+$jsonRequest = $request | ConvertTo-Json
+try {
+	$url = "https://localhost:8443/rest/v3/organizations/myOrganization/members/myOrgMember
+	$responseData = Invoke-WebRequest -Uri $url -Method Patch -Headers $headers  
+	$statusCode = $responseData.StatusCode
+} catch {
+	$statusCode = $_.Exception.Response.StatusCode.value__    
+}
+						</pre></p></div></div></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:05 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:05 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="W8aFEQkvRUei7BK7BN7Pog">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="W8aFEQkvRUei7BK7BN7Pog:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#SampleCode">Sample Code</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Authenticate">Authenticate</a>
+                                                            </li>
+                                                            <li><a href="#Adduserstoanorganization">Add users to an organization</a>
+                                                            </li>
+                                                            <li><a href="#Applycustomattributestovirtualmachines">Apply custom attributes to virtual machines</a>
+                                                            </li>
+                                                            <li><a href="#Assignanorganizationalownertoavirtualmachine"> Assign an organizational owner to a virtual machine</a>
+                                                            </li>
+                                                            <li><a href="#Deployavirtualmachine">Deploy a virtual machine</a>
+                                                            </li>
+                                                            <li><a href="#CreateanAWSdeploymentdestination">Create an AWS deployment destination</a>
+                                                            </li>
+                                                            <li><a href="#CreateaVMwaredeploymentdestination">Create a VMware deployment destination</a>
+                                                            </li>
+                                                            <li><a href="#Addusersandorganizationstoadeploymentdestination">Add users and organizations to a deployment destination</a>
+                                                            </li>
+                                                            <li><a href="#Addplacementattributestoadeploymentdestination">Add placement attributes to a deployment destination</a>
+                                                            </li>
+                                                            <li><a href="#Configureperdestinationquotasfororganizations">Configure per-destination quotas for organizations</a>
+                                                            </li>
+                                                            <li><a href="#Configureperdestinationquotasfororganizationmembers">Configure per-destination quotas for organization members</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

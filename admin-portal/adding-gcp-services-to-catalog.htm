@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Add GCP Services to the Catalog</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyles/Standard.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="AddGCPServicestotheCatalog" data-magellan-target="AddGCPServicestotheCatalog"><a name="aanchor301"></a><MadCap:concept term="Admin Portal" />Add GCP Services to the Catalog</h1><p>GCP published services can include deployment configurations as well as <a href="make_service_available.htm#Custom">custom components</a>. Through deployments, you can use Commander to provision any resource supported by Google Cloud Deployment Manager.</p><ul class="NoteMultiple"><li>Specifying parameter values for a deployment configuration isn't currently supported; all parameter values must be specified in the configuration itself.</li><li><a href="catalog-multi-cloud.htm">Multi-cloud services</a> aren't supported for GCP.</li></ul><p><b>See also:</b></p><ul><li><a href="https://cloud.google.com/deployment-manager/docs/configuration/" target="_blank" title="Google Cloud Documentation" alt="Google Cloud Documentation">Configurations Overview <span class="f_Icons_Inline"></span></a> in the Google Cloud documentation
+</li><li><a href="managing-gcp-deployments.htm" class="MCXref xref">GCP Deployments</a> to learn how Commander handles deployments</li><li><a href="manage-google-cloud-platform.htm" class="MCXref xref">Google Cloud Platform</a> to learn how to get started with GCP</li></ul><h2 id="AddnewGCPsservicetothecatalog" data-magellan-target="AddnewGCPsservicetothecatalog"><a name="add_new"></a>Add new GCPs service to the catalog</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Configuration &gt; Self-Service</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Commander Roles of Superuser and Enterprise Admin</p></td></tr></table><ol><li value="1">Click the <b>Catalog</b> tab.</li><li value="2">On the Catalog tab, click <b>Add Service</b>.
+               
+                <p class="tip">You can select an existing service and click Copy. This can save time because it copies much of the service's existing configuration.</p></li></ol><h2 id="ServiceDescriptionpage" data-magellan-target="ServiceDescriptionpage"><a name="service-desc-pg"></a>Service Description page</h2><p>Customize display options for this service.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Standard.css');" class="TableStyle-Standard" cellspacing="0"><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Field</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>Description</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Name</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>The display name for this service in the Service Catalog (maximum 100 characters).</p><p>This name is used as the label for the Service section of the Request New Service form. Choose a distinctive Service Name to help requesters fill out the form.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Description</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Optional; up to 1000 characters.</p><p>Along with the Name field, the Description field is used in Service Catalog searches, so adding a description can help users find service catalog entries.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Icon</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Choose an icon from those available, or click <b>Manage Icons</b> to add an icon. See <a href="make_service_available.htm#manage_service_icons" class="hreflinks">Managing Icons for the Service Catalog</a> for more details.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p><b>Categories</b></p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p>To help users find this service in a long list, choose one or more categories from those available, or click <b>Manage Categories</b> to add a category. See <a href="make_service_available.htm#manage_service_categories" class="hreflinks">Managing Categories for the Service Catalog</a> for more details.</p></td></tr></tbody></table><h2 id="Componentspage" data-magellan-target="Componentspage"><a name="components-pg"></a><a name="file_upload"></a>Components page</h2><p>On this page, you can add GCP deployment configurations and custom components to the service.</p><p class="Note">The maximum number of components in a service is 15.</p><p>To add a GCP deployment configuration to the service:
+        </p><ol><li value="1">Click <b>Add</b> and select <b>GCP Deployment Configuration</b>.</li><li value="2">In the Add GCP Deployment Configuration dialog, browse to a YAML configuration file or a ZIP file.
+            <p>The maximum uncompressed size of a deployment configuration is 1 MB.</p><p>If you upload a YAML&#160;file, it must not import external files. </p><p>If you upload a ZIP file:</p></li><ul><li>The ZIP&#160;file must include:<ul><li>One YAML configuration file, at the root level. If your ZIP file contains multiple YAML&#160;files, Commander uses the YAML&#160;file whose name matches the name of the ZIP file.</li><li>All Jinja or Python template files imported by the YAML configuration file.</li><li>Any schema files for the templates, in JSON&#160;format.</li></ul></li></ul><ul><li>File and directory names must include only simple ASCII characters. </li><li>
+                    The ZIP file must use relative paths, not absolute paths (for example, <code>network/firewall.py</code>, not <code>C:/network/firewall.py</code>). 
+                </li><li>You must replace all backslashes in references and imports with forward slashes. Commander doesn't support the use of backslash as path separator when uploading a ZIP&#160;file. For example, a YAML&#160;file with the following imports will generate the error "GCP deployment configurations must use forward slash as path separator":
+                
+                    <p><code>imports:<br />- path: network\network-template.jinja<br />- path: network\firewall-template.jinja</code></p><p>When the imports section is edited as follows, validation is successful:</p><p><code>imports:<br />- path: network/network-template.jinja<br />- path: network/firewall-template.jinja</code></p></li></ul><li value="3">Click <b>OK</b>.
+            
+                <p>The YAML file and any schema files are parsed, and basic validation for size and schema imports is performed. Commander displays an error if any files imported by the YAML and schema files are missing.</p><p>The new Deployment Configuration component appears on the Component Blueprints page.</p></li><li value="4">Add more deployment configurations or <a href="adding-custom-components.htm">custom components</a> to the service as required.</li></ol><h2 id="Componentspecificpages" data-magellan-target="Componentspecificpages"><a name="component_page"></a>Component-specific pages</h2><p>A subpage is added to the Add Service wizard for each component added to the service.</p><p>On each subpage, you see tabs allowing you to customize options for each component in the service.</p><p><img alt="Blueprint button bar" src="Images/gcp-cat-bp-button-bar.png" class="" style="width: auto;height: auto;max-width: 99%;" /></p><p>Adding elements to the Form tab allows requesters to change the default settings you configure on the other tabs. If a requester changes your configured defaults, the changes are displayed in approval emails, on the approval landing page, and in the Request Details dialog.</p><p class="Note">Specifying parameter values for a GCP deployment configuration isn't yet supported; in this release, all parameter values must be specified in the configuration.</p><h3><a name="comp_infra"></a>Infrastructure tab</h3><p>Set infrastructure options for this specific component.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Standard.css');" class="TableStyle-Standard" cellspacing="0"><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Field</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>Description</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Name</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Optional: Customize the display name for this component in the Service Catalog (maximum 100 characters).</p><p>This name is used as the label for the Component section of the Request New Service form. Choose a distinctive component name to help requesters fill out the form.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Description</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Optional: Customize the description for this component in the service catalog (maximum 1000 characters). </p><p>A user sees the component description when viewing service details and when completing a service request form.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Deployed Name</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Specify the name for this deployment when it's provisioned.</p><p>Select <b>Use default naming format</b> to use the default <a href="configure_auto_provision.htm" class="hreflinks">global naming convention for virtual services</a>, or enter a customized name.</p><p>To prevent deployment failure, your naming convention must adhere to GCP's strict naming rules. GCP mandates that deployment names comply with RFC 1035. Names must contain between 1 and 63 characters and must match the following regular expression: </p><p><code>[a-z]([-a-z0-9]*[a-z0-9])</code></p><p>Names must start with a letter, end with a letter or digit, and have as interior characters only letters, digits and hyphen.</p><p>If you don't want to edit your global naming convention to adhere to GCP's strict rules, we recommend customizing the name in the service catalog entry instead. The name specified in the service catalog <a href="configure_auto_provision.htm#order_precedence_vm_names">takes precedence</a> over the global naming convention.</p><p>Click <b>Configure global text replacement rules</b> to shorten your component names. For more information, see <a href="configure_auto_provision.htm#set_text_repl_rules" class="MCXref xref">Set up text replacement rules for service names</a></p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Completion Workflow</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>If you have set up one or more component-level <a href="completion-workflows.htm" class="hreflinks">completion workflows</a>, you can select one from the menu.</p><p>Completion workflows allow you to specify actions to be carried out after deployment.</p><p>You can click <b>Add Workflow</b> to create a new workflow.</p><p>You can click <b>Edit Workflow</b> to edit the workflow that's currently selected in the drop-down list. Note that when you edit the workflow using this link, you're editing the workflow for all of the components or services it's assigned to.</p><p>While it's possible to create completion workflows for all component types, they're especially recommended for custom components. If no completion workflow is assigned, a custom component moves immediately to the Completed state once approved. A completion workflow allows for provisioning steps to be carried out before the component moves to Completed. The completion workflow for a database instance, for example, could include a script to create the database.</p><p class="Note">Completion workflows don't act on a GCP Deployment's resources (that is, its child VMs). Completion workflows act only on the GCP Deployment component itself.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p><a name="deployment_cost"></a><b>Annual Deployment Cost</b></p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p>Enter an estimated annual cost for the entire deployment and select a currency. For more information, see<a href="managing-gcp-deployments.htm#costs" class="MCXref xref">Costs for deployment configurations</a>.</p><p>You can click <b>Google Cost Calculator</b> to  go to GCP and calculate the cost of all resources in the deployment.</p><p>The GCP cost calculator provides a monthly cost, while Commander requires an annual cost.</p></td></tr></tbody></table><h3><a name="comp_attribs"></a>Attributes tab: Custom Attributes</h3><p>Set custom attributes and their default values for this specific component. On the Form tab, you can allow requesters to set values for custom attributes. If you don't specify a default value, no default is set for the component. If you add an attribute on the Form tab, the default value you set on the Attributes tab is presented to the requester as the default value.</p><p class="tip">To be able to add a custom attribute for this component on the request form, you must add the custom attribute on the Attributes tab first.</p><p>Click <b>Add Attributes</b> to select from the list of existing custom attributes. In the Add Attributes dialog, Form attributes and custom attributes applicable to the current component type are displayed.</p><p>To edit existing custom attributes, click <b>Manage Attributes</b>. On the Custom Attributes page, you can add and edit custom attributes. Click the browser's Back button to return to the Attributes tab.</p><p>If you add list-type custom attributes that are interrelated, the attributes are displayed in the order of parent to child to grandchild (if applicable). Your selection of a default value for the parent affects the selectable values for the sublist attribute. For more information, see <a href="relating-attributes-used-on-forms.htm#sublist" class="MCXref xref">Create Relationships Between Attributes Used on Forms</a>.</p><h3><a name="comp_groups"></a>Attributes tab: Groups</h3><p>Set the default groups for this component. To learn about groups, including other methods for assigning groups to new services, see <a href="groups_vm.htm" class="MCXref xref">Manage Service Groups</a>.</p><p class="Note">If this component is a VM or VM&#160;template, groups assigned to the source template or VM aren't prepopulated on the Attributes tab.</p><p>Click <b>Add Groups</b> to select one or more group types and click <b>OK</b>. On the Attributes tab, select a group from the relevant menu.</p><p>To add, edit, or delete groups, click <b>Manage Groups</b>; when finished, click your browser's <b>Back</b> button to return to the Attributes tab.</p><h3><a name="comp_form"></a>Form tab</h3><p>On this tab, you customize the form users see when they request this specific component. Adding elements to the Form tab allows requesters to change the default settings you configured on the other tabs.</p><p>If you leave the Form tab blank, requesters won't see a Component form; they will see only the Service-level form that's configured as part of a new service request. For more information, see <a href="creating-service-forms.htm" class="MCXref xref">Create New Service Requests</a>.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Standard.css');" class="TableStyle-Standard" cellspacing="0"><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Form Element</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>Description</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Header</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Adds heading text to the form.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Text</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Adds explanatory text to the form.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><a name="input_text_field"></a><b>Input Text Field</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Allows the requester to enter a value, such as a note or a password.</p><p><b>Important: </b>If users will be entering a password on the request form, enable <b>Hide User Input</b>. When <b>Hide User Input</b> is enabled:</p><ul><li>Asterisks (*) are displayed for this field value in the Request Details dialog, emails, and landing pages.</li><li>The password is stored, encrypted, in the Commander database.</li><li>The plain-text password can be accessed through the approval workflow variable <span style="word-wrap:anywhere;"><code>#{request.services[x].components[x].settings.inputField['field name']}</code></span>. For example, if you set the Display Label for the Input Text Field to "Password", you would access the password in an approval workflow script with the variable <span style="word-wrap:anywhere;"><code>#{request.services[1].components[1].settings.inputField['Password']}</code></span>.</li><li>If a request containing a password is copied, the password is blanked out.</li></ul></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Dynamic List</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Allows the requester to select options from lists that are updated in real time from an external source. If the lists can depend on other form elements, the selection of one form element can dictate the available choices for another list. For more information, see <a href="adding-dynamic-lists-to-forms.htm" class="MCXref xref">Add Dynamic Lists to Forms</a>.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><a name="comp_name"></a><b>Component Name</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Allows the requester to specify the name of the deployment. The <b>Maximum Length</b> field allows you to change the maximum number of characters (default: 50). See also <a href="configure_auto_provision.htm#order_precedence_vm_names" class="MCXref xref">Order of precedence for deployed service names</a>.</p><p><b>Important:</b> Commander doesn't validate that the name entered by a requester complies with GCP naming restrictions. To prevent provisioning failure, if you add this element to the request form, we recommend also adding a <b>Text</b> form element to explain GCP's naming restrictions. Here's some text you can copy/paste into the Text form element: </p><p>Names must contain between 1 and 63 characters, start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p><a name="attributes"></a><b>Attributes</b></p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p>Allows the requester to specify custom attribute values for a component.</p><p>If you added custom attributes on the <a href="#comp_attribs" class="hreflinks">Attributes tab</a>, or if custom attributes were assigned to the source VM template, these attributes appear in the <b>Attributes</b> list.</p><p>Click a custom attribute to add it to the form.</p><p>If the attribute is a list-type attribute and configured to apply only to forms, you can enable <b>Select Multiple</b> to allow users to select multiple values for this attribute. For more information, see <a href="custom-attributes.htm#form" class="MCXref xref">Form custom attributes</a>.</p><p>If you add a custom attribute to the Form tab and add the same attribute to the Service form (see <a href="creating-service-forms.htm" class="MCXref xref">Create New Service Requests</a>), the value specified on the Service form takes precedence.</p></td></tr></tbody></table><h2 id="Deploymentpage" data-magellan-target="Deploymentpage"><a name="service_deploy"></a>Deployment page</h2><p>When you've finished setting options for each component in the service, specify deployment options for the entire service.</p><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Standard.css');" class="TableStyle-Standard" cellspacing="0"><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Field</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>Description</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Deployment Type</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Specify the policy for creating the resources in this deployment. </p><p>With the default selection, <b>Create Or Acquire</b>, the deployment acquires any existing resources in the target project and creates the rest.</p><p>Select <b>Acquire</b> if you have a number of resources already in your project, and you want to manage them together, as a single deployment.</p><p><b>Notes:</b></p><ul><li>Commander does not support the Create policy, which GCP has released as a Beta feature.</li><li>GCP best practices dictate that a deployment should not acquire resources from other deployments.</li></ul></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Deployment Order</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>Some components in a multi-tier service may require other components to be started and running before they can start.</p><p>Within each group, components are sorted in alphabetical order. Components are deployed serially, not in parallel.</p><p>An administrator can override this deployment order by manually deploying components in a different order.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p><b>Completion Workflow</b></p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p>If you have set up one or more service-level <a href="completion-workflows.htm" class="hreflinks">completion workflows</a>, you can select one from the drop-down menu.</p><p>Completion workflows allow you to specify actions to be carried out after deployment.</p><p>You can click <b>Add Workflow</b> to create a new workflow.</p><p>You can click <b>Edit Workflow</b> to edit the workflow that's currently selected in the drop-down list. Note that when you edit the workflow using this link, you're editing the workflow for all of the components or services it's assigned to.</p></td></tr></tbody></table><h2 id="Placementpage" data-magellan-target="Placementpage"><a name="int-plcmt"></a>Placement page</h2><p>When you assign a placement attribute value to a published service, you're identifying the requirements of that published service to help ensure that services are deployed to the best destination. </p><ol><li value="1">Click <b>Edit Placement Attributes</b>.</li><li value="2">In the Edit Placement Attributes dialog, in the <b>Not Required</b> pane, select an attribute value that's provided by this destination and click <b>Add</b> to move it to the Required pane.</li><li value="3">Click <b>OK</b> to close the Edit Placement Attributes dialog.</li><li value="4">The placement attribute values you've assigned to this service are displayed on the Placement page.</li><li value="5">For a placement attribute with selectable values, use the Up and Down arrow buttons to order the attribute values by preference. For example, if a service can be deployed on either private or public cloud, but private cloud is preferable, make sure the Private Cloud attribute value is first in the list.</li></ol><p>For more information, see <a href="plcmt_attribs.htm" class="MCXref xref">Configure Placement Attributes</a>.</p><h2 id="Visibilitypage" data-magellan-target="Visibilitypage"><a name="visibility"></a>Visibility page</h2><p>Specify which users and groups can request this service.</p><div style="overflow: auto; overflow-y: hidden;"><table style="mc-table-style: url('../Resources/TableStyles/Standard.css');width: auto;" class="TableStyle-Standard" cellspacing="0"><col class="TableStyle-Standard-Column-Regular" /><col class="TableStyle-Standard-Column-Regular" /><thead><tr class="TableStyle-Standard-Head-Header1"><th class="TableStyle-Standard-HeadE-Regular-Header1"><p>Field</p></th><th class="TableStyle-Standard-HeadD-Regular-Header1"><p>Description</p></th></tr></thead><tbody><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><a name="temporary-disable-service"></a><b>Do not publish</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>The service is in the catalog but is not available for selection (temporarily disabled).</p><p>See also <a href="make_service_available.htm#remove-service" class="MCXref xref">Permanently remove services from the Service Catalog</a>.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyE-Regular-Row1"><p><b>Publish - Global</b></p></td><td class="TableStyle-Standard-BodyD-Regular-Row1"><p>The service is available to all organizations, users and groups.</p></td></tr><tr class="TableStyle-Standard-Body-Row1"><td class="TableStyle-Standard-BodyB-Regular-Row1"><p><b>Publish - Specific organizations, users and groups</b></p></td><td class="TableStyle-Standard-BodyA-Regular-Row1"><p>The service is available to the specified organizations, users and groups.</p><p>Under Organizations, select an organization from the drop-down menu and click <b>Add</b>. Under Users/Groups, enter the user/group name or email address for one or more users or groups and click <b>Add</b>. You can assign a service to both organizations and users/groups.</p><p>When an organization member requests this service, the deployed service will automatically be assigned to the organization, with the requester as primary owner.</p></td></tr></tbody></table></div><h2 id="Summarypage" data-magellan-target="Summarypage"><a name="summary"></a>Summary page</h2><p>Review the details and click <b>Finish</b>.</p><p>The service is displayed in the Service Catalog List View or Table View.</p><h2 id="Whatsnext" data-magellan-target="Whatsnext">What's next</h2><p>Users with visibility of the service can now submit a service request. For more information, see <a href="request-new-services.htm" class="MCXref xref">Request New Services</a>.</p><p><a name="view_details_service"></a>You can edit the service at any time by selecting it in the list and clicking <b>Edit</b>.</p></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="zBhRO-GKW0CYxNuDhyw2Ew">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="zBhRO-GKW0CYxNuDhyw2Ew:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#AddGCPServicestotheCatalog">Add GCP Services to the Catalog</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#AddnewGCPsservicetothecatalog">Add new GCPs service to the catalog</a>
+                                                            </li>
+                                                            <li><a href="#ServiceDescriptionpage">Service Description page</a>
+                                                            </li>
+                                                            <li><a href="#Componentspage">Components page</a>
+                                                            </li>
+                                                            <li><a href="#Componentspecificpages">Component-specific pages</a>
+                                                            </li>
+                                                            <li><a href="#Deploymentpage">Deployment page</a>
+                                                            </li>
+                                                            <li><a href="#Placementpage">Placement page</a>
+                                                            </li>
+                                                            <li><a href="#Visibilitypage">Visibility page</a>
+                                                            </li>
+                                                            <li><a href="#Summarypage">Summary page</a>
+                                                            </li>
+                                                            <li><a href="#Whatsnext">What's next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Manually Provision AWS VMs</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <meta charset="utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/fontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/roboto.font.css" rel="stylesheet" type="text/css" />
+        <style>*
+{
+	box-sizing: border-box;
+}
+
+/* Create two columns that float next to each other */
+
+.column
+{
+	
+}
+
+.column2
+{
+	
+}
+
+/* Clear floats after the columns */
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.home-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/AccessAndAvailability.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-L05Y74KND5" async="async">
+        </script>
+        <script>/*<![CDATA[*/  window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+		gtag('config', 'G-L05Y74KND5');/*]]>*/</script>
+        <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="All Commander Docs" title="All Commander Docs" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Commander Docs</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="ManuallyProvisionAWSVMs" data-magellan-target="ManuallyProvisionAWSVMs"><a name="aanchor15"></a><MadCap:concept term="Admin Portal" />Manually Provision AWS VMs</h1><p>You can manually provision AWS VMs from:</p><ul><li>a template</li><li>a requested service or VM component</li></ul><p class="Note"> Once a component in a service has been deployed, it's no longer possible to deploy at the service level; you must deploy at the component level.
+</p><h2 id="ManuallyprovisionAWSVMsfromatemplate" data-magellan-target="ManuallyprovisionAWSVMsfromatemplate">Manually provision AWS VMs from a template</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory &gt; Applications</p><p>or</p><p>Views &gt; Service Requests &gt; Request Details</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator, Operator with Approval Access Rights</p></td></tr></table><ol><li value="1">From the <b>Applications </b>tree, select a VM template.</li><li value="2">Right-click and select <b>Provisioning &gt; Deploy to VM</b>.</li><li value="3">Provide the required information in the <b>Deploy to VM</b> dialog.</li></ol><h2 id="ManuallyprovisionAWSVMsfromrequestedservicesorVMcomponents" data-magellan-target="ManuallyprovisionAWSVMsfromrequestedservicesorVMcomponents">Manually provision AWS VMs from requested services or VM components</h2><table style="width: 100%;mc-table-style: url('../Resources/TableStyles/AccessAndAvailability.css');" class="TableStyle-AccessAndAvailability" cellspacing="0"><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Access:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Views &gt; Inventory &gt; Applications</p><p>or</p><p>Views &gt; Service Requests &gt; Request Details</p></td></tr><tr class="TableStyle-AccessAndAvailability-Body-Body1"><td class="TableStyle-AccessAndAvailability-BodyE-Column1-Body1"><p><b>Available to:</b></p></td><td class="TableStyle-AccessAndAvailability-BodyD-Column2-Body1"><p>Administrator, Operator, Operator with Approval Access Rights</p></td></tr></table><ol><li value="1">From the Service Requests page, select an approved service request and click <b>Request Details</b>.</li><li value="2">In the request tree, select a service or a component and click <b>Deploy</b>.</li><li value="3">Provide the required information in the manual deployment wizard. <ul><li>If you selected a service, the manual deployment wizard is called <b>Deploy Service as Individual Components</b>.</li><li>If you selected a component, the manual deployment wizard is called <b>Deploy to VM</b>.</li></ul></li></ol><p class="Note">When deploying an entire service, if the deployment of one or more components fails, Commander will still attempt to deploy other components in the service.</p><h2 id="Manualdeploymentwizard" data-magellan-target="Manualdeploymentwizard">Manual deployment wizard</h2><p>This section provides details and additional help links for the manual deployment wizard. The pages and options displayed depend on whether you're deploying an entire service or a VM component.</p><p class="Note">If you're provisioning AWS CloudFormation templates, see <a href="deploy_aws_cf.htm" class="MCXref xref">Manually Provision AWS CloudFormation Templates</a>.</p><p>The manual deployment wizard includes the following pages: </p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Name &amp; Target page</a></span><div class="MCDropDownBody dropDownBody"><p>Naming options are not available on this page if you're deploying an entire service as individual components. That is, if you clicked Deploy at the Service level in the Request Details dialog rather than at the Component level.</p><ul><li><b>Let the system name this Service / VM automatically:</b> See also <a href="configure_auto_provision.htm" class="MCXref xref">Customize Naming Conventions</a>.</li><li><b>Manually name this Service / VM:</b> Note that you can't use variables in this field, but you can use variables in the <a href="configure_auto_provision.htm" class="hreflinks">global VM naming convention</a>. See also <a href="configure_auto_provision.htm" class="MCXref xref">Customize Naming Conventions</a>.</li><p>The name must be unique in the region.</p><p>If Commander detects that the name isn't unique when you have specified the target (on the next page of the wizard), an error is displayed.</p></ul><ul><li><b>Placement Options:</b> Although the option you choose here allows Commander to preselect destination choices for you, you can change those selections throughout this wizard. The available options are:</li><ul><li><b>Last Specified:</b> Uses the placement location that was last used to deploy this service or component. If the service or component has not been previously deployed, no destination is selected.</li><li><b>User Specified:</b> No destination is selected; the destination must be selected manually.</li><li><b>Automated Deployment:</b> Uses the placement options configured for automated deployment. If you see the error "Automated deployment has not been configured", see <a href="config_auto_placement_depl_vms.htm" class="MCXref xref">Configure Automated Deployment for Approved Service Requests</a> to learn how to set up automated deployment.</li></ul><li><b>Destination:</b> Select a VPC in the AMI's region (if you're not using VPCs, select EC2-Classic).</li></ul></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Components page</a></span><div class="MCDropDownBody dropDownBody"><p>This page appears only when deploying an entire requested service. That is, you clicked <b>Deploy</b> at the Service level in the Request Details dialog, rather than at the Component level.</p><p>All components in the service are listed. Custom components in the service are listed for information purposes only.</p><p>Deselect the components you don't want to deploy at this time. Components are deployed serially, not in parallel.</p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Resources &amp; Security page</a></span><div class="MCDropDownBody dropDownBody"><p>This page allows you to customize VM resources and security settings.</p><ul><li><b>Instance Type:</b> Select an instance type from the drop-down menu. This option isn't available if you're deploying an entire service as individual components. That is, if you clicked <b>Deploy</b> at the Service level in the Request Details dialog rather than at the Component level.</li><p>Clicking <b>Details</b> provides the full set of properties for the selected instance type.</p><li><b>EBS Optimized:</b> If the selected instance type supports EBS optimization, this option is active. EBS optimization enables additional, dedicated throughput between Amazon EC2 and Amazon EBS, and therefore improved performance for Amazon EBS volumes. Additional charges from AWS apply if you enable this option.</li><li><b>Subnet:</b> If your deployment target is a VPC, select a subnet. If you have <a href="networking.htm" class="hreflinks">tagged subnets with zones</a>, the Subnet drop-down list groups subnets by zone.</li><p class="Note">If you have a large number of subnets, click <span class="f_Icons_Inline"></span> next to the Subnet drop-down menu to open a pop-up dialog for easier searching.</p><li><b>Availability Zone:</b> If your deployment target is EC2-Classic, select an availability zone, keep the default to let the system decide.</li><li><a name="keypair"></a><b>Key Pair Name:</b> Allows you to specify a key pair credential to assign to the deployed VM. For this drop-down menu, you can:</li><ul><li>Select a listed key pair. This will assign a key pair that's associated with the region. </li><li>Leave the field blank. This will ensure that no key pair is assigned.</li><li>Select<b> Let System Decide:</b> With this option, Commander will choose one of the following key pairs for assignment in the order of precedence listed below:
+                <ul><li>a key pair configured for the service request form.
+                        <p class="Note">If the <a href="catalog_ec2.htm#key_pair" class="hreflinks">Key Pair form element</a> has been added to the VM service request form, users can specify a key pair for requested VMs. Their selection isn't displayed in the manual Service deployment wizard. In this case, you should deploy each component separately by clicking Deploy at the Component level of the Request Details, rather than at the Service level. Doing so ensures that you won't override the requester's individual key pair selections with a single key pair for all VMs in the service.</p></li><li>a key pair configured for the user</li><li>a key pair configured for the user's organization</li><li>a key pair configured for the deployment destination</li></ul></li><p>For more information, see <a href="metadata.htm#key-pair-precedence" class="MCXref xref">Order of precedence for assigning key pairs to requested services</a>.</p></ul><li><b>Security Group Names:</b> Optionally, specify one or more security groups. Only security groups assigned to the target VPC are shown (or, if your target is EC2-Classic, those not assigned to a VPC). If no security group is specified, AWS assigns the deployed VM to the default security group.</li><li><a name="userdata"></a><b>User Data:</b> Optionally, enter user data to customize this VM during provisioning. If you're deploying a requested VM and user data was specified for this component <a href="catalog_ec2.htm#userdata" class="hreflinks">in the service catalog</a>, the User Data field is prepopulated. For more information, see <a href="userdata.htm" class="MCXref xref">AWS User Data Syntax and Supported Variables</a>.</li><li><a name="iam_role"></a><b>IAM Role:</b> Optionally, enter the name of an IAM role to assign to the VM. The maximum number of characters is 255. If an IAM role was configured in the <a href="config_auto_placement_depl_vms.htm#iam_role" class="hreflinks">deployment destination</a> or in the <a href="catalog_ec2.htm#iam_role" class="hreflinks">catalog blueprint</a>, or specified on the request form, the IAM Role field is prepopulated. Important: Commander doesn't validate IAM role names, so ensure that role names entered in Commander match those in AWS. IAM role names are not case-sensitive.</li><li><a name="cloudwatch"></a><b>Monitor Memory Usage:</b> To enable memory usage monitoring, enable the option Send guest OS memory usage statistics to Amazon CloudWatch. Memory usage monitoring requires the VM to have credentials with full access to CloudWatch. You can enter a role in the IAM Role field for this purpose. For more information, see <a href="aws_metrics_linux.htm" class="MCXref xref">Monitor Memory Metrics for EC2 Linux Instances</a> and <a href="aws_metrics_win.htm" class="MCXref xref">Monitor Memory Metrics for EC2 Windows Instances</a>.</li></ul></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Storage page</a></span><div class="MCDropDownBody dropDownBody"><p>This page allows you to add, modify and delete disks. Note that when deploying an entire service, all VMs in the service are deployed with the same storage options, and you can't edit disk information.</p><p><a name="edit_disks_page"></a>To edit disk information, click <b>Edit Disks</b>. In the Edit Disks dialog, you can:</p><ul><li>add a disk.</li><li>delete a disk (other than the base disk, which can't be deleted).</li><li>modify a disk by selecting it in the Disks list and editing its settings as required:</li></ul><p><b>Device Name:</b> Specify the name that the block device driver for the instance will assign when mounting the volume. The name recommended by Amazon is provided; edit this value if required. For more information, see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html" target="_blank">Block Device Mapping <span class="f_Icons_Inline"></span></a> in the AWS documentation.</p><p><b>Capacity:</b> Specify the disk capacity, in GB.</p><p><b>Volume Type:</b> Select one of the following types from the drop-down menu. Hover over the <span class="f_Icons_Inline"></span> icon for details on each type. For more information, see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html" target="_blank">Amazon EBS Volume Types <span class="f_Icons_Inline"></span></a> in the AWS documentation.</p><ul><li>General Purpose (SSD): General purpose Solid-State Drive volume that balances price and performance for a wide variety of transactional workloads. Recommended for system boot volumes, virtual desktops, low-latency interactive apps, development and test environments.</li><li>Provisioned IOPS (SSD): Highest-performance SSD volume designed for mission-critical applications. Best for critical business applications that require sustained IOPS performance, or more than 10,000 IOPS or 160 MiB/s of throughput per volume, such as large database workloads and EBS-optimized instances. The ratio of IOPS provisioned and the volume size requested can be a maximum of 50.</li><li>Magnetic: Previous-generation Hard Disk Drive volumes for workloads where data is infrequently accessed. Not recommended for new applications.</li><li>Throughput Optimized (HDD): Low-cost Hard Disk Drive volume designed for frequently accessed, throughput-intensive workloads. Best for streaming workloads requiring consistent, fast throughput at a low price, such as big data, data warehouses, and log processing. The minimum disk size for this type is 500 GB. It can't be a boot volume.</li><li>Cold (HDD): Lowest-cost Hard Disk Drive volume designed for less frequently accessed workloads. Best for throughput-oriented storage for large amounts of data that's infrequently accessed. The minimum disk size for this type is 500 GB. It can't be a boot volume.</li></ul><p><b>IOPS:</b> If you select the Provisioned IOPS (SSD) volume type, you must specify the number of I/O operations per second (IOPS) this volume will support. Specify a number between 100 and 10,000. A maximum ratio of 50:1 is permitted between IOPS and volume size; for example, a volume with 3000 IOPS must be at least 60 GB in size. The minimum disk size for this storage type is 4 GB.</p><p><b>Encryption:</b> Specify whether to encrypt the disk. Note that not all instance types support disk encryption; see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#EBSEncryption_supported_instances" target="_blank">Amazon EBS Encryption <span class="f_Icons_Inline"></span></a> in the AWS documentation for the list of supported instance types.</p><p><b>Delete on Termination:</b> By default, this disk will be deleted when the VM to which it's attached is terminated. If you want to preserve this disk so that it can be attached to a different VM when this VM is terminated, disable this option.</p><p class="Note">The new disk is created in the same availability zone as the instance it's attached to.</p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Custom Attributes page</a></span><div class="MCDropDownBody dropDownBody"><p>Custom attributes allow you to provide more metadata  about your virtualized infrastructure. For more information on custom attributes, see <a href="working-with-custom-attributes.htm" class="MCXref xref">Work with Custom Attributes</a>.</p><p>This page doesn't appear when deploying an entire service that's configured to be deployed as individual VM components.</p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Other Properties page</a></span><div class="MCDropDownBody dropDownBody"><p>When deploying at the service level, values entered on this page are applied only to the components of the service. This means that if the service contains a virtual service component, values entered on this page are not applied to any VMs which are components of the virtual service.</p><p class="Note">If the Expiry Date form element or the Primary Owner form element has been added to the Component request form, users can specify expiry and/or ownership information for requested components (see <a href="new-service-request-form-elements.htm" class="MCXref xref">Service Request Form Elements</a>). Their selection isn't displayed in the manual Service deployment wizard. In this case, you should deploy each component separately by clicking Deploy at the Component level of the Request Details, rather than at the Service level. Doing so ensures that you won't override the requester's individual selections for all components in the service. See also <a href="metadata.htm" class="MCXref xref">Order of Precedence for Metadata and Service Settings</a>.</p><ul><li><b>VM / Virtual Service Name:</b> Click <b>Edit</b> to override the service name. You can't use Commander variables in this field. See also <a href="configure_auto_provision.htm" class="MCXref xref">Customize Naming Conventions</a>.</li><li><b>Expiry Date:</b> Click <b>Edit</b> to set or override the expiry date, or to specify that the service will never expire. See also <a href="manage-service-expirations.htm" class="MCXref xref">Manage Service Expirations</a>.</li><li><b>Expiry Group:</b> Click <b>Edit</b> and choose an <a href="groups_vm.htm" class="hreflinks">expiry group</a> from the drop-down.</li><li><b>Maintenance Group:</b> Click <b>Edit</b> and choose a <a href="groups_vm.htm" class="hreflinks">maintenance group</a> from the drop-down.</li><li><b>Power Schedule Group:</b> Click <b>Edit</b> and choose a <a href="groups_vm.htm" class="hreflinks">power schedule group</a> from the drop-down. Displayed for VM components only.</li><li><b>Rightsizing Group:</b> Click <b>Edit</b> and choose a <a href="groups_vm.htm" class="hreflinks">rightsizing group</a> from the drop-down. Displayed for VM components only.</li><li><p><b>Owners:</b> To edit ownership assignment, click <b>Edit</b>. In the Edit Ownership dialog, if the user you assign is a member of an organization, make sure to select the owner's organization to ensure the service is visible to organization members. To assign users, enter a username or email address. See also <a href="set-resource-ownership.htm" class="MCXref xref">Set Resource Ownership</a>.</p></li><li><b>Service Request:</b> When deploying a service request, the <b>Release</b> checkbox is visible and is enabled by default, so that components advance to completion automatically. When the <b>Release</b> checkbox is enabled, if one or more <a href="completion-workflows.htm" class="hreflinks">completion workflows</a> have been assigned, the service request is automatically transferred to the completion workflow process. If no completion workflows are assigned, once all components in a service are deployed, releasing the components makes the service visible to the requester (for example, the Service Portal user).<br />If there are manual steps in your provisioning process, disable the <b>Release</b> checkbox so that you can carry out these steps before the completion workflow starts. For example, you may need to install software, check operating system patches, or migrate VMs. Click <b>Comment</b> to enter more information for the service request comment log.</li></ul></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Summary page</a></span><div class="MCDropDownBody dropDownBody"><p>A summary of your settings is displayed. New public cloud VMs are always powered on when created.</p><ul><li><b>Policy Actions:</b> If one or more policies will be triggered once deployment occurs, policy actions are listed here. <p>When policies have been applied at the availability zone level and the deployment target is a region (meaning that the public cloud vendor chooses the destination), policy actions can't be simulated, because Commander can't determine the destination.</p></li></ul></div></div></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column2">
+                                            <div data-sticky-container="" id="bjILiuqAz0CsF20TI6GqkA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="bjILiuqAz0CsF20TI6GqkA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                                    <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
+                                                        <li><a href="#ManuallyProvisionAWSVMs">Manually Provision AWS VMs</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#ManuallyprovisionAWSVMsfromatemplate">Manually provision AWS VMs from a template</a>
+                                                            </li>
+                                                            <li><a href="#ManuallyprovisionAWSVMsfromrequestedservicesorVMcomponents">Manually provision AWS VMs from requested services or VM components</a>
+                                                            </li>
+                                                            <li><a href="#Manualdeploymentwizard">Manual deployment wizard</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="scrollup" style="margin-bottom: 0px; margin-left: 17px;"><a id="scrollup" style="cursor: pointer;">Scroll</a>
+                                    </p>
+                                    <p>
+                                        <!-- This referenced snippet allows an alt text statement to be included for the logo/go-home button on the top of each page -->
+                                        <script>/*<![CDATA[*/$(document).ready(function(){
+   $('a.logo').attr({
+     alt: 'Snow Docs Home',
+     title: 'Snow Docs Home'
+   });
+});/*]]>*/</script>
+                                    </p>
+                                    <script type="text/javascript">/*<![CDATA[*/if ($(".sticky-menu > ul").children("ul").length == 0){
+        $(".sticky-menu > ul").css("visibility", "hidden");
+    }/*]]>*/</script>
+                                    <script defer="defer" src="../Resources/Scripts/scroll_to_top_left_nav.js" type="text/javascript">
+                                    </script>
+                                    <script type="text/javascript">/*<![CDATA[*/$("#home-link").prependTo("div.MCBreadcrumbsBox_SnowDocs_0");/*]]>*/</script>
+                                    <script type="text/javascript" src="../Resources/Scripts/fa_ext_link.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
