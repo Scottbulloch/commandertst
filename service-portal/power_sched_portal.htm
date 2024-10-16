@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Service Portal|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForVCmdrBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -53,32 +52,6 @@
 	content: "";
 	display: table;
 	clear: both;
-}
-
-</style>
-        <style>/*&lt;meta /&gt;*/
-
-.button.print-button
-{
-	-pie-background: linear-gradient(#ffffff, #ffffff);
-}
-
-.needs-pie
-{
-	behavior: url('../Resources/Scripts/PIE.htc');
-}
-
-</style>
-        <style>/*&lt;meta /&gt;*/
-
-.button.home-button
-{
-	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
-}
-
-.needs-pie
-{
-	behavior: url('../Resources/Scripts/PIE.htc');
 }
 
 </style>
@@ -148,7 +121,7 @@
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
                     <div data-sticky-container="" class="title-bar-container">
-                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <div class="central-account-wrapper">
@@ -163,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="title-bar-layout outer-row">
-                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.io" title="Docs Portal Home" alt="Docs Portal Home"></a>
                                 </div>
                                 <div class="navigation-wrapper nocontent">
                                     <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
@@ -216,32 +189,32 @@
                             </nav>
                             <div class="body-container">
                                 <div data-mc-content-body="True">
-                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                    <div style="width: 100%; overflow: hidden;">
                                         <div class="nocontent">
                                             <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="ScheduleAutomaticPowerOnandOffforVMs" data-magellan-target="ScheduleAutomaticPowerOnandOffforVMs"><a name="aanchor147"></a><MadCap:concept term="Service Portal" /><a name="kanchor2"></a>Schedule Automatic Power On and Off for VMs</h1><p>You can automatically power VMs on and off at specified times using power schedules. Power schedules are especially useful for the public cloud, where you pay more when VMs are running. It's still possible to manually power on and use a VM during the scheduled power-off period.</p><p>To set the power schedule for a VM, you add the VM to a power schedule group configured by your administrator.</p><p>To assign a VM to a power schedule group:</p><ol><li value="1">Go to the <span class="f_Icons_Inline"></span> <b>Applications</b> page.</li><li value="2">Select a service.</li><li value="3">From the <b>Actions</b> menu, choose <b>Attributes</b> &gt; <b>Set Power Schedule Group</b>.</li><li value="4">In the Set Power Schedule Group dialog, select the appropriate group and click <b>Save</b>.</li></ol><p>You can see what power schedule group a VM belongs to on the VM's summary page. If you don't have permission to change a VM's power schedule group, you may have permission to see and apply Power Schedule recommendations.</p><h2 id="Viewpowerschedulerecommendations" data-magellan-target="Viewpowerschedulerecommendations"><a name="view"></a>View power schedule recommendations</h2><p>Power schedule recommendations are issued for VMs that don't belong to a power schedule group.</p><p class="Note">You can't ignore a Power Schedule recommendation or exclude a VM from Power Schedule recommendations.</p><p>To view <b>all</b> power schedule recommendations:
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="ScheduleAutomaticPowerOnandOffforVMs" data-magellan-target="ScheduleAutomaticPowerOnandOffforVMs"><a name="aanchor181"></a><MadCap:concept term="Service Portal" /><a name="kanchor2"></a>Schedule Automatic Power On and Off for VMs</h1><p>You can automatically power VMs on and off at specified times using power schedules. Power schedules are especially useful for the public cloud, where you pay more when VMs are running. It's still possible to manually power on and use a VM during the scheduled power-off period.</p><p>To set the power schedule for a VM, you add the VM to a power schedule group configured by your administrator.</p><p>To assign a VM to a power schedule group:</p><ol><li value="1">Go to the <span class="f_Icons_Inline"></span> <b>Applications</b> page.</li><li value="2">Select a service.</li><li value="3">From the <b>Actions</b> menu, choose <b>Attributes</b> &gt; <b>Set Power Schedule Group</b>.</li><li value="4">In the Set Power Schedule Group dialog, select the appropriate group and click <b>Save</b>.</li></ol><p>You can see what power schedule group a VM belongs to on the VM's summary page. If you don't have permission to change a VM's power schedule group, you may have permission to see and apply Power Schedule recommendations.</p><h2 id="Viewpowerschedulerecommendations" data-magellan-target="Viewpowerschedulerecommendations"><a name="view"></a>View power schedule recommendations</h2><p>Power schedule recommendations are issued for VMs that don't belong to a power schedule group.</p><p class="Note">You can't ignore a Power Schedule recommendation or exclude a VM from Power Schedule recommendations.</p><p>To view <b>all</b> power schedule recommendations:
         </p><ol><li value="1">Go to <span class="f_Icons_Inline"></span> <b>Recommendations</b>. 
                 <p>All active recommendations for VMs that you own are displayed.</p><p class="Note">Make sure <span class="f_Icons_Inline"></span> <b>View Active Recommendations</b> is selected.</p></li><li value="2">You may see rightsizing recommendations as well as power schedule recommendations. You can filter the list by typing in the search field, for example, <code>power</code>.</li></ol><p>To view power schedule recommendations for a <b>single VM</b>: 
         </p><ol><li value="1">Go to a VM's summary page.</li><li value="2">Look at the <b>Recommendations</b> drop-down panel.
                 <p>If there are current recommendations (either rightsizing or power schedule), the message "This VM has recommendations" is displayed.</p></li><li value="3">Expand the <b>Recommendations</b> drop-down panel to view details.
                 <p class="tip">Make sure <span class="f_Icons_Inline"></span> <b>View Active Recommendations</b> is selected.</p></li></ol><h2 id="Applypowerschedulerecommendations" data-magellan-target="Applypowerschedulerecommendations"><a name="apply"></a>Apply power schedule recommendations</h2><p>You can apply recommendations from the <span class="f_Icons_Inline"> </span><b>Recommendations</b> page and from the VM's summary page.</p><ol><li value="1">When viewing a power schedule recommendation, click <b>Apply Immediately</b>.</li><li value="2">In the Set Power Schedule Group dialog, select a power schedule group and click <b>Save</b>.
-                <p>The recommendation is closed and disappears from the VM's summary page and the Recommendations page.</p></li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:05 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:05 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                <p>The recommendation is closed and disappears from the VM's summary page and the Recommendations page.</p></li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.7</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Flexera</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-10-16</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">9:32 AM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.flexera.com/legal/privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.flexera.com/legal" target="_blank">Terms and conditions</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">10/16/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">9:32 AM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.7.1</span></span></p></div></div></div>
                                         <div class="column2">
-                                            <div data-sticky-container="" id="EDQFXlr13km5Ez7d0dtp2g">
-                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="EDQFXlr13km5Ez7d0dtp2g:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                            <div data-sticky-container="" id="DlYqDoh23E2sD9UnLolzCQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="DlYqDoh23E2sD9UnLolzCQ:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
                                                     <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
-                                                        <li><a href="#ScheduleAutomaticPowerOnandOffforVMs">Schedule Automatic Power On and Off for VMs</a>
+                                                        <li class="tree-node"><a href="#ScheduleAutomaticPowerOnandOffforVMs">Schedule Automatic Power On and Off for VMs</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#Viewpowerschedulerecommendations">View power schedule recommendations</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Applypowerschedulerecommendations">Apply power schedule recommendations</a>
+                                                                </li>
+                                                            </ul>
                                                         </li>
-                                                        <ul>
-                                                            <li><a href="#Viewpowerschedulerecommendations">View power schedule recommendations</a>
-                                                            </li>
-                                                            <li><a href="#Applypowerschedulerecommendations">Apply power schedule recommendations</a>
-                                                            </li>
-                                                        </ul>
                                                     </ul>
                                                 </div>
                                             </div>

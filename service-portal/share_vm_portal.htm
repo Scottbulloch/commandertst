@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Service Portal|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForVCmdrBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -53,32 +52,6 @@
 	content: "";
 	display: table;
 	clear: both;
-}
-
-</style>
-        <style>/*&lt;meta /&gt;*/
-
-.button.print-button
-{
-	-pie-background: linear-gradient(#ffffff, #ffffff);
-}
-
-.needs-pie
-{
-	behavior: url('../Resources/Scripts/PIE.htc');
-}
-
-</style>
-        <style>/*&lt;meta /&gt;*/
-
-.button.home-button
-{
-	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
-}
-
-.needs-pie
-{
-	behavior: url('../Resources/Scripts/PIE.htc');
 }
 
 </style>
@@ -148,7 +121,7 @@
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
                     <div data-sticky-container="" class="title-bar-container">
-                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <div class="central-account-wrapper">
@@ -163,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="title-bar-layout outer-row">
-                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.io" title="Docs Portal Home" alt="Docs Portal Home"></a>
                                 </div>
                                 <div class="navigation-wrapper nocontent">
                                     <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
@@ -216,7 +189,7 @@
                             </nav>
                             <div class="body-container">
                                 <div data-mc-content-body="True">
-                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                    <div style="width: 100%; overflow: hidden;">
                                         <div class="nocontent">
                                             <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
                                             </div>
@@ -228,19 +201,19 @@
 </li><ul><li><b>Service Name</b> — The name for the service in the Service Catalog. The Service Name is also included at the top of the email. This field is prepopulated with the name of the shared VM. It's helpful to provide a different name, so that the two tabs of the New Service Request Form don't have the same labels.</li><li><b>Service Description</b> — Enter a description for the service. The description appears in the Service Catalog and in the email.</li><li><b>Share With</b> — Do one of the following:</li><ul><li>Select all users in organization to share with your entire organization.</li><li>Select Specific users to share with specific users or groups. Enter a user name or group name and click <b>Add</b>. You can add as many recipients as you like.
                             <p class="Note"> If you specify a Directory Services group that's a member of an organization, the email is sent to the email address for the group.</p></li></ul><li><b>Preserve Memory State</b> — If the VM is running or suspended, you can save the VM's memory state. Saving the memory state is useful for debugging memory-specific problems but increases the overall deployment time.</li><li><b>Keep Existing Owners</b> — By default, the existing owners of the source VM aren't kept as owners on VMs deployed from the shared service. Enable this option if you want to keep the owners of the source VM as owners of the deployed VM.</li><li><b>Days Available</b> — Once a shared service's availability has lapsed, it's removed from the Service Catalog and can no longer be requested. In-progress service requests are unaffected.
                     <p class="Note"> This option isn't related to a VM's expiry date.</p></li><li><b>Send Email</b> — By default, emails are sent to all recipients. Disable this option if you don't want to send emails. Users will still see the shared service in their Service Catalog.</li><li><b>Email Subject</b> — Enter a subject line for the email.</li><li><b>Comments</b> — Enter additional comments that will be included in the email.</li></ul></ol><h2 id="Troubleshooting" data-magellan-target="Troubleshooting"><a name="troubleshoot"></a>Troubleshooting</h2><ul><li>If the snapshot used to create the shared service is deleted, the Service Catalog entry is disabled and no longer visible to users. You must share the VM again.</li><li>If a user sees the following message after clicking the hyperlink in a Shared Service email:
-                <p><code>The requested service is not available at this time using your current security context. Please contact the sharing user or system administrator for more details.</code></p><p>There are a few possible reasons:</p><ul><li>The service availability may have lapsed. Once the availability has lapsed, users can no longer request the service.</li><li>The service may have been deleted. An administrator may have deleted the service before its availability lapsed.</li><li>The user may have signed in with a different username, or signed in to a different organization. If the user who shared the VM was a member of an organization and shared the VM with their organization, recipients must sign in as members of that organization.</li></ul></li><li><a name="aanchor455"></a><MadCap:concept term="Service Portal" />If a user is taken to the Service Portal home page after clicking the hyperlink in a Shared Service email, it's possible that they don't have permission to request a new service.</li><li>You can share a single VM in a <a href="../admin-portal/network_fencing.htm" class="hreflinks">fenced network</a>. The requested VM is deployed as a new fenced service with the same network settings as the source VM. It's not possible to share multiple VMs from a fenced network as a new fenced network, to share an entire fenced network, or to share a VM into an existing fenced network.</li></ul></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:05 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:05 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                <p><code>The requested service is not available at this time using your current security context. Please contact the sharing user or system administrator for more details.</code></p><p>There are a few possible reasons:</p><ul><li>The service availability may have lapsed. Once the availability has lapsed, users can no longer request the service.</li><li>The service may have been deleted. An administrator may have deleted the service before its availability lapsed.</li><li>The user may have signed in with a different username, or signed in to a different organization. If the user who shared the VM was a member of an organization and shared the VM with their organization, recipients must sign in as members of that organization.</li></ul></li><li><a name="aanchor27"></a><MadCap:concept term="Service Portal" />If a user is taken to the Service Portal home page after clicking the hyperlink in a Shared Service email, it's possible that they don't have permission to request a new service.</li><li>You can share a single VM in a <a href="../admin-portal/network_fencing.htm" class="hreflinks">fenced network</a>. The requested VM is deployed as a new fenced service with the same network settings as the source VM. It's not possible to share multiple VMs from a fenced network as a new fenced network, to share an entire fenced network, or to share a VM into an existing fenced network.</li></ul></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.7</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Flexera</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-10-16</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">9:32 AM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.flexera.com/legal/privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.flexera.com/legal" target="_blank">Terms and conditions</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">10/16/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">9:32 AM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.7.1</span></span></p></div></div></div>
                                         <div class="column2">
-                                            <div data-sticky-container="" id="AMWBqdVDHE-o48HwrrQXWA">
-                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="AMWBqdVDHE-o48HwrrQXWA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                            <div data-sticky-container="" id="JyduWjZu5EKpib6lpeWzJA">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="JyduWjZu5EKpib6lpeWzJA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
                                                     <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
-                                                        <li><a href="#ShareVMswithOtherUsers">Share VMs with Other Users</a>
+                                                        <li class="tree-node"><a href="#ShareVMswithOtherUsers">Share VMs with Other Users</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#ShareVMs">Share VMs</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Troubleshooting">Troubleshooting</a>
+                                                                </li>
+                                                            </ul>
                                                         </li>
-                                                        <ul>
-                                                            <li><a href="#ShareVMs">Share VMs</a>
-                                                            </li>
-                                                            <li><a href="#Troubleshooting">Troubleshooting</a>
-                                                            </li>
-                                                        </ul>
                                                     </ul>
                                                 </div>
                                             </div>

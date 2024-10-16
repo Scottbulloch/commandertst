@@ -1,4 +1,4 @@
-/*<meta />*/
+﻿/*<meta />*/
 
 @media print 
 {
@@ -19,9 +19,11 @@
 
 	/* Header Style */
 
-	.title-bar-container
+	nav.title-bar
 	{
 		display: none;
+		background-repeat: no-repeat;
+		background-color: #ffffff;
 	}
 
 	/* Side Navigation Menu styles */
@@ -284,12 +286,6 @@
 		
 	}
 
-	nav.title-bar
-	{
-		background-repeat: no-repeat;
-		background-color: #ffffff;
-	}
-
 	.off-canvas-wrapper-inner nav.title-bar .outer-row
 	{
 		
@@ -403,7 +399,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -414,8 +410,8 @@
 
 	.title-bar-layout a.logo
 	{
-		background: transparent url('Images/snow-black-45h.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/snow-black-45h.png') no-repeat center center;
+		background: transparent url('Images/flexera-snowdocs-logo2.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/flexera-snowdocs-logo2.png') no-repeat center center;
 	}
 
 	.main-section > .outer-row
@@ -531,7 +527,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -638,7 +634,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -745,7 +741,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -898,7 +894,7 @@
 
 	.search-bar .search-filter-wrapper.open
 	{
-		-pie-background: #ffffff url('Skins/Fluid/Stylesheets/Images/filter-wh-background.png') no-repeat;
+		-pie-background: #ffffff url('Skins/Fluid/Stylesheets/Images/filter-wh-background.png') no-repeat center center;
 		background-color: #ffffff;
 	}
 
@@ -1032,7 +1028,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 

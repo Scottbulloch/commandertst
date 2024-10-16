@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Admin Portal|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForSPBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -53,32 +52,6 @@
 	content: "";
 	display: table;
 	clear: both;
-}
-
-</style>
-        <style>/*&lt;meta /&gt;*/
-
-.button.print-button
-{
-	-pie-background: linear-gradient(#ffffff, #ffffff);
-}
-
-.needs-pie
-{
-	behavior: url('../Resources/Scripts/PIE.htc');
-}
-
-</style>
-        <style>/*&lt;meta /&gt;*/
-
-.button.home-button
-{
-	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
-}
-
-.needs-pie
-{
-	behavior: url('../Resources/Scripts/PIE.htc');
 }
 
 </style>
@@ -146,7 +119,7 @@
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
                     <div data-sticky-container="" class="title-bar-container">
-                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <div class="central-account-wrapper">
@@ -161,7 +134,7 @@
                                 </div>
                             </div>
                             <div class="title-bar-layout outer-row">
-                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.io" title="Docs Portal Home" alt="Docs Portal Home"></a>
                                 </div>
                                 <div class="navigation-wrapper nocontent">
                                     <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
@@ -214,32 +187,32 @@
                             </nav>
                             <div class="body-container">
                                 <div data-mc-content-body="True">
-                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                    <div style="width: 100%; overflow: hidden;">
                                         <div class="nocontent">
                                             <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="AWSUserDataSyntaxandSupportedVariables" data-magellan-target="AWSUserDataSyntaxandSupportedVariables"><a name="aanchor283"></a><MadCap:concept term="Admin Portal" />AWS User Data Syntax and Supported Variables</h1><p>User data allows you to configure an AWS VM during provisioning, or to run a configuration script on a VM. User data allows you to, for example:</p><ul><li>Customize the deployed VM's host name during provisioning.</li><li>Run scripts after the VM starts and perform common automated configuration tasks.</li><li>Enable CloudWatch monitoring for new VMs.</li></ul><p>With Commander, you can add user data:</p><ul><li>To an AWS <a href="catalog_ec2.htm#userdata" class="hreflinks">service catalog component</a>; the user data is then applied during deployment of a service request.</li><li>When <a href="deploy_clone_aws.htm#userdata" class="hreflinks">manually deploying an AWS VM from a template.</a></li></ul><h2 id="SyntaxforAWSuserdata" data-magellan-target="SyntaxforAWSuserdata"><a name="syntax"></a>Syntax for AWS user data</h2><p>Both scripts and cloud-init directives are supported.</p><p>User data is limited to 16 KB. For longer user data, point to a script file instead.</p><p>New lines and carriage returns are preserved.</p><p>Unicode characters are not supported.</p><p>You can use Commander variables in the User Data field; see the next section for details.</p><p>Escaping variables isn't supported; variables are substituted when valid within the current context.</p><p>Commander doesn't perform user data input validation, aside from Commander variables. Consult the Amazon EC2 documentation for more information on prerequisites and syntax:
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="AWSUserDataSyntaxandSupportedVariables" data-magellan-target="AWSUserDataSyntaxandSupportedVariables"><a name="aanchor358"></a><MadCap:concept term="Admin Portal" />AWS User Data Syntax and Supported Variables</h1><p>User data allows you to configure an AWS VM during provisioning, or to run a configuration script on a VM. User data allows you to, for example:</p><ul><li>Customize the deployed VM's host name during provisioning.</li><li>Run scripts after the VM starts and perform common automated configuration tasks.</li><li>Enable CloudWatch monitoring for new VMs.</li></ul><p>With Commander, you can add user data:</p><ul><li>To an AWS <a href="catalog_ec2.htm#userdata" class="hreflinks">service catalog component</a>; the user data is then applied during deployment of a service request.</li><li>When <a href="deploy_clone_aws.htm#userdata" class="hreflinks">manually deploying an AWS VM from a template.</a></li></ul><h2 id="SyntaxforAWSuserdata" data-magellan-target="SyntaxforAWSuserdata"><a name="syntax"></a>Syntax for AWS user data</h2><p>Both scripts and cloud-init directives are supported.</p><p>User data is limited to 16 KB. For longer user data, point to a script file instead.</p><p>New lines and carriage returns are preserved.</p><p>Unicode characters are not supported.</p><p>You can use Commander variables in the User Data field; see the next section for details.</p><p>Escaping variables isn't supported; variables are substituted when valid within the current context.</p><p>Commander doesn't perform user data input validation, aside from Commander variables. Consult the Amazon EC2 documentation for more information on prerequisites and syntax:
         </p><ul><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html" target="_blank">Running Commands on Your Linux Instance at Launch</a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html" target="_blank">Instance Metadata and User Data</a></li></ul><h2 id="UsingvariablesinAWSuserdata" data-magellan-target="UsingvariablesinAWSuserdata"><a name="variables"></a>Using variables in AWS user data</h2><p>Only a few variables are supported when manually deploying an AWS template. If you use variables that are supported only in the service catalog user data when manually deploying an AWS template, the variables will be passed as text (they won't be substituted).</p><p class="tip">In any text field that supports variables, click <span class="f_Icons_Inline"></span> to open the script editor and select variables for the current context.</p><h2 id="Verifyingtheapplicationofuserdataafterdeployment" data-magellan-target="Verifyingtheapplicationofuserdataafterdeployment"><a name="test"></a>Verifying the application of user data after deployment</h2><p>Note that once the user data is passed to AWS during deployment, Commander doesn't provide feedback on the success or failure of the configuration process. The following information was valid at time of publication; consult the AWS documentation for more information troubleshooting customization with user data.</p><h3>Linux</h3><p>For Linux, the cloud-init log file (found at <code>/var/log/cloud-init.log</code>) captures console output, allowing you to debug your scripts if the VM isn't configured as intended.</p><h3>Windows</h3><p>The AWS user data log can be found on the deployed VM at:
         </p><p class="code">C:\&lt;Program Files&gt;\Amazon\Ec2ConfigService\Logs\Ec2ConfigLog.txt</p><p>AWS user data (.bat and PowerShell scripts) are stored here on the deployed VM:
         </p><p class="code">C:\Program Files\Amazon\Ec2ConfigService\Scripts</p><p>You can check whether the user data has been imported correctly by browsing to this URL on the deployed VM:
-        </p><p class="code">http://169.254.169.254/latest/user-data</p></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:04 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:04 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+        </p><p class="code">http://169.254.169.254/latest/user-data</p></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.7</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Flexera</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-10-16</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">9:31 AM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.flexera.com/legal/privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.flexera.com/legal" target="_blank">Terms and conditions</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">10/16/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">9:31 AM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.7.1</span></span></p></div></div></div>
                                         <div class="column2">
-                                            <div data-sticky-container="" id="Yhv7mnLYkUK-DrLgyrXtQw">
-                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="Yhv7mnLYkUK-DrLgyrXtQw:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                            <div data-sticky-container="" id="WHKaTrH7sUqgFucmTPOR8w">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="WHKaTrH7sUqgFucmTPOR8w:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
                                                     <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
-                                                        <li><a href="#AWSUserDataSyntaxandSupportedVariables">AWS User Data Syntax and Supported Variables</a>
+                                                        <li class="tree-node"><a href="#AWSUserDataSyntaxandSupportedVariables">AWS User Data Syntax and Supported Variables</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#SyntaxforAWSuserdata">Syntax for AWS user data</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#UsingvariablesinAWSuserdata">Using variables in AWS user data</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Verifyingtheapplicationofuserdataafterdeployment">Verifying the application of user data after deployment</a>
+                                                                </li>
+                                                            </ul>
                                                         </li>
-                                                        <ul>
-                                                            <li><a href="#SyntaxforAWSuserdata">Syntax for AWS user data</a>
-                                                            </li>
-                                                            <li><a href="#UsingvariablesinAWSuserdata">Using variables in AWS user data</a>
-                                                            </li>
-                                                            <li><a href="#Verifyingtheapplicationofuserdataafterdeployment">Verifying the application of user data after deployment</a>
-                                                            </li>
-                                                        </ul>
                                                     </ul>
                                                 </div>
                                             </div>
