@@ -1,4 +1,4 @@
-/* Scroll To Top Link Using jQuery */
+﻿/* Scroll To Top Link Using jQuery */
 
 (function($) {
 	$(document).ready(function(){

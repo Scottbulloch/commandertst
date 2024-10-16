@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin_SnowDocs" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Service Portal|[%=System.LinkedTitle%]" data-mc-conditions="General.NotForVCmdrBuildHelp" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -53,32 +52,6 @@
 	content: "";
 	display: table;
 	clear: both;
-}
-
-</style>
-        <style>/*&lt;meta /&gt;*/
-
-.button.print-button
-{
-	-pie-background: linear-gradient(#ffffff, #ffffff);
-}
-
-.needs-pie
-{
-	behavior: url('../Resources/Scripts/PIE.htc');
-}
-
-</style>
-        <style>/*&lt;meta /&gt;*/
-
-.button.home-button
-{
-	-pie-background: url('../Skins/Default/Stylesheets/Images/home-fa-18w.png') no-repeat center center, linear-gradient(transparent, transparent);
-}
-
-.needs-pie
-{
-	behavior: url('../Resources/Scripts/PIE.htc');
 }
 
 </style>
@@ -148,7 +121,7 @@
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
                     <div data-sticky-container="" class="title-bar-container">
-                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <div class="central-account-wrapper">
@@ -163,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="title-bar-layout outer-row">
-                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.com" title="Docs Portal Home" alt="Docs Portal Home"></a>
+                                <div class="logo-wrapper"><a class="logo" href="https://docs.snowsoftware.io" title="Docs Portal Home" alt="Docs Portal Home"></a>
                                 </div>
                                 <div class="navigation-wrapper nocontent">
                                     <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
@@ -216,20 +189,20 @@
                             </nav>
                             <div class="body-container">
                                 <div data-mc-content-body="True">
-                                    <div style="width: 100%; overflow: hidden;"><span class="hide-when-mobile"><div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarPrint mc-component nocontent" style="mc-topic-toolbar-items: Print;"><div class="button-group-container-left"><button class="button needs-pie print-button" title="Print this page"><div><div role="img" class="button-icon-wrapper" aria-label="Print"><div class="button-icon"> </div></div></div></button></div></div><a href="/commander/index.htm"><div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBarHome mc-component nocontent" style="mc-topic-toolbar-items: Home;"><div class="button-group-container-left"><button class="button needs-pie home-button" title="Commander Docs Home"><div><div role="img" class="button-icon-wrapper"><div class="button-icon"> </div></div></div></button></div></div></a></div><div style="float: right; padding-right: 25px; padding-left: 25px;"><a href="https://www.snowsoftware.com" target="_blank" style="font-size: 11px; color: #606f7b;">snowsoftware.com</a>&#160;&#160;&#160;</div></span><span id="home-link"><a style="font-size: 11px;font-style: normal;color: #606f7b;" href="../index.htm">Commander</a> / </span>
+                                    <div style="width: 100%; overflow: hidden;">
                                         <div class="nocontent">
                                             <div class="MCBreadcrumbsBox_SnowDocs_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="RequestVMClones" data-magellan-target="RequestVMClones">Request VM Clones</h1><p><a name="aanchor192"></a><MadCap:concept term="Service Portal" />In the Service Portal, you can request a clone of a VM. A clone is a full copy of an existing VM and its properties —with the exception that it may not have the exact same network configuration.</p><p>As a Service Portal user, you do not have control over the network configuration for the deployed clone. The clone request goes through the same approval process as other service requests. Once approved, the clone is placed into a deployment destination.</p><p>Within that deployment destination, the network for the clone will be selected based on the network zone that the source VM currently uses (the network of the source NIC). However, if there a multiple networks configured for the deployment destination, the first network will be selected based on alphabetic order.</p><p class="Note">Requesting a clone isn't supported for all platforms.</p><ol><li value="1">From the  <b>Applications</b> page, select a VM.
-                <p class="tip">You can also select a VM from the <b>Applications</b> widget on the <b>Dashboard</b>.</p></li><li value="2">From the <b>Actions</b> menu, select <b>Requests &gt; Request Clone</b>.</li><li value="3">In the Request Clone dialog, fill out the required information and click <b>Next</b>.</li><li value="4">Review the request summary and click <b>Submit</b>.</li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.6</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Snow Software</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-05-21</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">7:05 PM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/termsofuse" target="_blank" data-mc-conditions="General.ForWebOnly">Terms of use</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/seo/legal-privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.snowsoftware.com/legal/dataprotection" target="_blank">Data protection</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://go.snowsoftware.com/subscription-center.html" target="_blank">Subscription&#160;center</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://community.snowsoftware.com/s" target="_blank">Community</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Docs Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">5/21/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">7:05 PM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.6.3</span></span></p></div></div></div>
+                                        <div class="column"> <div role="main" id="mc-main-content"><h1 id="RequestVMClones" data-magellan-target="RequestVMClones">Request VM Clones</h1><p><a name="aanchor64"></a><MadCap:concept term="Service Portal" />In the Service Portal, you can request a clone of a VM. A clone is a full copy of an existing VM and its properties —with the exception that it may not have the exact same network configuration.</p><p>As a Service Portal user, you do not have control over the network configuration for the deployed clone. The clone request goes through the same approval process as other service requests. Once approved, the clone is placed into a deployment destination.</p><p>Within that deployment destination, the network for the clone will be selected based on the network zone that the source VM currently uses (the network of the source NIC). However, if there a multiple networks configured for the deployment destination, the first network will be selected based on alphabetic order.</p><p class="Note">Requesting a clone isn't supported for all platforms.</p><ol><li value="1">From the  <b>Applications</b> page, select a VM.
+                <p class="tip">You can also select a VM from the <b>Applications</b> widget on the <b>Dashboard</b>.</p></li><li value="2">From the <b>Actions</b> menu, select <b>Requests &gt; Request Clone</b>.</li><li value="3">In the Request Clone dialog, fill out the required information and click <b>Next</b>.</li><li value="4">Review the request summary and click <b>Submit</b>.</li></ol></div><div><div style="border-top-color: rgb(245, 245, 245); border-top-style: none; border-top-width: 1px; margin-top: 22px;"><br /><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomLeft mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;"><div class="button-group-container-left"><button class="button needs-pie previous-topic-button" title="Previous Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Previous Topic"><div class="button-icon"> </div></div></div></button></div></div><div class="buttons popup-container clearfix topicToolbarProxy _Skins_ToolbarSnowDocsBottomRight mc-component nocontent" style="mc-topic-toolbar-items: NextTopic;"><div class="button-group-container-left"><button class="button needs-pie next-topic-button" title="Next Topic" disabled="true"><div><div role="img" class="button-icon-wrapper" aria-label="Next Topic"><div class="button-icon"> </div></div></div></button></div></div><p>&#160;</p><div style="border-top-color: rgb(245, 245, 245); border-top-style: solid; border-top-width: 1px; margin-top: 22px;"><p>&#160;</p></div><p class="footer-logo">Snow Commander <span class="mc-variable General.VersionShort variable">9.7</span> documentation</p><p class="footer-logo"><img src="../Resources/Images/copyright-regular-8.svg" /> <span class="mc-variable General.Year variable">2024</span> <span class="mc-variable General.CompanyName variable">Flexera</span>&#160;&#160;&#160;Last modified: <span class="mc-variable General.ISOShortDate variable">2024-10-16</span>&#160;&#160;&#160;<span style="color: #FFF;" class="mc-variable System.ShortTime variable">9:32 AM</span></p><p class="footer-logo"><a class="footer-links-herschel" href="https://www.flexera.com/legal/privacy-policy" target="_blank" data-mc-conditions="General.ForWebOnly">Privacy policy</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="https://www.flexera.com/legal" target="_blank">Terms and conditions</a>&#160;&#160;&#160;<a class="footer-links-herschel" href="mailto:docsportal-feedback@snowsoftware.com" target="_blank">Feedback</a></p><p><span class="hide-when-mobile"><span style="color: #ffffff;" class="mc-variable System.ShortDate variable">10/16/2024</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable System.ShortTime variable">9:32 AM</span>&#160;&#160;<span style="color: #ffffff;" class="mc-variable General.Version variable">9.7.1</span></span></p></div></div></div>
                                         <div class="column2">
-                                            <div data-sticky-container="" id="-foo16alVk-QugzYvfZsYA">
-                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="-foo16alVk-QugzYvfZsYA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
+                                            <div data-sticky-container="" id="y5tG6530PEKuXn_f0KJ7TQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="y5tG6530PEKuXn_f0KJ7TQ:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 901px)" data-scroll-container-on="only screen and (min-width: 901px)">
                                                     <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 901px)" class="nocontent menu _Skins_SideMenuWithInThisTopicColumn mc-component">
-                                                        <li><a href="#RequestVMClones">Request VM Clones</a>
+                                                        <li class="tree-node"><a href="#RequestVMClones">Request VM Clones</a>
                                                         </li>
                                                     </ul>
                                                 </div>

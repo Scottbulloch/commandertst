@@ -1,4 +1,4 @@
-/*<meta />*/
+﻿/*<meta />*/
 
 /* Main Page Styles */
 
@@ -232,7 +232,7 @@ ul.navigation > li
 }
 
 ul.navigation li:hover > ul,
-ul.navigation > li.has-children:hover:after,
+ul.navigation > li.is-expanded:after,
 ul.sub-menu.focus-within-expanded
 {
 	visibility: visible;
@@ -324,7 +324,7 @@ nav.title-bar .menu-icon
 	display: flex;
 	flex: 0 1 auto;
 	order: 1;
-	min-height: 45px;
+	min-height: 43px;
 	align-self: center;
 	justify-content: center;
 }
@@ -336,11 +336,11 @@ nav.title-bar .menu-icon
 	margin: 0;
 	z-index: 1;
 	display: block;
-	width: 132px;
-	height: 45px;
+	width: 248px;
+	height: 43px;
 	align-self: center;
-	background: transparent url('Images/snow-black-45h.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/snow-black-45h.png') no-repeat center center;
+	background: transparent url('Images/flexera-snowdocs-logo2.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/flexera-snowdocs-logo2.png') no-repeat center center;
 }
 
 .title-bar-container
@@ -823,7 +823,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -872,7 +872,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -1017,7 +1017,7 @@ div.central-dropdown-content > a:hover
 
 .menu-icon-container
 {
-	min-height: 45px;
+	min-height: 43px;
 }
 
 .off-canvas-wrapper-inner .outer-row
@@ -1193,7 +1193,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -1347,7 +1347,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -1502,7 +1502,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
